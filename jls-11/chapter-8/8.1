@@ -1,0 +1,184 @@
+# Java 11 语言提案
+---
+author：James Gosling，Bil Joy， Guy Steele， Gilad Bracha， Alex Buckley，Daniel Smith
+
+---
+
+2019-01-09   翻译   王治锋
+
+
+# 第八章 类
+
+
+# 8.1 类声明
+
+一个类声明指定一个新的命名引用类型。
+有两种声明类的方法： normal类声明和enum声明。
+
+```
+ 类声明：
+   Normal类声明
+   Enums声明
+   
+
+ Normal类声明：
+   ｛类修饰符｝class  类型标识符[类型参数]
+       [super类][super接口] 类体 
+```
+
+上面的规则适合所有的类声明，同样也适用于enum声明。有关于类修饰符，内部类，super类的enum声明的特殊规则，在[8.9]()小节进行讲述。
+
+
+类声明中的 类型标识符 是指类的名字。
+
+如果一个类和嵌套的类或者接口有同样的名字，则会报编译时错误。
+
+类声明的范围及作用域在[6.3]()和[6.4]()小节讲述。
+
+
+## 8.1.1 类修饰符
+
+一个类声明可能包含 类修饰符。
+
+```
+ 类修饰符：
+   （其中一个）
+   Anotation public protectted private 
+   abstract static final strictfp
+
+```
+
+类声明上的 annotation 修饰符相关规则在[9.7.4]() 和 [9.7.5]()中讲述。
+
+
+public[6.6]()访问修饰符只能修饰顶级类[7.6]()和成员类[8.5]()，不能修饰本地类[14.3]()和匿名类[15.9.5]()。
+
+protected和private访问修饰符只能修饰带有直接嵌套声明的成员类[8.5]()
+
+static 修饰符只能修饰成员类[8.5.1]()，不能修饰顶级类，本地类，和匿名类。
+
+如果修饰符关键字在一个类上出现多于一次将会报编译时错误，一个类上包含如下两个或者两个以上的访问修饰符也会报编译时错误：public，protected，private[6.6]()
+
+>如果两个或者两个以上的类型修饰符出现在一个类声明上，可以认为是正常的，但不需要这么做， that they appear in the order consistent with that shown above in the production for ClassModifier。
+
+
+### 8.1.1.1 abstract 类
+
+一个abstract类是一个不完整的类，被认为是不完全实现的类。
+
+如果用类实例创建表达式[15.9.1]()尝试创建一个abstract类的实例，将会报编译时错误。
+
+A subclass of an abstract class that is not itself abstract may be instantiated, resulting in the execution of a constructor for the abstract class and, therefore, the execution of the field initializers for instance variables of that class.
+
+一个普通类只有是abstract类的时候，才可能有abstract方法，这些方法只声明不实现[8.4.3.1]()。如果一个普通类不是abstract类但是有abstract方法，则报编译时错误。
+
+一个类 C 在下面的两种情形下会出现abstract方法：
+```
+ * C 的任何一个成员方法[8.2]()-声明的或者继承的 是abstract。
+ * C 的super类任何一个有一个absract方法被声明为包访问权限，并且在C或者C的super类中不存在此方法的覆盖。
+
+```
+声明一个abstract类，但在子类中不实现所有的abstract方法会报编译时错误。这种情况可能会发生，例如：
+ if the class would have as members two abstract methods  that have the same method signature (§8.4.2) but return types for which no type is return-type-substitutable with both [§8.4.5]().
+
+```
+例子 8.1.1.1-1 抽象类声明
+
+ abstract class Point{
+
+     int x = 1, y = 1;
+
+     void move( int dx, iint dy){
+
+     	x += dx;
+
+     	y += dy;
+
+     	alert();
+
+     }
+     abstract void alert();
+ }
+
+ abstract class ColoredPoint extends Point{
+
+ 	int color;
+ }
+
+ class SimplePoint extends Point{
+
+ 	void alert(){}
+
+ }
+
+
+```
+
+上面定义了类Point，Point必须定义为abstract，因为Point中年方法alert是abstract的。Point的子类ColoredPoint集成了abstract方法alert，因此类ColoredPoint也必须声明为abstract。另外，SimplePoint继承了Point，实现了alert方法，因此SimplePoint不需要声明为abstract。
+
+如下语句：
+
+> Point p = new Point();
+
+会导致编译时错误。因为，Point是abstract，不能被实例化。但是，Point变量可以被实例化为Point的子类的引用。类SimplePoint不是abstract，因此如下的语句：
+
+> Point p = new SimplePoint();
+
+是正确的。 SimplePoint实例引用默认的构造器进行构建，并用默认的初始化器为Point的x和y变量进行初始化。
+
+例子 8.1.1.1-2 禁用子类的Abstract类声明
+
+```
+ interface Colorable {
+
+    void setColor(int color);
+
+ }
+
+ abstract class Colored implements Colorable {
+
+    public abstract int setColor(int color);
+
+ }
+
+```
+
+如上的声明导致编译时错误：对于Colored的任何子类来说，都不可能实现名字为setColor方法，这个方法带有一个int参数，在接口Colorable和抽象诶Clored中都出现。因为，接口Colorable中的setColor方法没有返回值，而在Colored类中的setColor方法有int类型[$8.4]()的返回值。
+
+class只有在子类能够被创建并实现时才声明为abstract。如果只是为了防止class被实例化的目的，合适的表达方法是声明一个没有参数的构造器[$8.8.10]()，让构造函数是private，从不调用它，并且不声明其它的构造器。一个类的通常形式包含：类方法和变量。
+
+
+下面的例子中：Math不能被实例化，它的声明形式如下：
+
+```
+ public final class Math{
+
+    private Math(){ }  //从来不实例化这个类
+
+    .....类变量和方法声明
+
+ }
+
+```
+
+
+### 8.1.1.2 final 类
+
+如果一个类滋生定义是完整的并且不需要任何子类，可以声明为：final。
+
+如果一个final类名出现在带有extends的另一个类的声明子句[$8.1.4]()中，会报编译时错误；这意味着final类不能有任何的子类。
+
+如果类同时被声明为final和abstract则会报编译时错误，因为这样的类从来不能被完整地实现[$8.1.1.1]().
+
+因为一个final类不会i有任何子类，final类的方法也不会被覆盖[$8.4.8.1]().
+
+
+### 8.1.1.3 strictfp 类
+
+strictfp修饰符的作用是在类声明(包括变量初始化器，实例初始化器，静态初始化器以及构造器)中使所有的float和double表达式 be explicitly FP-strict [$15.4]()。
+
+这意味着类中声明的所有方法，以及类中所有嵌套类型的声明 are implicitly strictfp。
+
+
+### 8.1.2 通用类和类型参数
+
