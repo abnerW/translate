@@ -56,7 +56,6 @@ The	IT	infrastructure	that	AWS	provides	to	organizations	is	designed	and	managed
 
   是一个面向后端web开发人员的零管理计算平台，它在aws云上为您运行代码，并为您提供细粒度的定价结构。aws lambda在一个区域的多个可用性区域中运行自己的aws计算组amazon ec2实例，它提供了aws基础设施的高可用性、安全性、性能和可扩展性 
 
-
 ### 自动伸缩
 
 * Auto Scaling允许组织根据为特定工作负载定义的条件自动向上或向下扩展Amazon EC2容量（见图1.3）。它不仅可以帮助维护应用程序可用性并确保所需数量的Amazon EC2实例正在运行，但它也允许资源进行扩展以满足动态工作负载的需求，组织可以优化成本，而不是为峰值负载提供资源，只使用实际需要的容量。
@@ -87,7 +86,6 @@ The	IT	infrastructure	that	AWS	provides	to	organizations	is	designed	and	managed
 
 AWS提供各种满足需要的存储服务，诸如：Amazon简单存储服务，Amzzon CloudFront，Amazon弹性块服务。本章节只是存储和内容分发服务的概述。
 
-
 #### Amazon S3
 
 * Amazon Simple Storage Service（Amazon S3）为开发人员和IT团队提供了高度持久和可扩展的对象存储，可以处理几乎无限量的数据和大量并发用户。组织可以存储任何类型的对象，如HTML页面、源代码文件、图像文件和加密数据，并使用基于http的协议访问它们。amazon s3为各种各样的用例提供经济高效的对象存储，包括备份和恢复、近线归档、大数据分析、灾难恢复、云应用程序和内容分发。
@@ -104,11 +102,9 @@ AWS提供各种满足需要的存储服务，诸如：Amazon简单存储服务，Amzzon CloudFront，Amaz
 
 * AWS存储网关是一项将内部软件设备与基于云的存储连接起来的服务，可在组织的内部IT环境和AWS存储基础设施之间提供无缝和安全的集成。该服务支持与现有应用程序一起工作的行业标准存储协议。它提供低功耗的通过在本地维护频繁访问的数据的缓存，同时在AmazonS3或AmazonGlacie中安全地存储加密的所有数据，从而保持稳定的性能。
 
-
 #### AWS CloudFront
 
 * amazon cloudfront是一个内容交付web服务，它与其他aws云服务集成，使开发人员和企业能够以低延迟、高数据传输速度和无最低使用承诺的方式向全球用户分发内容。Amazon CloudFront可以使用边缘位置的全球网络来交付您的整个网站，包括动态、静态、流式和交互式内容。对内容的请求会自动路由到最近的边缘位置，因此内容会以最佳性能交付给全球各地的最终用户
-
 
 ### 数据库服务
 
@@ -117,5 +113,63 @@ AWS提供各种满足需要的存储服务，诸如：Amazon简单存储服务，Amzzon CloudFront，Amaz
 #### Amazon RDS
 
 * amazon关系数据库服务（amazon rds）提供了一个完全托管的关系数据库，支持许多流行的开源和商用数据库引擎。这是一个经济高效的服务，允许组织启动安全、高可用、容错的数据库。在几分钟内就可以生产数据库了。由于amazon rds管理耗时的管理任务，包括备份、软件修补、监视、扩展和复制，因此组织资源可以集中于产生收入的应用程序和业务，而不是普通的操作任务。
+
+#### Amazon	DynamoDB
+
+* Amazon DYNAMODB是一种快速灵活的NoSQL数据库服务，适用于任何规模的需要一致的、毫秒级延迟的所有应用程序。它是一个完全托管的数据库，支持文档和键/值数据模型。它灵活的数据模型和可靠的性能使它非常适合移动、Web、游戏、广告技术，物联网和许多其他应用。
+
+#### Amazon	Redshift
+
+* Amazon Redshift是一个快速、完全管理、PB级的数据仓库服务，它使分析结构化数据变得简单且经济高效。Amazon Redshift提供了一个标准的SQL接口，允许组织使用现有的商业智能工具。通过利用提高I/O效率和跨多个节点并行查询的柱状存储技术，Amazon Redshift能够提供快速的查询性能。Amazon Redshift体系结构允许组织自动执行与提供、配置和监视云数据仓库相关的大多数常见管理任务。
+
+#### Amazon	ElastiCache 
+
+* Amazon Elasticache是一个Web服务，它简化了云中内存缓存的部署、操作和扩展。该服务允许组织从快速、托管的内存缓存中检索信息，而不是完全依赖速度较慢的基于磁盘的数据库，从而提高了Web应用程序的性能。在撰写本文时，Amazon Elasticache支持memcached和redis缓存引擎。
+
+### 管理工具
+
+* AWS提供各种工具，帮助企业管理自己的AWS资源。本章节概述了AWS提供给企业的管理工具。
+
+#### Amazon CloudWatch
+
+* amazon cloudwatch是一项针对aws云资源和aws上运行的应用程序的监视服务，它允许组织收集和跟踪度量、收集和监视日志文件以及设置警报。通过利用amazon cloudwatch，组织可以在系统范围内了解资源利用率、应用程序性能，以及运营健康。通过使用这些洞察力，组织可以根据需要做出反应，以保持应用程序的平稳运行。 
+
+#### AWS CloudFormation
+
+* aws cloudformation为开发人员和系统管理员提供了创建和管理相关aws资源集合的有效方法，以有序和可预测的方式提供和更新它们。aws cloudformation定义了一种基于json的模板语言，可用于描述工作负载所需的所有aws资源。模板可以提交给aws cloudformation，服务将负责以适当的顺序配置和配置这些资源（参见图1.4）。
+
+#### AWS CloudTrail
+
+* aws cloudtrail是一个web服务，它记录aws api对某个帐户的调用，并提供日志文件供审计和审查。记录的信息包括api调用方的身份、api调用的时间、api调用方的源ip地址、请求参数和服务返回的响应元素。
+
+#### AWS Config
+
+* aws config是一个完全托管的服务，它向组织提供aws资源清单、配置历史记录和配置更改通知，以启用安全性和治理。使用aws config组织可以发现现有的aws资源，导出包含所有配置详细信息的aws资源清单，并确定资源在任何时间点的配置方式。这些功能支持合规审核、安全性分析、资源更改跟踪和故障排除 
+
+
+### 安全和身份
+
+* aws提供安全和身份服务，帮助组织在云上保护他们的数据和系统。下一节将从一个较高等级讨论这些服务。
+
+#### AWS Identity and Access Management （IAM)
+
+* aws身份和访问管理（IAM）使组织能够安全地控制其用户对aws云服务和资源的访问。使用IAM，组织可以创建和管理aws用户和组，并使用权限允许和拒绝其对aws资源的访问。
+
+#### AWS Key Management Service(KMS)
+
+* aws密钥管理服务（kms）是一种托管服务，它使组织能够轻松创建和控制用于加密其数据的加密密钥，并使用硬件安全模块（hsms）保护密钥的安全性。aws kms与其他几个aws云服务集成，以帮助保护与这些服务一起存储的数据。
+
+#### AWS Directory Service
+
+* AWS目录服务允许组织在AWS云上设置和运行Microsoft Active Directory，或将其AWS资源连接到现有的内部部署Microsoft Active Directory。组织可以使用它来管理用户和组、提供对应用程序和服务的单点登录、创建和应用组策略，域加入amazon ec2实例，简化基于云的linux和microsoft windows工作负载的部署和管理。
+
+
+#### AWS Certificate Manager
+
+* aws证书管理器是一种服务，允许组织轻松地配置、管理和部署安全套接字层/传输层安全（ssl/tls）证书，以便与aws云服务一起使用。它消除了购买、上载和续订ssl/tls证书的耗时的手动过程。使用aws证书管理器，组织可以快速请求证书，将其部署到aws资源（如弹性负载平衡或amazon cloudfront发行版）上，并让aws证书管理器处理证书续订。
+
+#### AWS Web Application Firewall (WAF)
+
+* AWS Web应用程序防火墙（WAF）有助于保护Web应用程序免受可能影响应用程序可用性、危害安全性或消耗过多资源的常见攻击和利用。AWS WAF通过定义可自定义的Web安全规则，使组织能够控制允许或阻止哪些通信流到其Web应用程序
 
 
