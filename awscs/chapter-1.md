@@ -10,7 +10,7 @@
  * ÔÆ¼ÆËãÄÜ¹»¿ìËÙÖØÐÂÅäÖÃ¼ÆËã»·¾³£¬ÒÔÊÊÓ¦²»¶Ï±ä»¯µÄÒµÎñÐèÇó£¬×éÖ¯¿ÉÒÔÓÅ»¯Ö§³ö¡£
  * ÈÝÁ¿¿ÉÒÔ×Ô¶¯Ôö¼Ó»ò¼õÉÙ£¬ÒÔÂú×ã²¨¶¯µÄÊ¹ÓÃÄ£Ê½¡£
  * ·þÎñ¿ÉÒÔÔÝÊ±ÍÑ»ú»ò¸ù¾ÝÒµÎñÐèÇóÓÀ¾Ã¹Ø±Õ¡£
- * ´ËÍâ£¬Ê¹ÓÃ°´´Î¼Æ·Ñ£¬awsÔÆ·þÎñ³ÉÎªÒ»ÖÖÔËÓª·ÑÓÃ£¬¶ø²»ÊÇ×Ê±¾·ÑÓÃ¡£
+ * ´ËÍâ£¬Ê¹ÓÃ°´´Î¼Æ·Ñ£¬AWSÔÆ·þÎñ³ÉÎªÒ»ÖÖÔËÓª·ÑÓÃ£¬¶ø²»ÊÇ×Ê±¾·ÑÓÃ¡£
  * ËäÈ»Ã¿¸ö×éÖ¯¶¼¾­ÀúÁËÒ»´Î¶ÀÌØµÄÔÆ¶ËÖ®ÂÃ£¬´øÀ´ÁËÐí¶àºÃ´¦£¬µ«Áù¸öºÃ´¦È´Ò»´ÎÓÖÒ»´ÎµØÏÔÏÖ³öÀ´£¬ÈçÍ¼-1.1ËùÊ¾¡£
 
 #### ¿É±ä¾­¼ÃÖ§³ö Variable VS.capital expense
@@ -19,7 +19,7 @@
 
 #### ¹æÄ£¾­¼Ã Economies of Scale
 
-* ÔÆ¼ÆËãµÄÁíÒ»¸öÓÅÊÆÊÇ£¬×éÖ¯¿ÉÒÔ´Ó´ó¹æÄ£µÄ¹æÄ£¾­¼ÃÖÐ»ñÒæ¡£Í¨¹ýÊ¹ÓÃÔÆ¼ÆËã£¬Äã¿ÉÒÔÊµÏÖ±ÈÄã×Ô¼º¸üµÍµÄ¿É±ä³É±¾¡£ÒòÎªÊýÊ®Íò¿Í»§µÄÊ¹ÓÃÊÇÔÚÔÆÖÐ¾ÛºÏµÄ£¬ËùÒÔÏñawsÕâÑùµÄÌá¹©ÉÌ¿ÉÒÔÊµÏÖ¸ü¸ßµÄ¹æÄ£¾­¼Ã£¬Õâ¾ÍÒâÎ¶×Å¸üµÍµÄ¼Û¸ñ¡£
+* ÔÆ¼ÆËãµÄÁíÒ»¸öÓÅÊÆÊÇ£¬×éÖ¯¿ÉÒÔ´Ó´ó¹æÄ£µÄ¹æÄ£¾­¼ÃÖÐ»ñÒæ¡£Í¨¹ýÊ¹ÓÃÔÆ¼ÆËã£¬Äã¿ÉÒÔÊµÏÖ±ÈÄã×Ô¼º¸üµÍµÄ¿É±ä³É±¾¡£ÒòÎªÊýÊ®Íò¿Í»§µÄÊ¹ÓÃÊÇÔÚÔÆÖÐ¾ÛºÏµÄ£¬ËùÒÔÏñAWSÕâÑùµÄÌá¹©ÉÌ¿ÉÒÔÊµÏÖ¸ü¸ßµÄ¹æÄ£¾­¼Ã£¬Õâ¾ÍÒâÎ¶×Å¸üµÍµÄ¼Û¸ñ¡£
 
 #### ÌáÉýËÙ¶È Increace speed and ingility
 
@@ -37,7 +37,7 @@
 
 * ÔÆ¼ÆËãµÄÁíÒ»¸öÓÅÊÆÊÇÄÜ¹»ÔÚ¼¸·ÖÖÓÄÚÈ«Çò»¯¡£×éÖ¯Ö»Ðèµã»÷¼¸ÏÂ£¬¾Í¿ÉÒÔÇáËÉµØ½«ÆäÓ¦ÓÃ³ÌÐò²¿Êðµ½ÊÀ½ç¸÷µØµÄ¶à¸öÎ»ÖÃ¡£ÕâÔÊÐí×éÖ¯ÔÚÈ«Çò·¶Î§ÄÚÌá¹©ÈßÓà£¬²¢Ìá¹©¸üµÍµÄÒÔ×îµÍµÄ³É±¾Îª¿Í»§Ìá¹©ÑÓ³ÙºÍ¸üºÃµÄÌåÑé¡£¹ýÈ¥Ö»ÓÐ×î´óµÄÆóÒµ²ÅÄÜ¸ºµ£µÃÆðÈ«Çò»¯£¬µ«ÔÆ¼ÆËãÊ¹ÕâÒ»ÄÜÁ¦ÃñÖ÷»¯£¬Ê¹ÈÎºÎ×éÖ¯¶¼³ÉÎª¿ÉÄÜ¡£ËäÈ»¹ØÓÚÔÆ¼ÆËãµÄÕâÐ©ÓÅÊÆµÄ¾ßÌåÎÊÌâ²»Ì«¿ÉÄÜ³öÏÖÔÚ¿¼ÊÔÖÐ£¬µ«ÊÇÁË½âÕâÐ©ÓÅÊÆÓÐÖúÓÚºÏÀí»¯ÊÊµ±µÄ´ð°¸¡£
 
-### Óë¼ÆËã²¿ÊðÄ£ÐÍ
+### ÔÆ¼ÆËã²¿ÊðÄ£ÐÍ
 
 * ±¾´Î¿¼ÊÔ¹Ø×¢µÄÁ½ÖÖÖ÷ÒªÔÆ¼ÆËã²¿ÊðÄ£ÐÍÊÇ»ùÓÚÔÆµÄ"Ò»Ìå»¯"²¿ÊðºÍ»ìºÏ²¿Êð£¬ÁË½âÃ¿ÖÖ²ßÂÔÈçºÎÓ¦ÓÃÓÚ¼Ü¹¹Ñ¡ÏîºÍ¾ö²ß·Ç³£ÖØÒª¡£
 
@@ -47,11 +47,11 @@
 
 ## AWS »ù±¾Ô­Àí
 
-* AWSµÄºËÐÄÊÇÔÚ°²È«µÄÔÆ·þÎñÆ½Ì¨ÉÏÍ¨¹ý»¥ÁªÍøÌá¹©IT×ÊÔ´µÄ°´Ðè½»¸¶£¬Ìá¹©¼ÆËãÄÜÁ¦¡¢´æ´¢¡¢Êý¾Ý¿â¡¢ÄÚÈÝ½»¸¶£¬ÒÔ¼°ÆäËû°ïÖúÆóÒµÀ©´ó¹æÄ£ºÍÔö³¤µÄ¹¦ÄÜ¡£Ê¹ÓÃaws×ÊÔ´¶ø²»ÊÇ×Ô¼ºµÄ×ÊÔ´¾ÍÏñ´ÓµçÁ¦¹«Ë¾¹ºÂòµçÁ¦¶ø²»ÊÇÔËÐÐ×Ô¼ºµÄ·¢µç»ú£¬ËüÌá¹©ÁËÔÆ¼ÆËãµÄ¹Ø¼üÓÅÊÆ£ºÈÝÁ¿ÍêÈ«·ûºÏÄúµÄÐèÇó£¬ÄúÖ»ÐèÖ§¸¶ËùÓÃµÄ×ÊÔ´£¬¹æÄ£¾­¼Ãµ¼ÖÂ³É±¾½µµÍ£¬·þÎñÓÉÓÐ¾­ÑéµÄÔËÓª´óÐÍÍøÂçµÄ¹©Ó¦ÉÌÌá¹©¡£**awsÈ«Çò»ù´¡ÉèÊ©ºÍaws°²È«ÓëºÏ¹æ·½·¨ÊÇ×¼±¸¿¼ÊÔÊ±ÐèÒªÀí½âµÄ¹Ø¼ü»ù´¡¸ÅÄî**¡£
+* AWSµÄºËÐÄÊÇÔÚ°²È«µÄÔÆ·þÎñÆ½Ì¨ÉÏÍ¨¹ý»¥ÁªÍøÌá¹©IT×ÊÔ´µÄ°´Ðè½»¸¶£¬Ìá¹©¼ÆËãÄÜÁ¦¡¢´æ´¢¡¢Êý¾Ý¿â¡¢ÄÚÈÝ½»¸¶£¬ÒÔ¼°ÆäËû°ïÖúÆóÒµÀ©´ó¹æÄ£ºÍÔö³¤µÄ¹¦ÄÜ¡£Ê¹ÓÃAWS×ÊÔ´¶ø²»ÊÇ×Ô¼ºµÄ×ÊÔ´¾ÍÏñ´ÓµçÁ¦¹«Ë¾¹ºÂòµçÁ¦¶ø²»ÊÇÔËÐÐ×Ô¼ºµÄ·¢µç»ú£¬ËüÌá¹©ÁËÔÆ¼ÆËãµÄ¹Ø¼üÓÅÊÆ£ºÈÝÁ¿ÍêÈ«·ûºÏÄúµÄÐèÇó£¬ÄúÖ»ÐèÖ§¸¶ËùÓÃµÄ×ÊÔ´£¬¹æÄ£¾­¼Ãµ¼ÖÂ³É±¾½µµÍ£¬·þÎñÓÉÓÐ¾­ÑéµÄÔËÓª´óÐÍÍøÂçµÄ¹©Ó¦ÉÌÌá¹©¡£**AWSÈ«Çò»ù´¡ÉèÊ©ºÍAWS°²È«ÓëºÏ¹æ·½·¨ÊÇ×¼±¸¿¼ÊÔÊ±ÐèÒªÀí½âµÄ¹Ø¼ü»ù´¡¸ÅÄî**¡£
 
 ### È«Çò»ù´¡ÉèÊ©
 
-* awsÎª190¶à¸ö¹ú¼ÒµÄ100¶àÍò»îÔ¾¿Í»§Ìá¹©·þÎñ£¬²¢¼ÌÐøÎÈ²½À©Õ¹ÆäÈ«Çò»ù´¡ÉèÊ©£¬ÒÔ°ïÖúÆóÒµÊµÏÖ½ÏµÍµÄÑÓ³ÙºÍ½Ï¸ßµÄÍÌÍÂÁ¿£¬Âú×ãÆäÒµÎñÐèÇó¡£AWSÌá¹©ÁËÒ»¸ö¸ß¿ÉÓÃµÄ¼¼Êõ»ù´¡ÉèÊ©Æ½Ì¨£¬ÔÚÈ«ÇòÓÐ¶à¸öÎ»ÖÃ¡£ÕâÐ©Î»ÖÃÓÉRegionsºÍ¿ÉÓÃÓò×é³É¡£Ã¿¸öRegionÊÇÒ»¸öµ¥¶ÀµÄµØÀíÇøÓò¡£Ã¿¸öRegionÓÐ¶à¸ö³ÆÎª¿ÉÓÃÓòµÄ¶ÀÁ¢Î»ÖÃ¡£AWSÔÊÐíÔÚ¶à¸öÎ»ÖÃ·ÅÖÃ×ÊÔ´ºÍÊý¾Ý¡£³ý·Ç×éÖ¯Ñ¡Ôñ¿çRegion¸´ÖÆ×ÊÔ´¡£Ã¿¸öRegion¶¼ÊÇÍêÈ«¶ÀÁ¢µÄ£¬²¢ÇÒ±»Éè¼Æ³ÉÓëÆäËûRegionÍêÈ«¸ôÀë¡£ÕâÑù¿ÉÒÔÊµÏÖ×î´óµÄÈÝ´íÐÔºÍÎÈ¶¨ÐÔ¡£Ã¿¸ö¿ÉÓÃÓòÒ²±»¸ôÀë£¬µ«ÊÇ£¬Ò»¸öµØÇøµÄ¿ÉÓÃÓòÍ¨¹ýµÍÑÓ³ÙÁ´Â·Á¬½Ó¡£¿ÉÓÃÓòÔÚµäÐÍµÄ´ó¶¼ÊÐµØÇøÄÚÎïÀíÉÏÊÇ·Ö¿ªµÄ£¬²¢ÇÒÎ»ÓÚµÍ·çÏÕµÄºé·ºÆ½Ô­£¨ÌØ¶¨µÄºé·ºÇø·ÖÀàÒòµØÇø¶øÒì£©¡£´ËÍâ£¬»¹Ê¹ÓÃÀëÉ¢µÄ²»¼ä¶ÏµçÔ´£¨UPS£©ºÍÏÖ³¡±¸ÓÃ·¢µç»úÍ¨¹ý¶ÀÁ¢¹«ÓÃÉèÊ©£¨Èç¿ÉÓÃ£©µÄ²»Í¬µçÍø¹©µç£¬ÒÔ½øÒ»²½¼õÉÙµ¥µã¹ÊÕÏ¡£¿ÉÓÃÓò¾ùÈßÓàÁ¬½Óµ½¶à¸öÒ»¼¶¹«½»¹©Ó¦ÉÌ¡£Í¨¹ý½«×ÊÔ´·ÅÖÃÔÚµ¥¶ÀµÄ¿ÉÓÃÇøÓò£¬Äú¿ÉÒÔ±£»¤ÄúµÄÍøÕ¾»òÓ¦ÓÃ³ÌÐòÃâÊÜ·þÎñÖÐ¶Ï¶Ôµ¥¸öÎ»ÖÃµÄÓ°Ïì¡£
+* AWSÎª190¶à¸ö¹ú¼ÒµÄ100¶àÍò»îÔ¾¿Í»§Ìá¹©·þÎñ£¬²¢¼ÌÐøÎÈ²½À©Õ¹ÆäÈ«Çò»ù´¡ÉèÊ©£¬ÒÔ°ïÖúÆóÒµÊµÏÖ½ÏµÍµÄÑÓ³ÙºÍ½Ï¸ßµÄÍÌÍÂÁ¿£¬Âú×ãÆäÒµÎñÐèÇó¡£AWSÌá¹©ÁËÒ»¸ö¸ß¿ÉÓÃµÄ¼¼Êõ»ù´¡ÉèÊ©Æ½Ì¨£¬ÔÚÈ«ÇòÓÐ¶à¸öÎ»ÖÃ¡£ÕâÐ©Î»ÖÃÓÉRegionsºÍ¿ÉÓÃÓò×é³É¡£Ã¿¸öRegionÊÇÒ»¸öµ¥¶ÀµÄµØÀíÇøÓò¡£Ã¿¸öRegionÓÐ¶à¸ö³ÆÎª¿ÉÓÃÓòµÄ¶ÀÁ¢Î»ÖÃ¡£AWSÔÊÐíÔÚ¶à¸öÎ»ÖÃ·ÅÖÃ×ÊÔ´ºÍÊý¾Ý¡£³ý·Ç×éÖ¯Ñ¡Ôñ¿çRegion¸´ÖÆ×ÊÔ´¡£Ã¿¸öRegion¶¼ÊÇÍêÈ«¶ÀÁ¢µÄ£¬²¢ÇÒ±»Éè¼Æ³ÉÓëÆäËûRegionÍêÈ«¸ôÀë¡£ÕâÑù¿ÉÒÔÊµÏÖ×î´óµÄÈÝ´íÐÔºÍÎÈ¶¨ÐÔ¡£Ã¿¸ö¿ÉÓÃÓòÒ²±»¸ôÀë£¬µ«ÊÇ£¬Ò»¸öµØÇøµÄ¿ÉÓÃÓòÍ¨¹ýµÍÑÓ³ÙÁ´Â·Á¬½Ó¡£¿ÉÓÃÓòÔÚµäÐÍµÄ´ó¶¼ÊÐµØÇøÄÚÎïÀíÉÏÊÇ·Ö¿ªµÄ£¬²¢ÇÒÎ»ÓÚµÍ·çÏÕµÄºé·ºÆ½Ô­£¨ÌØ¶¨µÄºé·ºÇø·ÖÀàÒòµØÇø¶øÒì£©¡£´ËÍâ£¬»¹Ê¹ÓÃÀëÉ¢µÄ²»¼ä¶ÏµçÔ´£¨UPS£©ºÍÏÖ³¡±¸ÓÃ·¢µç»úÍ¨¹ý¶ÀÁ¢¹«ÓÃÉèÊ©£¨Èç¿ÉÓÃ£©µÄ²»Í¬µçÍø¹©µç£¬ÒÔ½øÒ»²½¼õÉÙµ¥µã¹ÊÕÏ¡£¿ÉÓÃÓò¾ùÈßÓàÁ¬½Óµ½¶à¸öÒ»¼¶¹«½»¹©Ó¦ÉÌ¡£Í¨¹ý½«×ÊÔ´·ÅÖÃÔÚµ¥¶ÀµÄ¿ÉÓÃÇøÓò£¬Äú¿ÉÒÔ±£»¤ÄúµÄÍøÕ¾»òÓ¦ÓÃ³ÌÐòÃâÊÜ·þÎñÖÐ¶Ï¶Ôµ¥¸öÎ»ÖÃµÄÓ°Ïì¡£
 
 ```
  ÌáÊ¾£º
@@ -60,22 +60,22 @@
 
 ### °²È«ºÍºÏ¹æ
 
-* ÎÞÂÛÊÇÔÚ±¾µØ»¹ÊÇÔÚawsÉÏ£¬ÐÅÏ¢°²È«¶ÔÓÚÔËÐÐ¹Ø¼ü¹¤×÷¸ºÔØµÄ×éÖ¯¡£°²È«ÐÔÊÇÒ»ÏîºËÐÄ¹¦ÄÜÒªÇó£¬¿É±£»¤¹Ø¼üÈÎÎñÐÅÏ¢ÃâÊÜÒâÍâ»òÐîÒâµÄµÁÇÔ¡¢Ð¹Â©¡¢ÍêÕûÐÔÊÜËðºÍÉ¾³ý¡£°ïÖú±£»¤ÏµÍ³ºÍÊý¾ÝµÄ»úÃÜÐÔ¡¢ÍêÕûÐÔºÍ¿ÉÓÃÐÔ¶ÔAWSÖÁ¹ØÖØÒª£¬±£³ÖÄãµÄÐÅÈÎºÍÐÅÐÄ¡£±¾½ÚÖ¼ÔÚ¼òÒª½éÉÜAWSµÄ°²È«ºÍºÏ¹æ·½·¨¡£µÚ12ÕÂ"AWS°²È«"ºÍµÚ13ÕÂ"AWS·çÏÕºÍºÏ¹æ"½«¸üÏêÏ¸µØÌÖÂÛÕâÐ©Ö÷Ìâ£¬°üÀ¨Ã¿¸öÖ÷ÌâÔÚ¿¼ÊÔÖÐµÄÖØÒªÐÔ¡£
+* ÎÞÂÛÊÇÔÚ±¾µØ»¹ÊÇÔÚAWSÉÏ£¬ÐÅÏ¢°²È«¶ÔÓÚÔËÐÐ¹Ø¼ü¹¤×÷¸ºÔØµÄ×éÖ¯¡£°²È«ÐÔÊÇÒ»ÏîºËÐÄ¹¦ÄÜÒªÇó£¬¿É±£»¤¹Ø¼üÈÎÎñÐÅÏ¢ÃâÊÜÒâÍâ»òÐîÒâµÄµÁÇÔ¡¢Ð¹Â©¡¢ÍêÕûÐÔÊÜËðºÍÉ¾³ý¡£°ïÖú±£»¤ÏµÍ³ºÍÊý¾ÝµÄ»úÃÜÐÔ¡¢ÍêÕûÐÔºÍ¿ÉÓÃÐÔ¶ÔAWSÖÁ¹ØÖØÒª£¬±£³ÖÄãµÄÐÅÈÎºÍÐÅÐÄ¡£±¾½ÚÖ¼ÔÚ¼òÒª½éÉÜAWSµÄ°²È«ºÍºÏ¹æ·½·¨¡£µÚ12ÕÂ"AWS°²È«"ºÍµÚ13ÕÂ"AWS·çÏÕºÍºÏ¹æ"½«¸üÏêÏ¸µØÌÖÂÛÕâÐ©Ö÷Ìâ£¬°üÀ¨Ã¿¸öÖ÷ÌâÔÚ¿¼ÊÔÖÐµÄÖØÒªÐÔ¡£
 
 #### °²È«
 
-* AWSµÄÔÆ°²È«ÊÇÊ×ÒªÈÎÎñ¡£ËùÓÐAWS¿Í»§¶¼ÊÜÒæÓÚÎªÂú×ã×î°²È«Ãô¸Ð×éÖ¯µÄÒªÇó¶ø¹¹½¨µÄÊý¾ÝÖÐÐÄºÍÍøÂç¼Ü¹¹¡£AWS¼°ÆäºÏ×÷»ï°éÌá¹©ÁËÊý°ÙÖÖ¹¤¾ßºÍ¹¦ÄÜ£¬°ïÖú×éÖ¯ÊµÏÖÆä°²È«Ä¿±ê£¬ÊµÏÖ¿É¼ûÐÔ¡¢¿ÉÉó¼ÆÐÔ£¬¿É¿ØÐÔºÍÃô½ÝÐÔ¡£ÕâÒâÎ¶×Å×éÖ¯¿ÉÒÔÓµÓÐËùÐèµÄ°²È«ÐÔ£¬µ«²»ÐèÒª×Ê½ðÖ§³ö£¬¶øÇÒÓëÄÚ²¿»·¾³Ïà±È£¬²Ù×÷¿ªÏúÒªµÍµÃ¶à¡£ÀûÓÃawsµÄ×éÖ¯¼Ì³ÐÁËaws²ßÂÔ¡¢ÌåÏµ½á¹¹ºÍÒÔ¼°ÎªÂú×ã×î°²È«Ãô¸Ð¿Í»§µÄÒªÇó¶ø¹¹½¨µÄ²Ù×÷Á÷³Ì¡£AWS»ù´¡ÉèÊ©Ö¼ÔÚÌá¹©×î¸ßµÄ¿ÉÓÃÐÔ£¬Í¬Ê±ÔÚ¿Í»§ÒþË½ºÍ¸ôÀë·½ÃæÊµÊ©Ç¿ÓÐÁ¦µÄ±£»¤´ëÊ©¡£ÔÚAWSÔÆ¼ÆËãÆ½Ì¨ÉÏ²¿ÊðÏµÍ³Ê±£¬awsÍ¨¹ýÓë×éÖ¯¹²Ïí°²È«Ö°ÔðÀ´Ìá¹©°ïÖú¡£aws¹ÜÀíµ×²ã»ù´¡ÉèÊ©£¬×éÖ¯¿ÉÒÔ±£»¤ÆäÔÚawsÉÏ²¿ÊðµÄÈÎºÎÄÚÈÝ¡£ÕâÎªÃ¿¸ö×éÖ¯Ìá¹©ÁË°²È«¿ØÖÆËùÐèµÄÁé»îÐÔºÍÁé»îÐÔ¡£¸Ã»ù´¡ÉèÊ©²»½ö°´ÕÕ°²È«×î¼ÑÊµ¼ùºÍ±ê×¼½øÐÐ¹¹½¨ºÍ¹ÜÀí£¬¶øÇÒ¿¼ÂÇµ½ÔÆµÄ¶ÀÌØÐèÇó¡£AWSÊ¹ÓÃÈßÓàºÍ·Ö²ã¿ØÖÆ¡¢Á¬ÐøÑéÖ¤ºÍ²âÊÔ£¬ÒÔ¼°´óÁ¿µÄ×Ô¶¯»¯£¬ÒÔÈ·±£µ×²ã»ù´¡ÉèÊ©24/7ÊÜµ½¼à¿ØºÍ±£»¤¡£AWSÈ·±£ÕâÐ©¿ØÖÆÔÚÃ¿¸öÐÂµÄÊý¾ÝÖÐÐÄ»ò·þÎñÖÐµÃµ½Ò»ÖÂµÄÓ¦ÓÃ¡£
+* AWSµÄÔÆ°²È«ÊÇÊ×ÒªÈÎÎñ¡£ËùÓÐAWS¿Í»§¶¼ÊÜÒæÓÚÎªÂú×ã×î°²È«Ãô¸Ð×éÖ¯µÄÒªÇó¶ø¹¹½¨µÄÊý¾ÝÖÐÐÄºÍÍøÂç¼Ü¹¹¡£AWS¼°ÆäºÏ×÷»ï°éÌá¹©ÁËÊý°ÙÖÖ¹¤¾ßºÍ¹¦ÄÜ£¬°ïÖú×éÖ¯ÊµÏÖÆä°²È«Ä¿±ê£¬ÊµÏÖ¿É¼ûÐÔ¡¢¿ÉÉó¼ÆÐÔ£¬¿É¿ØÐÔºÍÃô½ÝÐÔ¡£ÕâÒâÎ¶×Å×éÖ¯¿ÉÒÔÓµÓÐËùÐèµÄ°²È«ÐÔ£¬µ«²»ÐèÒª×Ê½ðÖ§³ö£¬¶øÇÒÓëÄÚ²¿»·¾³Ïà±È£¬²Ù×÷¿ªÏúÒªµÍµÃ¶à¡£ÀûÓÃAWSµÄ×éÖ¯¼Ì³ÐÁËAWS²ßÂÔ¡¢ÌåÏµ½á¹¹ºÍÒÔ¼°ÎªÂú×ã×î°²È«Ãô¸Ð¿Í»§µÄÒªÇó¶ø¹¹½¨µÄ²Ù×÷Á÷³Ì¡£AWS»ù´¡ÉèÊ©Ö¼ÔÚÌá¹©×î¸ßµÄ¿ÉÓÃÐÔ£¬Í¬Ê±ÔÚ¿Í»§ÒþË½ºÍ¸ôÀë·½ÃæÊµÊ©Ç¿ÓÐÁ¦µÄ±£»¤´ëÊ©¡£ÔÚAWSÔÆ¼ÆËãÆ½Ì¨ÉÏ²¿ÊðÏµÍ³Ê±£¬AWSÍ¨¹ýÓë×éÖ¯¹²Ïí°²È«Ö°ÔðÀ´Ìá¹©°ïÖú¡£AWS¹ÜÀíµ×²ã»ù´¡ÉèÊ©£¬×éÖ¯¿ÉÒÔ±£»¤ÆäÔÚAWSÉÏ²¿ÊðµÄÈÎºÎÄÚÈÝ¡£ÕâÎªÃ¿¸ö×éÖ¯Ìá¹©ÁË°²È«¿ØÖÆËùÐèµÄÁé»îÐÔºÍÁé»îÐÔ¡£¸Ã»ù´¡ÉèÊ©²»½ö°´ÕÕ°²È«×î¼ÑÊµ¼ùºÍ±ê×¼½øÐÐ¹¹½¨ºÍ¹ÜÀí£¬¶øÇÒ¿¼ÂÇµ½ÔÆµÄ¶ÀÌØÐèÇó¡£AWSÊ¹ÓÃÈßÓàºÍ·Ö²ã¿ØÖÆ¡¢Á¬ÐøÑéÖ¤ºÍ²âÊÔ£¬ÒÔ¼°´óÁ¿µÄ×Ô¶¯»¯£¬ÒÔÈ·±£µ×²ã»ù´¡ÉèÊ©24/7ÊÜµ½¼à¿ØºÍ±£»¤¡£AWSÈ·±£ÕâÐ©¿ØÖÆÔÚÃ¿¸öÐÂµÄÊý¾ÝÖÐÐÄ»ò·þÎñÖÐµÃµ½Ò»ÖÂµÄÓ¦ÓÃ¡£
 
 #### ºÏ¹æ
 
-* µ±¿Í»§½«ÆäÉú²ú¹¤×÷¸ºÔØ×ªÒÆµ½awsÔÆÊ±£¬Ë«·½¸ºÔð¹ÜÀíIT»·¾³¡£¿Í»§¸ºÔðÒÔ°²È«ºÍÊÜ¿ØµÄ·½Ê½½¨Á¢Æä»·¾³¡£¿Í»§»¹ÐèÒª¶ÔÆäÕû¸öIT¿ØÖÆ»·¾³±£³ÖÊÊµ±µÄÖÎÀí¡£Í¨¹ý½«ÖÎÀí¼¯ÖÐÔÚÒ»Æð£¬ÓÐÀûÓÚÉó¼ÆµÄ·þÎñ¹¦ÄÜ£¬Í¨¹ýÊÊÓÃµÄºÏ¹æ»òÉó¼Æ±ê×¼£¬AWSÊ¹¿Í»§ÄÜ¹»½¨Á¢ÔÚ´«Í³µÄºÏ¹æ¼Æ»®Ö®ÉÏ¡£ÕâÓÐÖúÓÚ×éÖ¯ÔÚAWS°²È«¿ØÖÆ»·¾³ÖÐ½¨Á¢ºÍÔËÐÐ¡£
+* µ±¿Í»§½«ÆäÉú²ú¹¤×÷¸ºÔØ×ªÒÆµ½AWSÔÆÊ±£¬Ë«·½¸ºÔð¹ÜÀíIT»·¾³¡£¿Í»§¸ºÔðÒÔ°²È«ºÍÊÜ¿ØµÄ·½Ê½½¨Á¢Æä»·¾³¡£¿Í»§»¹ÐèÒª¶ÔÆäÕû¸öIT¿ØÖÆ»·¾³±£³ÖÊÊµ±µÄÖÎÀí¡£Í¨¹ý½«ÖÎÀí¼¯ÖÐÔÚÒ»Æð£¬ÓÐÀûÓÚÉó¼ÆµÄ·þÎñ¹¦ÄÜ£¬Í¨¹ýÊÊÓÃµÄºÏ¹æ»òÉó¼Æ±ê×¼£¬AWSÊ¹¿Í»§ÄÜ¹»½¨Á¢ÔÚ´«Í³µÄºÏ¹æ¼Æ»®Ö®ÉÏ¡£ÕâÓÐÖúÓÚ×éÖ¯ÔÚAWS°²È«¿ØÖÆ»·¾³ÖÐ½¨Á¢ºÍÔËÐÐ¡£
 
 ```
 ÌáÊ¾£º
     ×éÖ¯¶ÔÆäÊý¾ÝËùÔÚµÄÇøÓò±£³ÖÍêÈ«µÄ¿ØÖÆÈ¨ºÍËùÓÐÈ¨£¬Ê¹ËüÃÇÄÜ¹»Âú×ãÇøÓò·¨¹æ×ñ´ÓÐÔºÍÊý¾Ý×¤ÁôÒªÇó¡£
 ```
 
-awsÌá¹©¸ø×éÖ¯µÄit»ù´¡ÉèÊ©ÊÇ°´ÕÕ°²È«×î¼ÑÊµ¼ùºÍ¸÷ÖÖit°²È«±ê×¼Éè¼ÆºÍ¹ÜÀíµÄ¡£ÒÔÏÂÊÇaws×ñÊØµÄÐí¶àÈÏÖ¤ºÍ±ê×¼µÄ²¿·ÖÁÐ±í£º
+AWSÌá¹©¸ø×éÖ¯µÄIT»ù´¡ÉèÊ©ÊÇ°´ÕÕ°²È«×î¼ÑÊµ¼ùºÍ¸÷ÖÖIT°²È«±ê×¼Éè¼ÆºÍ¹ÜÀíµÄ¡£ÒÔÏÂÊÇAWS×ñÊØµÄÐí¶àÈÏÖ¤ºÍ±ê×¼µÄ²¿·ÖÁÐ±í£º
 
 ```
   * ·þÎñ×éÖ¯¿ØÖÆ£¨soc£©1/¹ú¼Ê±£Ö¤±ê×¼²ÎÓë£¨ISAE£©3402¡¢SOC 2ºÍSOC 3
@@ -83,39 +83,39 @@ awsÌá¹©¸ø×éÖ¯µÄit»ù´¡ÉèÊ©ÊÇ°´ÕÕ°²È«×î¼ÑÊµ¼ùºÍ¸÷ÖÖit°²È«±ê×¼Éè¼ÆºÍ¹ÜÀíµÄ¡£ÒÔÏÂÊÇa
   * Ò»¼¶¹ú¼Ê±ê×¼»¯×éÖ¯£¨ISO£©9001¡¢ISO 27001£¬¶øiso 27018 
 ```
 
-awsÌá¹©ÁËÓÐ¹ØÆäit¿ØÖÆ»·¾³µÄ¹ã·ºÐÅÏ¢£¬ÒÔ°ïÖú×éÖ¯ÒÔ±¨¸æ¡¢ÈÏÖ¤¡¢ÈÏÖ¤ºÍÆäËûµÚÈý·½ÈÏÖ¤µÄÐÎÊ½ÊµÏÖ¼à¹Ü³ÐÅµ¡£ 
+AWSÌá¹©ÁËÓÐ¹ØÆäIT¿ØÖÆ»·¾³µÄ¹ã·ºÐÅÏ¢£¬ÒÔ°ïÖú×éÖ¯ÒÔ±¨¸æ¡¢ÈÏÖ¤¡¢ÈÏÖ¤ºÍÆäËûµÚÈý·½ÈÏÖ¤µÄÐÎÊ½ÊµÏÖ¼à¹Ü³ÐÅµ¡£ 
 
 
 ## AWS ÔÆ¼ÆËãÆ½Ì¨ 
 
-  awsÌá¹©ÁËÐí¶àÔÆ·þÎñ£¬Äú¿ÉÒÔ½«ËüÃÇ½áºÏÆðÀ´ÒÔÂú×ãÒµÎñ»ò×éÖ¯ÐèÇó£¨Çë²Î¼ûÍ¼1.2£©¡£ÁË½âËùÓÐµÄÆ½Ì¨·þÎñ½«Ê¹Äú³ÉÎªÒ»ÃûÈ«ÃæµÄ½â¾ö·½°¸¼Ü¹¹Ê¦£¬ÁË½â±¾ÊéÖÐ¸ÅÊöµÄ·þÎñºÍ»ù±¾¸ÅÄî½«ÓÐÖúÓÚÄúÎª¡¶AWSÈÏÖ¤½â¾ö·½°¸¼Ü¹¹Ê¦-ÁªºÏ¿¼ÊÔ¡·×öºÃ×¼±¸¡£
+  AWSÌá¹©ÁËÐí¶àÔÆ·þÎñ£¬Äú¿ÉÒÔ½«ËüÃÇ½áºÏÆðÀ´ÒÔÂú×ãÒµÎñ»ò×éÖ¯ÐèÇó£¨Çë²Î¼ûÍ¼1.2£©¡£ÁË½âËùÓÐµÄÆ½Ì¨·þÎñ½«Ê¹Äú³ÉÎªÒ»ÃûÈ«ÃæµÄ½â¾ö·½°¸¼Ü¹¹Ê¦£¬ÁË½â±¾ÊéÖÐ¸ÅÊöµÄ·þÎñºÍ»ù±¾¸ÅÄî½«ÓÐÖúÓÚÄúÎª¡¶AWSÈÏÖ¤½â¾ö·½°¸¼Ü¹¹Ê¦-ÁªºÏ¿¼ÊÔ¡·×öºÃ×¼±¸¡£
 
 
-±¾½Ú°´Àà±ð½éÉÜÖ÷ÒªµÄawsÔÆ·þÎñ¡£ËæºóµÄÕÂ½ÚÌá¹©ÁËÓë¿¼ÊÔÏà¹ØµÄ·þÎñµÄ¸üÉîÈëµÄÊÓÍ¼¡£
+±¾½Ú°´Àà±ð½éÉÜÖ÷ÒªµÄAWSÔÆ·þÎñ¡£ËæºóµÄÕÂ½ÚÌá¹©ÁËÓë¿¼ÊÔÏà¹ØµÄ·þÎñµÄ¸üÉîÈëµÄÊÓÍ¼¡£
 
 ### Æ½Ì¨·ÃÎÊ
 
-  Òª·ÃÎÊawsÔÆ·þÎñ£¬¿ÉÒÔÊ¹ÓÃaws¹ÜÀí¿ØÖÆÌ¨¡¢awsÃüÁîÐÐ½çÃæ£¨cli£©»òawsÈí¼þ¿ª·¢¹¤¾ß°ü£¨sdk£©¡£
+  Òª·ÃÎÊAWSÔÆ·þÎñ£¬¿ÉÒÔÊ¹ÓÃAWS¹ÜÀí¿ØÖÆÌ¨¡¢AWSÃüÁîÐÐ½çÃæ£¨cli£©»òAWSÈí¼þ¿ª·¢¹¤¾ß°ü£¨sdk£©¡£
 
-* aws¹ÜÀí¿ØÖÆÌ¨ÊÇÒ»¸öÓÃÓÚ¹ÜÀíawsÔÆ·þÎñµÄwebÓ¦ÓÃ³ÌÐò¡£¿ØÖÆÌ¨ÎªÖ´ÐÐÐí¶àÈÎÎñÌá¹©Ö±¹ÛµÄÓÃ»§½çÃæ¡£Ã¿¸ö·þÎñ¶¼ÓÐ×Ô¼ºµÄ¿ØÖÆÌ¨£¬¿ÉÒÔ´Óaws¹ÜÀí¿ØÖÆÌ¨·ÃÎÊ¡£¿ØÖÆÌ¨»¹Ìá¹©ÓÐ¹ØÕÊ»§ºÍÕÊµ¥µÄÐÅÏ¢¡£
+* AWS¹ÜÀí¿ØÖÆÌ¨ÊÇÒ»¸öÓÃÓÚ¹ÜÀíAWSÔÆ·þÎñµÄwebÓ¦ÓÃ³ÌÐò¡£¿ØÖÆÌ¨ÎªÖ´ÐÐÐí¶àÈÎÎñÌá¹©Ö±¹ÛµÄÓÃ»§½çÃæ¡£Ã¿¸ö·þÎñ¶¼ÓÐ×Ô¼ºµÄ¿ØÖÆÌ¨£¬¿ÉÒÔ´ÓAWS¹ÜÀí¿ØÖÆÌ¨·ÃÎÊ¡£¿ØÖÆÌ¨»¹Ìá¹©ÓÐ¹ØÕÊ»§ºÍÕÊµ¥µÄÐÅÏ¢¡£
 
-* awsÃüÁîÐÐ½çÃæ£¨cli£©ÊÇÓÃÓÚ¹ÜÀíawsÔÆ·þÎñµÄÍ³Ò»¹¤¾ß£¬Ö»ÐèÏÂÔØºÍÅäÖÃÒ»¸ö¹¤¾ß£¬¾Í¿ÉÒÔ´ÓÃüÁîÐÐ¿ØÖÆ¶à¸ö·þÎñ£¬²¢Í¨¹ý½Å±¾ÊµÏÖ×Ô¶¯»¯¡£
+* AWSÃüÁîÐÐ½çÃæ£¨cli£©ÊÇÓÃÓÚ¹ÜÀíAWSÔÆ·þÎñµÄÍ³Ò»¹¤¾ß£¬Ö»ÐèÏÂÔØºÍÅäÖÃÒ»¸ö¹¤¾ß£¬¾Í¿ÉÒÔ´ÓÃüÁîÐÐ¿ØÖÆ¶à¸ö·þÎñ£¬²¢Í¨¹ý½Å±¾ÊµÏÖ×Ô¶¯»¯¡£
 
-* awsÈí¼þ¿ª·¢¹¤¾ß°ü£¨sdk£©Ìá¹©ÁËÒ»¸öÓ¦ÓÃ³ÌÐò±à³Ì½Ó¿Ú£¨api£©£¬ËüÓë»ù±¾¹¹³ÉawsÆ½Ì¨µÄweb·þÎñ½øÐÐ½»»¥¡£sdkÎªÐí¶à²»Í¬µÄ±à³ÌÓïÑÔºÍÆ½Ì¨Ìá¹©Ö§³Ö£¬ÔÊÐíÄúÊ¹ÓÃÊ×Ñ¡ÓïÑÔ¡£
+* AWSÈí¼þ¿ª·¢¹¤¾ß°ü£¨sdk£©Ìá¹©ÁËÒ»¸öÓ¦ÓÃ³ÌÐò±à³Ì½Ó¿Ú£¨api£©£¬ËüÓë»ù±¾¹¹³ÉAWSÆ½Ì¨µÄweb·þÎñ½øÐÐ½»»¥¡£sdkÎªÐí¶à²»Í¬µÄ±à³ÌÓïÑÔºÍÆ½Ì¨Ìá¹©Ö§³Ö£¬ÔÊÐíÄúÊ¹ÓÃÊ×Ñ¡ÓïÑÔ¡£
 
 ¶ÔÓÚWeb·þÎñ¶Ëµã£¬Ê¹ÓÃSDK¿ÉÒÔÍ¨¹ýÌá¹©¶ÔÐí¶à·þÎñµÄ±à³Ì·ÃÎÊÀ´¼õÉÙ±àÂëµÄ¸´ÔÓÐÔ¡£ 
 
 ### ¼ÆËãºÍÍøÂç·þÎñ
 
-  awsÌá¹©¸÷ÖÖ¼ÆËãºÍÍøÂç·þÎñ£¬ÎªÆóÒµ¿ª·¢ºÍÔËÐÐÆä¹¤×÷¸ºÔØÌá¹©ºËÐÄ¹¦ÄÜ¡£ÕâÐ©¼ÆËãºÍÍøÂç·þÎñ¿ÉÓë´æ´¢¡¢Êý¾Ý¿âºÍÓ¦ÓÃ³ÌÐò·þÎñÒ»ÆðÊ¹ÓÃ£¬Îª¼ÆËã¡¢²éÑ¯´¦ÀíÌá¹©ÍêÕûµÄ½â¾ö·½°¸£¬ÒÔ¼°¹ã·ºÓ¦ÓÃµÄ´æ´¢¡£±¾½ÚÌá¹©ºËÐÄ¼ÆËãºÍÍøÂç·þÎñµÄ¸ß¼¶ÃèÊö
+  AWSÌá¹©¸÷ÖÖ¼ÆËãºÍÍøÂç·þÎñ£¬ÎªÆóÒµ¿ª·¢ºÍÔËÐÐÆä¹¤×÷¸ºÔØÌá¹©ºËÐÄ¹¦ÄÜ¡£ÕâÐ©¼ÆËãºÍÍøÂç·þÎñ¿ÉÓë´æ´¢¡¢Êý¾Ý¿âºÍÓ¦ÓÃ³ÌÐò·þÎñÒ»ÆðÊ¹ÓÃ£¬Îª¼ÆËã¡¢²éÑ¯´¦ÀíÌá¹©ÍêÕûµÄ½â¾ö·½°¸£¬ÒÔ¼°¹ã·ºÓ¦ÓÃµÄ´æ´¢¡£±¾½ÚÌá¹©ºËÐÄ¼ÆËãºÍÍøÂç·þÎñµÄ¸ß¼¶ÃèÊö
 
 ### Amazon Elastic Compute Cloud£¨Amazon EC2)
 
   Amazon Elastic Compute Cloud£¨Amazon EC2£©ÊÇÒ»¸öÔÚÔÆÖÐÌá¹©¿Éµ÷Õû´óÐ¡µÄ¼ÆËãÄÜÁ¦µÄWeb·þÎñ£¬ËüÔÊÐí×éÖ¯»ñÈ¡ºÍÅäÖÃAmazonÊý¾ÝÖÐÐÄµÄÐéÄâ·þÎñÆ÷£¬²¢ÀûÓÃÕâÐ©×ÊÔ´À´¹¹½¨ºÍÍÐ¹ÜÈí¼þÏµÍ³¡£×éÖ¯¿ÉÒÔ´Ó¸÷ÖÖ²Ù×÷ÏµÍ³ºÍ×ÊÔ´ÅäÖÃ£¨ÄÚ´æ¡¢CPU¡¢´æ´¢µÈ£©ÖÐÑ¡Ôñ×îÊÊºÏÃ¿¸ö¹¤×÷¸ºÔØµÄÓ¦ÓÃ³ÌÐòÅäÖÃÎÄ¼þ¡£Amazon EC2Ìá¹©ÁËÒ»¸öÕæÕýµÄÐéÄâ¼ÆËã»·¾³£¬ÔÊÐí×éÖ¯Ê¹ÓÃ¸÷ÖÖ²Ù×÷ÏµÍ³Æô¶¯¼ÆËã×ÊÔ´£¬Ê¹ÓÃ×Ô¶¨ÒåÓ¦ÓÃ³ÌÐò¼ÓÔØËüÃÇ£¬²¢ÔÚ±£³ÖÍêÈ«¿ØÖÆµÄÍ¬Ê±¹ÜÀíÍøÂç·ÃÎÊÈ¨ÏÞ
 
-### aws lambda
+### AWS lambda
 
-  ÊÇÒ»¸öÃæÏòºó¶Ëweb¿ª·¢ÈËÔ±µÄÁã¹ÜÀí¼ÆËãÆ½Ì¨£¬ËüÔÚawsÔÆÉÏÎªÄúÔËÐÐ´úÂë£¬²¢ÎªÄúÌá¹©Ï¸Á£¶ÈµÄ¶¨¼Û½á¹¹¡£aws lambdaÔÚÒ»¸öÇøÓòµÄ¶à¸ö¿ÉÓÃÐÔÇøÓòÖÐÔËÐÐ×Ô¼ºµÄaws¼ÆËã×éamazon ec2ÊµÀý£¬ËüÌá¹©ÁËaws»ù´¡ÉèÊ©µÄ¸ß¿ÉÓÃÐÔ¡¢°²È«ÐÔ¡¢ÐÔÄÜºÍ¿ÉÀ©Õ¹ÐÔ 
+  ÊÇÒ»¸öÃæÏòºó¶Ëweb¿ª·¢ÈËÔ±µÄÁã¹ÜÀí¼ÆËãÆ½Ì¨£¬ËüÔÚAWSÔÆÉÏÎªÄúÔËÐÐ´úÂë£¬²¢ÎªÄúÌá¹©Ï¸Á£¶ÈµÄ¶¨¼Û½á¹¹¡£AWS lambdaÔÚÒ»¸öÇøÓòµÄ¶à¸ö¿ÉÓÃÐÔÇøÓòÖÐÔËÐÐ×Ô¼ºµÄAWS¼ÆËã×éAmazon ec2ÊµÀý£¬ËüÌá¹©ÁËAWS»ù´¡ÉèÊ©µÄ¸ß¿ÉÓÃÐÔ¡¢°²È«ÐÔ¡¢ÐÔÄÜºÍ¿ÉÀ©Õ¹ÐÔ 
 
 ### ×Ô¶¯ÉìËõ£¨Auto Scaling£©
 
@@ -129,19 +129,19 @@ awsÌá¹©ÁËÓÐ¹ØÆäit¿ØÖÆ»·¾³µÄ¹ã·ºÐÅÏ¢£¬ÒÔ°ïÖú×éÖ¯ÒÔ±¨¸æ¡¢ÈÏÖ¤¡¢ÈÏÖ¤ºÍÆäËûµÚÈý·½ÈÏÖ
 
 ### AWS Elastic Beanstalk 
 
-* AWS Elastic BeanstalkÊÇÔÚAWSÉÏÆô¶¯ºÍÔËÐÐWebÓ¦ÓÃ³ÌÐòµÄ×î¿ìºÍ×î¼òµ¥µÄ·½Ê½¡£¿ª·¢ÈËÔ±Ö»ÐèÉÏ´«ËûÃÇµÄÓ¦ÓÃ³ÌÐò´úÂë£¬¸Ã·þÎñ¾Í»á×Ô¶¯´¦ÀíËùÓÐÏ¸½Ú£¬Èç×ÊÔ´ÅäÖÃ¡¢¸ºÔØÆ½ºâ¡¢×Ô¶¯ÉìËõ£¬ËüÎª¸÷ÖÖÆ½Ì¨Ìá¹©Ö§³Ö£¬°üÀ¨php¡¢java¡¢python¡¢ruby¡¢node.js¡¢.netºÍgo¡£Ê¹ÓÃawsµ¯ÐÔbeanstalk£¬×éÖ¯¿ÉÒÔÍêÈ«¿ØÖÆÎªÓ¦ÓÃ³ÌÐòÌá¹©¶¯Á¦µÄaws×ÊÔ´£¬²¢¿ÉÒÔËæÊ±·ÃÎÊµ×²ã×ÊÔ´¡£
+* AWS Elastic BeanstalkÊÇÔÚAWSÉÏÆô¶¯ºÍÔËÐÐWebÓ¦ÓÃ³ÌÐòµÄ×î¿ìºÍ×î¼òµ¥µÄ·½Ê½¡£¿ª·¢ÈËÔ±Ö»ÐèÉÏ´«ËûÃÇµÄÓ¦ÓÃ³ÌÐò´úÂë£¬¸Ã·þÎñ¾Í»á×Ô¶¯´¦ÀíËùÓÐÏ¸½Ú£¬Èç×ÊÔ´ÅäÖÃ¡¢¸ºÔØÆ½ºâ¡¢×Ô¶¯ÉìËõ£¬ËüÎª¸÷ÖÖÆ½Ì¨Ìá¹©Ö§³Ö£¬°üÀ¨php¡¢java¡¢python¡¢ruby¡¢node.js¡¢.netºÍgo¡£Ê¹ÓÃAWSµ¯ÐÔbeanstalk£¬×éÖ¯¿ÉÒÔÍêÈ«¿ØÖÆÎªÓ¦ÓÃ³ÌÐòÌá¹©¶¯Á¦µÄAWS×ÊÔ´£¬²¢¿ÉÒÔËæÊ±·ÃÎÊµ×²ã×ÊÔ´¡£
 
 ### AmazonÐéÄâË½ÓÐÔÆ£¨Amazon VPC£©
 
-* amazonÐéÄâË½ÓÐÔÆ£¨amazon vpc£©ÔÊÐí×éÖ¯Ìá¹©awsÔÆµÄÂß¼­¸ôÀë²¿·Ö£¬ÔÚÄÇÀïËûÃÇ¿ÉÒÔÔÚ×Ô¼º¶¨ÒåµÄÐéÄâÍøÂçÖÐÆô¶¯aws×ÊÔ´¡£×éÖ¯¿ÉÒÔÍêÈ«¿ØÖÆÐéÄâ»·¾³£¬°üÀ¨Ñ¡ÔñipµØÖ··¶Î§¡¢´´½¨×ÓÍø£¬ÒÔ¼°Â·ÓÉ±íµÄÅäÖÃºÍÍøÂçÍø¹Ø¡£´ËÍâ£¬×éÖ¯¿ÉÒÔÊ¹ÓÃÓ²¼þ»òÈí¼þÐéÄâ×¨ÓÃÍø£¨VPN£©Á¬½Ó»ò×¨ÓÃµçÂ·Ê¹ÓÃAWSÖ±½ÓÁ¬½Ó½«Æä¹«Ë¾Êý¾ÝÖÐÐÄÍøÂçÀ©Õ¹µ½AWS
+* AmazonÐéÄâË½ÓÐÔÆ£¨Amazon vpc£©ÔÊÐí×éÖ¯Ìá¹©AWSÔÆµÄÂß¼­¸ôÀë²¿·Ö£¬ÔÚÄÇÀïËûÃÇ¿ÉÒÔÔÚ×Ô¼º¶¨ÒåµÄÐéÄâÍøÂçÖÐÆô¶¯AWS×ÊÔ´¡£×éÖ¯¿ÉÒÔÍêÈ«¿ØÖÆÐéÄâ»·¾³£¬°üÀ¨Ñ¡ÔñipµØÖ··¶Î§¡¢´´½¨×ÓÍø£¬ÒÔ¼°Â·ÓÉ±íµÄÅäÖÃºÍÍøÂçÍø¹Ø¡£´ËÍâ£¬×éÖ¯¿ÉÒÔÊ¹ÓÃÓ²¼þ»òÈí¼þÐéÄâ×¨ÓÃÍø£¨VPN£©Á¬½Ó»ò×¨ÓÃµçÂ·Ê¹ÓÃAWSÖ±½ÓÁ¬½Ó½«Æä¹«Ë¾Êý¾ÝÖÐÐÄÍøÂçÀ©Õ¹µ½AWS
 
 ### AWS Direct Connect
 
-* aws direct connectÔÊÐí×éÖ¯½¨Á¢´ÓÆäÊý¾ÝÖÐÐÄµ½awsµÄ×¨ÓÃÍøÂçÁ¬½Ó¡£Ê¹ÓÃaws direct connect£¬×éÖ¯¿ÉÒÔÔÚawsºÍÆäÊý¾ÝÖÐÐÄ¡¢°ì¹«ÊÒ»òÍÐ¹Ü»·¾³Ö®¼ä½¨Á¢×¨ÓÃÁ¬½Ó£¬ÕâÔÚÐí¶àÇé¿öÏÂ¿ÉÒÔ½µµÍÍøÂç³É±¾£¬Ôö¼Ó´ø¿íÍÌÍÂÁ¿£¬Ìá¹©±È»ùÓÚInternetµÄVPNÁ¬½Ó¸üÒ»ÖÂµÄÍøÂçÌåÑé
+* AWS direct connectÔÊÐí×éÖ¯½¨Á¢´ÓÆäÊý¾ÝÖÐÐÄµ½AWSµÄ×¨ÓÃÍøÂçÁ¬½Ó¡£Ê¹ÓÃAWS direct connect£¬×éÖ¯¿ÉÒÔÔÚAWSºÍÆäÊý¾ÝÖÐÐÄ¡¢°ì¹«ÊÒ»òÍÐ¹Ü»·¾³Ö®¼ä½¨Á¢×¨ÓÃÁ¬½Ó£¬ÕâÔÚÐí¶àÇé¿öÏÂ¿ÉÒÔ½µµÍÍøÂç³É±¾£¬Ôö¼Ó´ø¿íÍÌÍÂÁ¿£¬Ìá¹©±È»ùÓÚInternetµÄVPNÁ¬½Ó¸üÒ»ÖÂµÄÍøÂçÌåÑé
 
 ### Amazon Route 53 
 
-* ÑÇÂíÑ·Route53ÊÇÒ»¸ö¸ß¶È¿ÉÓÃºÍ¿ÉÀ©Õ¹µÄÓòÃûÏµÍ³£¨DNS£©ÍøÂç·þÎñ¡£ËüµÄÄ¿µÄÊÇÍ¨¹ý½«ÈËÀà¿É¶ÁµÄÃû³Æ£¨Èçwww.example.com£©×ª»»Îª¼ÆËã»úÓÃÀ´Ïà»¥Á¬½ÓµÄÊý×ÖIPµØÖ·£¨Èç192.0.2.1£©£¬Îª¿ª·¢ÈËÔ±ºÍÆóÒµÌá¹©Ò»ÖÖ¼«Æä¿É¿¿ºÍ¾­¼Ã¸ßÐ§µÄ·½Ê½À´½«×îÖÕÓÃ»§Â·ÓÉµ½InternetÓ¦ÓÃ³ÌÐò¡£ÔÊÐíÄúÖ±½Ó´Óaws¹ºÂòºÍ¹ÜÀíÓò¡£
+* ÑÇÂíÑ·Route53ÊÇÒ»¸ö¸ß¶È¿ÉÓÃºÍ¿ÉÀ©Õ¹µÄÓòÃûÏµÍ³£¨DNS£©ÍøÂç·þÎñ¡£ËüµÄÄ¿µÄÊÇÍ¨¹ý½«ÈËÀà¿É¶ÁµÄÃû³Æ£¨Èçwww.example.com£©×ª»»Îª¼ÆËã»úÓÃÀ´Ïà»¥Á¬½ÓµÄÊý×ÖIPµØÖ·£¨Èç192.0.2.1£©£¬Îª¿ª·¢ÈËÔ±ºÍÆóÒµÌá¹©Ò»ÖÖ¼«Æä¿É¿¿ºÍ¾­¼Ã¸ßÐ§µÄ·½Ê½À´½«×îÖÕÓÃ»§Â·ÓÉµ½InternetÓ¦ÓÃ³ÌÐò¡£ÔÊÐíÄúÖ±½Ó´ÓAWS¹ºÂòºÍ¹ÜÀíÓò¡£
 
 ### ´æ´¢ºÍÄÚÈÝ·Ö·¢
 
@@ -149,7 +149,7 @@ AWSÌá¹©¸÷ÖÖÂú×ãÐèÒªµÄ´æ´¢·þÎñ£¬ÖîÈç£ºAmazon¼òµ¥´æ´¢·þÎñ£¬Amzzon CloudFront£¬Amaz
 
 #### Amazon S3
 
-* Amazon Simple Storage Service£¨Amazon S3£©Îª¿ª·¢ÈËÔ±ºÍITÍÅ¶ÓÌá¹©ÁË¸ß¶È³Ö¾ÃºÍ¿ÉÀ©Õ¹µÄ¶ÔÏó´æ´¢£¬¿ÉÒÔ´¦Àí¼¸ºõÎÞÏÞÁ¿µÄÊý¾ÝºÍ´óÁ¿²¢·¢ÓÃ»§¡£×éÖ¯¿ÉÒÔ´æ´¢ÈÎºÎÀàÐÍµÄ¶ÔÏó£¬ÈçHTMLÒ³Ãæ¡¢Ô´´úÂëÎÄ¼þ¡¢Í¼ÏñÎÄ¼þºÍ¼ÓÃÜÊý¾Ý£¬²¢Ê¹ÓÃ»ùÓÚhttpµÄÐ­Òé·ÃÎÊËüÃÇ¡£amazon s3Îª¸÷ÖÖ¸÷ÑùµÄÓÃÀýÌá¹©¾­¼Ã¸ßÐ§µÄ¶ÔÏó´æ´¢£¬°üÀ¨±¸·ÝºÍ»Ö¸´¡¢½üÏß¹éµµ¡¢´óÊý¾Ý·ÖÎö¡¢ÔÖÄÑ»Ö¸´¡¢ÔÆÓ¦ÓÃ³ÌÐòºÍÄÚÈÝ·Ö·¢¡£
+* Amazon Simple Storage Service£¨Amazon S3£©Îª¿ª·¢ÈËÔ±ºÍITÍÅ¶ÓÌá¹©ÁË¸ß¶È³Ö¾ÃºÍ¿ÉÀ©Õ¹µÄ¶ÔÏó´æ´¢£¬¿ÉÒÔ´¦Àí¼¸ºõÎÞÏÞÁ¿µÄÊý¾ÝºÍ´óÁ¿²¢·¢ÓÃ»§¡£×éÖ¯¿ÉÒÔ´æ´¢ÈÎºÎÀàÐÍµÄ¶ÔÏó£¬ÈçHTMLÒ³Ãæ¡¢Ô´´úÂëÎÄ¼þ¡¢Í¼ÏñÎÄ¼þºÍ¼ÓÃÜÊý¾Ý£¬²¢Ê¹ÓÃ»ùÓÚhttpµÄÐ­Òé·ÃÎÊËüÃÇ¡£Amazon s3Îª¸÷ÖÖ¸÷ÑùµÄÓÃÀýÌá¹©¾­¼Ã¸ßÐ§µÄ¶ÔÏó´æ´¢£¬°üÀ¨±¸·ÝºÍ»Ö¸´¡¢½üÏß¹éµµ¡¢´óÊý¾Ý·ÖÎö¡¢ÔÖÄÑ»Ö¸´¡¢ÔÆÓ¦ÓÃ³ÌÐòºÍÄÚÈÝ·Ö·¢¡£
 
 #### Amazon Glacier
 
@@ -165,15 +165,15 @@ AWSÌá¹©¸÷ÖÖÂú×ãÐèÒªµÄ´æ´¢·þÎñ£¬ÖîÈç£ºAmazon¼òµ¥´æ´¢·þÎñ£¬Amzzon CloudFront£¬Amaz
 
 #### AWS CloudFront
 
-* amazon cloudfrontÊÇÒ»¸öÄÚÈÝ½»¸¶web·þÎñ£¬ËüÓëÆäËûawsÔÆ·þÎñ¼¯³É£¬Ê¹¿ª·¢ÈËÔ±ºÍÆóÒµÄÜ¹»ÒÔµÍÑÓ³Ù¡¢¸ßÊý¾Ý´«ÊäËÙ¶ÈºÍÎÞ×îµÍÊ¹ÓÃ³ÐÅµµÄ·½Ê½ÏòÈ«ÇòÓÃ»§·Ö·¢ÄÚÈÝ¡£Amazon CloudFront¿ÉÒÔÊ¹ÓÃ±ßÔµÎ»ÖÃµÄÈ«ÇòÍøÂçÀ´½»¸¶ÄúµÄÕû¸öÍøÕ¾£¬°üÀ¨¶¯Ì¬¡¢¾²Ì¬¡¢Á÷Ê½ºÍ½»»¥Ê½ÄÚÈÝ¡£¶ÔÄÚÈÝµÄÇëÇó»á×Ô¶¯Â·ÓÉµ½×î½üµÄ±ßÔµÎ»ÖÃ£¬Òò´ËÄÚÈÝ»áÒÔ×î¼ÑÐÔÄÜ½»¸¶¸øÈ«Çò¸÷µØµÄ×îÖÕÓÃ»§
+* Amazon cloudfrontÊÇÒ»¸öÄÚÈÝ½»¸¶web·þÎñ£¬ËüÓëÆäËûAWSÔÆ·þÎñ¼¯³É£¬Ê¹¿ª·¢ÈËÔ±ºÍÆóÒµÄÜ¹»ÒÔµÍÑÓ³Ù¡¢¸ßÊý¾Ý´«ÊäËÙ¶ÈºÍÎÞ×îµÍÊ¹ÓÃ³ÐÅµµÄ·½Ê½ÏòÈ«ÇòÓÃ»§·Ö·¢ÄÚÈÝ¡£Amazon CloudFront¿ÉÒÔÊ¹ÓÃ±ßÔµÎ»ÖÃµÄÈ«ÇòÍøÂçÀ´½»¸¶ÄúµÄÕû¸öÍøÕ¾£¬°üÀ¨¶¯Ì¬¡¢¾²Ì¬¡¢Á÷Ê½ºÍ½»»¥Ê½ÄÚÈÝ¡£¶ÔÄÚÈÝµÄÇëÇó»á×Ô¶¯Â·ÓÉµ½×î½üµÄ±ßÔµÎ»ÖÃ£¬Òò´ËÄÚÈÝ»áÒÔ×î¼ÑÐÔÄÜ½»¸¶¸øÈ«Çò¸÷µØµÄ×îÖÕÓÃ»§
 
 ### Êý¾Ý¿â·þÎñ
 
-* awsÌá¹©ÁËÍêÈ«ÍÐ¹ÜµÄ¹ØÏµÊý¾Ý¿â·þÎñºÍnosqlÊý¾Ý¿â·þÎñ£¬ÒÔ¼°×÷Îª·þÎñµÄÄÚ´æ»º´æºÍPB¼¶µÄÊý¾Ý²Ö¿â½â¾ö·½°¸¡£±¾Ð¡½Ú¸ÅÊöÁËÊý¾Ý¿â·þÎñ°üº¬ÄÄÐ©²úÆ·£º
+* AWSÌá¹©ÁËÍêÈ«ÍÐ¹ÜµÄ¹ØÏµÊý¾Ý¿â·þÎñºÍnosqlÊý¾Ý¿â·þÎñ£¬ÒÔ¼°×÷Îª·þÎñµÄÄÚ´æ»º´æºÍPB¼¶µÄÊý¾Ý²Ö¿â½â¾ö·½°¸¡£±¾Ð¡½Ú¸ÅÊöÁËÊý¾Ý¿â·þÎñ°üº¬ÄÄÐ©²úÆ·£º
 
 #### Amazon RDS
 
-* amazon¹ØÏµÊý¾Ý¿â·þÎñ£¨amazon rds£©Ìá¹©ÁËÒ»¸öÍêÈ«ÍÐ¹ÜµÄ¹ØÏµÊý¾Ý¿â£¬Ö§³ÖÐí¶àÁ÷ÐÐµÄ¿ªÔ´ºÍÉÌÓÃÊý¾Ý¿âÒýÇæ¡£ÕâÊÇÒ»¸ö¾­¼Ã¸ßÐ§µÄ·þÎñ£¬ÔÊÐí×éÖ¯Æô¶¯°²È«¡¢¸ß¿ÉÓÃ¡¢ÈÝ´íµÄÊý¾Ý¿â¡£ÔÚ¼¸·ÖÖÓÄÚ¾Í¿ÉÒÔÉú²úÊý¾Ý¿âÁË¡£ÓÉÓÚamazon rds¹ÜÀíºÄÊ±µÄ¹ÜÀíÈÎÎñ£¬°üÀ¨±¸·Ý¡¢Èí¼þÐÞ²¹¡¢¼àÊÓ¡¢À©Õ¹ºÍ¸´ÖÆ£¬Òò´Ë×éÖ¯×ÊÔ´¿ÉÒÔ¼¯ÖÐÓÚ²úÉúÊÕÈëµÄÓ¦ÓÃ³ÌÐòºÍÒµÎñ£¬¶ø²»ÊÇÆÕÍ¨µÄ²Ù×÷ÈÎÎñ¡£
+* Amazon¹ØÏµÊý¾Ý¿â·þÎñ£¨Amazon rds£©Ìá¹©ÁËÒ»¸öÍêÈ«ÍÐ¹ÜµÄ¹ØÏµÊý¾Ý¿â£¬Ö§³ÖÐí¶àÁ÷ÐÐµÄ¿ªÔ´ºÍÉÌÓÃÊý¾Ý¿âÒýÇæ¡£ÕâÊÇÒ»¸ö¾­¼Ã¸ßÐ§µÄ·þÎñ£¬ÔÊÐí×éÖ¯Æô¶¯°²È«¡¢¸ß¿ÉÓÃ¡¢ÈÝ´íµÄÊý¾Ý¿â¡£ÔÚ¼¸·ÖÖÓÄÚ¾Í¿ÉÒÔÉú²úÊý¾Ý¿âÁË¡£ÓÉÓÚAmazon rds¹ÜÀíºÄÊ±µÄ¹ÜÀíÈÎÎñ£¬°üÀ¨±¸·Ý¡¢Èí¼þÐÞ²¹¡¢¼àÊÓ¡¢À©Õ¹ºÍ¸´ÖÆ£¬Òò´Ë×éÖ¯×ÊÔ´¿ÉÒÔ¼¯ÖÐÓÚ²úÉúÊÕÈëµÄÓ¦ÓÃ³ÌÐòºÍÒµÎñ£¬¶ø²»ÊÇÆÕÍ¨µÄ²Ù×÷ÈÎÎñ¡£
 
 #### Amazon DynamoDB
 
@@ -193,41 +193,41 @@ AWSÌá¹©¸÷ÖÖÂú×ãÐèÒªµÄ´æ´¢·þÎñ£¬ÖîÈç£ºAmazon¼òµ¥´æ´¢·þÎñ£¬Amzzon CloudFront£¬Amaz
 
 #### Amazon CloudWatch
 
-* amazon cloudwatchÊÇÒ»ÏîÕë¶ÔawsÔÆ×ÊÔ´ºÍawsÉÏÔËÐÐµÄÓ¦ÓÃ³ÌÐòµÄ¼àÊÓ·þÎñ£¬ËüÔÊÐí×éÖ¯ÊÕ¼¯ºÍ¸ú×Ù¶ÈÁ¿¡¢ÊÕ¼¯ºÍ¼àÊÓÈÕÖ¾ÎÄ¼þÒÔ¼°ÉèÖÃ¾¯±¨¡£Í¨¹ýÀûÓÃamazon cloudwatch£¬×éÖ¯¿ÉÒÔÔÚÏµÍ³·¶Î§ÄÚÁË½â×ÊÔ´ÀûÓÃÂÊ¡¢Ó¦ÓÃ³ÌÐòÐÔÄÜ£¬ÒÔ¼°ÔËÓª½¡¿µ¡£Í¨¹ýÊ¹ÓÃÕâÐ©¶´²ìÁ¦£¬×éÖ¯¿ÉÒÔ¸ù¾ÝÐèÒª×ö³ö·´Ó¦£¬ÒÔ±£³ÖÓ¦ÓÃ³ÌÐòµÄÆ½ÎÈÔËÐÐ¡£ 
+* Amazon cloudwatchÊÇÒ»ÏîÕë¶ÔAWSÔÆ×ÊÔ´ºÍAWSÉÏÔËÐÐµÄÓ¦ÓÃ³ÌÐòµÄ¼àÊÓ·þÎñ£¬ËüÔÊÐí×éÖ¯ÊÕ¼¯ºÍ¸ú×Ù¶ÈÁ¿¡¢ÊÕ¼¯ºÍ¼àÊÓÈÕÖ¾ÎÄ¼þÒÔ¼°ÉèÖÃ¾¯±¨¡£Í¨¹ýÀûÓÃAmazon cloudwatch£¬×éÖ¯¿ÉÒÔÔÚÏµÍ³·¶Î§ÄÚÁË½â×ÊÔ´ÀûÓÃÂÊ¡¢Ó¦ÓÃ³ÌÐòÐÔÄÜ£¬ÒÔ¼°ÔËÓª½¡¿µ¡£Í¨¹ýÊ¹ÓÃÕâÐ©¶´²ìÁ¦£¬×éÖ¯¿ÉÒÔ¸ù¾ÝÐèÒª×ö³ö·´Ó¦£¬ÒÔ±£³ÖÓ¦ÓÃ³ÌÐòµÄÆ½ÎÈÔËÐÐ¡£ 
 
 #### AWS CloudFormation
 
-* aws cloudformationÎª¿ª·¢ÈËÔ±ºÍÏµÍ³¹ÜÀíÔ±Ìá¹©ÁË´´½¨ºÍ¹ÜÀíÏà¹Øaws×ÊÔ´¼¯ºÏµÄÓÐÐ§·½·¨£¬ÒÔÓÐÐòºÍ¿ÉÔ¤²âµÄ·½Ê½Ìá¹©ºÍ¸üÐÂËüÃÇ¡£aws cloudformation¶¨ÒåÁËÒ»ÖÖ»ùÓÚjsonµÄÄ£°åÓïÑÔ£¬¿ÉÓÃÓÚÃèÊö¹¤×÷¸ºÔØËùÐèµÄËùÓÐaws×ÊÔ´¡£Ä£°å¿ÉÒÔÌá½»¸øaws cloudformation£¬·þÎñ½«¸ºÔðÒÔÊÊµ±µÄË³ÐòÅäÖÃºÍÅäÖÃÕâÐ©×ÊÔ´£¨²Î¼ûÍ¼1.4£©¡£
+* AWS cloudformationÎª¿ª·¢ÈËÔ±ºÍÏµÍ³¹ÜÀíÔ±Ìá¹©ÁË´´½¨ºÍ¹ÜÀíÏà¹ØAWS×ÊÔ´¼¯ºÏµÄÓÐÐ§·½·¨£¬ÒÔÓÐÐòºÍ¿ÉÔ¤²âµÄ·½Ê½Ìá¹©ºÍ¸üÐÂËüÃÇ¡£AWS cloudformation¶¨ÒåÁËÒ»ÖÖ»ùÓÚjsonµÄÄ£°åÓïÑÔ£¬¿ÉÓÃÓÚÃèÊö¹¤×÷¸ºÔØËùÐèµÄËùÓÐAWS×ÊÔ´¡£Ä£°å¿ÉÒÔÌá½»¸øAWS cloudformation£¬·þÎñ½«¸ºÔðÒÔÊÊµ±µÄË³ÐòÅäÖÃºÍÅäÖÃÕâÐ©×ÊÔ´£¨²Î¼ûÍ¼1.4£©¡£
 
 #### AWS CloudTrail
 
-* aws cloudtrailÊÇÒ»¸öweb·þÎñ£¬Ëü¼ÇÂ¼aws api¶ÔÄ³¸öÕÊ»§µÄµ÷ÓÃ£¬²¢Ìá¹©ÈÕÖ¾ÎÄ¼þ¹©Éó¼ÆºÍÉó²é¡£¼ÇÂ¼µÄÐÅÏ¢°üÀ¨apiµ÷ÓÃ·½µÄÉí·Ý¡¢apiµ÷ÓÃµÄÊ±¼ä¡¢apiµ÷ÓÃ·½µÄÔ´ipµØÖ·¡¢ÇëÇó²ÎÊýºÍ·þÎñ·µ»ØµÄÏìÓ¦ÔªËØ¡£
+* AWS cloudtrailÊÇÒ»¸öweb·þÎñ£¬Ëü¼ÇÂ¼AWS api¶ÔÄ³¸öÕÊ»§µÄµ÷ÓÃ£¬²¢Ìá¹©ÈÕÖ¾ÎÄ¼þ¹©Éó¼ÆºÍÉó²é¡£¼ÇÂ¼µÄÐÅÏ¢°üÀ¨apiµ÷ÓÃ·½µÄÉí·Ý¡¢apiµ÷ÓÃµÄÊ±¼ä¡¢apiµ÷ÓÃ·½µÄÔ´ipµØÖ·¡¢ÇëÇó²ÎÊýºÍ·þÎñ·µ»ØµÄÏìÓ¦ÔªËØ¡£
 
 #### AWS Config
 
-* aws configÊÇÒ»¸öÍêÈ«ÍÐ¹ÜµÄ·þÎñ£¬ËüÏò×éÖ¯Ìá¹©aws×ÊÔ´Çåµ¥¡¢ÅäÖÃÀúÊ·¼ÇÂ¼ºÍÅäÖÃ¸ü¸ÄÍ¨Öª£¬ÒÔÆôÓÃ°²È«ÐÔºÍÖÎÀí¡£Ê¹ÓÃaws config×éÖ¯¿ÉÒÔ·¢ÏÖÏÖÓÐµÄaws×ÊÔ´£¬µ¼³ö°üº¬ËùÓÐÅäÖÃÏêÏ¸ÐÅÏ¢µÄaws×ÊÔ´Çåµ¥£¬²¢È·¶¨×ÊÔ´ÔÚÈÎºÎÊ±¼äµãµÄÅäÖÃ·½Ê½¡£ÕâÐ©¹¦ÄÜÖ§³ÖºÏ¹æÉóºË¡¢°²È«ÐÔ·ÖÎö¡¢×ÊÔ´¸ü¸Ä¸ú×ÙºÍ¹ÊÕÏÅÅ³ý 
+* AWS configÊÇÒ»¸öÍêÈ«ÍÐ¹ÜµÄ·þÎñ£¬ËüÏò×éÖ¯Ìá¹©AWS×ÊÔ´Çåµ¥¡¢ÅäÖÃÀúÊ·¼ÇÂ¼ºÍÅäÖÃ¸ü¸ÄÍ¨Öª£¬ÒÔÆôÓÃ°²È«ÐÔºÍÖÎÀí¡£Ê¹ÓÃAWS config×éÖ¯¿ÉÒÔ·¢ÏÖÏÖÓÐµÄAWS×ÊÔ´£¬µ¼³ö°üº¬ËùÓÐÅäÖÃÏêÏ¸ÐÅÏ¢µÄAWS×ÊÔ´Çåµ¥£¬²¢È·¶¨×ÊÔ´ÔÚÈÎºÎÊ±¼äµãµÄÅäÖÃ·½Ê½¡£ÕâÐ©¹¦ÄÜÖ§³ÖºÏ¹æÉóºË¡¢°²È«ÐÔ·ÖÎö¡¢×ÊÔ´¸ü¸Ä¸ú×ÙºÍ¹ÊÕÏÅÅ³ý 
 
 
 ### °²È«ºÍÉí·Ý
 
-* awsÌá¹©°²È«ºÍÉí·Ý·þÎñ£¬°ïÖú×éÖ¯ÔÚÔÆÉÏ±£»¤ËûÃÇµÄÊý¾ÝºÍÏµÍ³¡£ÏÂÒ»½Ú½«´ÓÒ»¸ö½Ï¸ßµÈ¼¶ÌÖÂÛÕâÐ©·þÎñ¡£
+* AWSÌá¹©°²È«ºÍÉí·Ý·þÎñ£¬°ïÖú×éÖ¯ÔÚÔÆÉÏ±£»¤ËûÃÇµÄÊý¾ÝºÍÏµÍ³¡£ÏÂÒ»½Ú½«´ÓÒ»¸ö½Ï¸ßµÈ¼¶ÌÖÂÛÕâÐ©·þÎñ¡£
 
 #### AWS Identity and Access Management £¨IAM)
 
-* awsÉí·ÝºÍ·ÃÎÊ¹ÜÀí£¨IAM£©Ê¹×éÖ¯ÄÜ¹»°²È«µØ¿ØÖÆÆäÓÃ»§¶ÔawsÔÆ·þÎñºÍ×ÊÔ´µÄ·ÃÎÊ¡£Ê¹ÓÃIAM£¬×éÖ¯¿ÉÒÔ´´½¨ºÍ¹ÜÀíawsÓÃ»§ºÍ×é£¬²¢Ê¹ÓÃÈ¨ÏÞÔÊÐíºÍ¾Ü¾øÆä¶Ôaws×ÊÔ´µÄ·ÃÎÊ¡£
+* AWSÉí·ÝºÍ·ÃÎÊ¹ÜÀí£¨IAM£©Ê¹×éÖ¯ÄÜ¹»°²È«µØ¿ØÖÆÆäÓÃ»§¶ÔAWSÔÆ·þÎñºÍ×ÊÔ´µÄ·ÃÎÊ¡£Ê¹ÓÃIAM£¬×éÖ¯¿ÉÒÔ´´½¨ºÍ¹ÜÀíAWSÓÃ»§ºÍ×é£¬²¢Ê¹ÓÃÈ¨ÏÞÔÊÐíºÍ¾Ü¾øÆä¶ÔAWS×ÊÔ´µÄ·ÃÎÊ¡£
 
 #### AWS Key Management Service(KMS)
 
-* awsÃÜÔ¿¹ÜÀí·þÎñ£¨kms£©ÊÇÒ»ÖÖÍÐ¹Ü·þÎñ£¬ËüÊ¹×éÖ¯ÄÜ¹»ÇáËÉ´´½¨ºÍ¿ØÖÆÓÃÓÚ¼ÓÃÜÆäÊý¾ÝµÄ¼ÓÃÜÃÜÔ¿£¬²¢Ê¹ÓÃÓ²¼þ°²È«Ä£¿é£¨hsms£©±£»¤ÃÜÔ¿µÄ°²È«ÐÔ¡£aws kmsÓëÆäËû¼¸¸öawsÔÆ·þÎñ¼¯³É£¬ÒÔ°ïÖú±£»¤ÓëÕâÐ©·þÎñÒ»Æð´æ´¢µÄÊý¾Ý¡£
+* AWSÃÜÔ¿¹ÜÀí·þÎñ£¨KMS£©ÊÇÒ»ÖÖÍÐ¹Ü·þÎñ£¬ËüÊ¹×éÖ¯ÄÜ¹»ÇáËÉ´´½¨ºÍ¿ØÖÆÓÃÓÚ¼ÓÃÜÆäÊý¾ÝµÄ¼ÓÃÜÃÜÔ¿£¬²¢Ê¹ÓÃÓ²¼þ°²È«Ä£¿é£¨hsms£©±£»¤ÃÜÔ¿µÄ°²È«ÐÔ¡£AWS KMSÓëÆäËû¼¸¸öAWSÔÆ·þÎñ¼¯³É£¬ÒÔ°ïÖú±£»¤ÓëÕâÐ©·þÎñÒ»Æð´æ´¢µÄÊý¾Ý¡£
 
 #### AWS Directory Service
 
-* AWSÄ¿Â¼·þÎñÔÊÐí×éÖ¯ÔÚAWSÔÆÉÏÉèÖÃºÍÔËÐÐMicrosoft Active Directory£¬»ò½«ÆäAWS×ÊÔ´Á¬½Óµ½ÏÖÓÐµÄÄÚ²¿²¿ÊðMicrosoft Active Directory¡£×éÖ¯¿ÉÒÔÊ¹ÓÃËüÀ´¹ÜÀíÓÃ»§ºÍ×é¡¢Ìá¹©¶ÔÓ¦ÓÃ³ÌÐòºÍ·þÎñµÄµ¥µãµÇÂ¼¡¢´´½¨ºÍÓ¦ÓÃ×é²ßÂÔ£¬Óò¼ÓÈëamazon ec2ÊµÀý£¬¼ò»¯»ùÓÚÔÆµÄlinuxºÍmicrosoft windows¹¤×÷¸ºÔØµÄ²¿ÊðºÍ¹ÜÀí¡£
+* AWSÄ¿Â¼·þÎñÔÊÐí×éÖ¯ÔÚAWSÔÆÉÏÉèÖÃºÍÔËÐÐMicrosoft Active Directory£¬»ò½«ÆäAWS×ÊÔ´Á¬½Óµ½ÏÖÓÐµÄÄÚ²¿²¿ÊðMicrosoft Active Directory¡£×éÖ¯¿ÉÒÔÊ¹ÓÃËüÀ´¹ÜÀíÓÃ»§ºÍ×é¡¢Ìá¹©¶ÔÓ¦ÓÃ³ÌÐòºÍ·þÎñµÄµ¥µãµÇÂ¼¡¢´´½¨ºÍÓ¦ÓÃ×é²ßÂÔ£¬Óò¼ÓÈëAmazon ec2ÊµÀý£¬¼ò»¯»ùÓÚÔÆµÄlinuxºÍmicrosoft windows¹¤×÷¸ºÔØµÄ²¿ÊðºÍ¹ÜÀí¡£
 
 
 #### AWS Certificate Manager
 
-* awsÖ¤Êé¹ÜÀíÆ÷ÊÇÒ»ÖÖ·þÎñ£¬ÔÊÐí×éÖ¯ÇáËÉµØÅäÖÃ¡¢¹ÜÀíºÍ²¿Êð°²È«Ì×½Ó×Ö²ã/´«Êä²ã°²È«£¨ssl/tls£©Ö¤Êé£¬ÒÔ±ãÓëawsÔÆ·þÎñÒ»ÆðÊ¹ÓÃ¡£ËüÏû³ýÁË¹ºÂò¡¢ÉÏÔØºÍÐø¶©ssl/tlsÖ¤ÊéµÄºÄÊ±µÄÊÖ¶¯¹ý³Ì¡£Ê¹ÓÃawsÖ¤Êé¹ÜÀíÆ÷£¬×éÖ¯¿ÉÒÔ¿ìËÙÇëÇóÖ¤Êé£¬½«Æä²¿Êðµ½aws×ÊÔ´£¨Èçµ¯ÐÔ¸ºÔØÆ½ºâ»òamazon cloudfront·¢ÐÐ°æ£©ÉÏ£¬²¢ÈÃawsÖ¤Êé¹ÜÀíÆ÷´¦ÀíÖ¤ÊéÐø¶©¡£
+* AWSÖ¤Êé¹ÜÀíÆ÷ÊÇÒ»ÖÖ·þÎñ£¬ÔÊÐí×éÖ¯ÇáËÉµØÅäÖÃ¡¢¹ÜÀíºÍ²¿Êð°²È«Ì×½Ó×Ö²ã/´«Êä²ã°²È«£¨ssl/tls£©Ö¤Êé£¬ÒÔ±ãÓëAWSÔÆ·þÎñÒ»ÆðÊ¹ÓÃ¡£ËüÏû³ýÁË¹ºÂò¡¢ÉÏÔØºÍÐø¶©ssl/tlsÖ¤ÊéµÄºÄÊ±µÄÊÖ¶¯¹ý³Ì¡£Ê¹ÓÃAWSÖ¤Êé¹ÜÀíÆ÷£¬×éÖ¯¿ÉÒÔ¿ìËÙÇëÇóÖ¤Êé£¬½«Æä²¿Êðµ½AWS×ÊÔ´£¨Èçµ¯ÐÔ¸ºÔØÆ½ºâ»òAmazon cloudfront·¢ÐÐ°æ£©ÉÏ£¬²¢ÈÃAWSÖ¤Êé¹ÜÀíÆ÷´¦ÀíÖ¤ÊéÐø¶©¡£
 
 #### AWS Web Application Firewall (WAF)
 
@@ -240,7 +240,7 @@ AWS provides a variety of managed services to use with applications. The followi
 
 #### Amazon API Gateway
 
-* amazon api gatewayÊÇÒ»¸öÍêÈ«ÍÐ¹ÜµÄ·þÎñ£¬ËüÊ¹¿ª·¢ÈËÔ±¿ÉÒÔÇáËÉµØ´´½¨¡¢·¢²¼¡¢Î¬»¤¡¢¼àÊÓºÍ±£»¤ÈÎºÎ¹æÄ£µÄapi¡£×éÖ¯¿ÉÒÔ´´½¨Ò»¸öapi£¬×÷ÎªÓ¦ÓÃ³ÌÐò·ÃÎÊÊý¾Ý¡¢ÒµÎñÂß¼­»òºó¶Ë·þÎñ¹¦ÄÜµÄ¡°Ç°ÃÅ¡±£¨ÀýÈç£ºÔËÐÐÔÚamazon ec2ÉÏµÄ¹¤×÷¸ºÔØ£¬ÔÚaws lambda»òÈÎºÎwebÓ¦ÓÃ³ÌÐòÉÏÔËÐÐµÄ´úÂë£©¡£amazon api gateway´¦Àí½ÓÊÜºÍ´¦Àí¶à´ïÊýÊ®Íò¸ö²¢·¢apiµ÷ÓÃËùÉæ¼°µÄËùÓÐÈÎÎñ£¬°üÀ¨Á÷Á¿¹ÜÀí¡¢ÊÚÈ¨ºÍ·ÃÎÊ¿ØÖÆ¡¢¼àÊÓºÍapi°æ±¾¹ÜÀí
+* Amazon api gatewayÊÇÒ»¸öÍêÈ«ÍÐ¹ÜµÄ·þÎñ£¬ËüÊ¹¿ª·¢ÈËÔ±¿ÉÒÔÇáËÉµØ´´½¨¡¢·¢²¼¡¢Î¬»¤¡¢¼àÊÓºÍ±£»¤ÈÎºÎ¹æÄ£µÄapi¡£×éÖ¯¿ÉÒÔ´´½¨Ò»¸öapi£¬×÷ÎªÓ¦ÓÃ³ÌÐò·ÃÎÊÊý¾Ý¡¢ÒµÎñÂß¼­»òºó¶Ë·þÎñ¹¦ÄÜµÄ¡°Ç°ÃÅ¡±£¨ÀýÈç£ºÔËÐÐÔÚAmazon ec2ÉÏµÄ¹¤×÷¸ºÔØ£¬ÔÚAWS lambda»òÈÎºÎwebÓ¦ÓÃ³ÌÐòÉÏÔËÐÐµÄ´úÂë£©¡£Amazon api gateway´¦Àí½ÓÊÜºÍ´¦Àí¶à´ïÊýÊ®Íò¸ö²¢·¢apiµ÷ÓÃËùÉæ¼°µÄËùÓÐÈÎÎñ£¬°üÀ¨Á÷Á¿¹ÜÀí¡¢ÊÚÈ¨ºÍ·ÃÎÊ¿ØÖÆ¡¢¼àÊÓºÍapi°æ±¾¹ÜÀí
 
 
 #### Amazon Elastic Transcoder
@@ -249,7 +249,7 @@ AWS provides a variety of managed services to use with applications. The followi
 
 #### Amzaon Simple Notification Service £¨Amazon SNS£©
 
-* amazon¼òµ¥Í¨Öª·þÎñ£¨amazon sns£©ÊÇÒ»ÖÖÐ­µ÷ºÍ¹ÜÀíÏò½ÓÊÕÕßÍ¶µÝ»ò·¢ËÍÏûÏ¢µÄweb·þÎñ¡£ÔÚamazon snsÖÐ£¬ÓÐÁ½ÖÖÀàÐÍµÄ¿Í»§¶Ë-·¢²¼ÕßºÍ¶©ÔÄÕß£¬Ò²³ÆÎªÉú²úÕßºÍÏû·ÑÕß¡£·¢²¼·þÎñÆ÷Í¨¹ýÉú³ÉÏûÏ¢²¢½«ÏûÏ¢·¢ËÍµ½Ö÷Ìâ£¨Âß¼­·ÃÎÊµãºÍÍ¨ÐÅÍ¨µÀ£©Óë¶©ÔÄ·þÎñÆ÷Òì²½Í¨ÐÅ¡£¶©ÔÄ·þÎñÆ÷ÔÚ¶©ÔÄ¸ÃÖ÷ÌâÊ±Í¨¹ýÊÜÖ§³ÖµÄÐ­ÒéÖ®Ò»Ê¹ÓÃ»ò½ÓÊÕÏûÏ¢»òÍ¨Öª 
+* Amazon¼òµ¥Í¨Öª·þÎñ£¨Amazon SNS£©ÊÇÒ»ÖÖÐ­µ÷ºÍ¹ÜÀíÏò½ÓÊÕÕßÍ¶µÝ»ò·¢ËÍÏûÏ¢µÄweb·þÎñ¡£ÔÚAmazon snsÖÐ£¬ÓÐÁ½ÖÖÀàÐÍµÄ¿Í»§¶Ë-·¢²¼ÕßºÍ¶©ÔÄÕß£¬Ò²³ÆÎªÉú²úÕßºÍÏû·ÑÕß¡£·¢²¼·þÎñÆ÷Í¨¹ýÉú³ÉÏûÏ¢²¢½«ÏûÏ¢·¢ËÍµ½Ö÷Ìâ£¨Âß¼­·ÃÎÊµãºÍÍ¨ÐÅÍ¨µÀ£©Óë¶©ÔÄ·þÎñÆ÷Òì²½Í¨ÐÅ¡£¶©ÔÄ·þÎñÆ÷ÔÚ¶©ÔÄ¸ÃÖ÷ÌâÊ±Í¨¹ýÊÜÖ§³ÖµÄÐ­ÒéÖ®Ò»Ê¹ÓÃ»ò½ÓÊÕÏûÏ¢»òÍ¨Öª 
 
 #### Amazon Simple Email Service£¨Amazon SES£©
 
@@ -265,13 +265,13 @@ AWS provides a variety of managed services to use with applications. The followi
 
 ## ¸ÅÊö
 
-* "ÔÆ¼ÆËã"Ò»´ÊÊÇÖ¸Í¨¹ý»¥ÁªÍø°´Ðè½»¸¶IT×ÊÔ´£¬°´Ðè¸¶·Ñ¡£×éÖ¯²»±Ø¹ºÂò¡¢ÓµÓÐºÍÎ¬»¤Êý¾ÝÖÐÐÄºÍ·þÎñÆ÷£¬¶øÊÇ¿ÉÒÔ¸ù¾ÝÐèÒª»ñÈ¡¼ÆËãÄÜÁ¦¡¢´æ´¢¡¢Êý¾Ý¿âºÍÆäËû·þÎñµÈ¼¼Êõ¡£Ê¹ÓÃÔÆ¼ÆËã£¬awsÔÚÒ»¸ö°²È«µÄ»·¾³ÖÐ¹ÜÀíºÍÎ¬»¤¼¼Êõ»ù´¡ÉèÊ©£¬ÆóÒµÍ¨¹ý»¥ÁªÍø·ÃÎÊÕâÐ©×ÊÔ´À´¿ª·¢ºÍÔËÐÐËûÃÇµÄÓ¦ÓÃ³ÌÐò¡£ÈÝÁ¿¿ÉÒÔÁ¢¼´Ôö³¤»òËõ¼õ£¬ÆóÒµÖ»Ö§¸¶ËûÃÇÊ¹ÓÃµÄ¶«Î÷¡£
+* "ÔÆ¼ÆËã"Ò»´ÊÊÇÖ¸Í¨¹ý»¥ÁªÍø°´Ðè½»¸¶IT×ÊÔ´£¬°´Ðè¸¶·Ñ¡£×éÖ¯²»±Ø¹ºÂò¡¢ÓµÓÐºÍÎ¬»¤Êý¾ÝÖÐÐÄºÍ·þÎñÆ÷£¬¶øÊÇ¿ÉÒÔ¸ù¾ÝÐèÒª»ñÈ¡¼ÆËãÄÜÁ¦¡¢´æ´¢¡¢Êý¾Ý¿âºÍÆäËû·þÎñµÈ¼¼Êõ¡£Ê¹ÓÃÔÆ¼ÆËã£¬AWSÔÚÒ»¸ö°²È«µÄ»·¾³ÖÐ¹ÜÀíºÍÎ¬»¤¼¼Êõ»ù´¡ÉèÊ©£¬ÆóÒµÍ¨¹ý»¥ÁªÍø·ÃÎÊÕâÐ©×ÊÔ´À´¿ª·¢ºÍÔËÐÐËûÃÇµÄÓ¦ÓÃ³ÌÐò¡£ÈÝÁ¿¿ÉÒÔÁ¢¼´Ôö³¤»òËõ¼õ£¬ÆóÒµÖ»Ö§¸¶ËûÃÇÊ¹ÓÃµÄ¶«Î÷¡£
 
 * ÔÆ¼ÆËã´øÀ´ÁË¼¼Êõ»ñÈ¡¡¢Ê¹ÓÃºÍ¹ÜÀí·½Ê½µÄ¸ïÃüÐÔ×ª±ä£¬ÒÔ¼°×éÖ¯ÈçºÎÎª¼¼Êõ·þÎñ½øÐÐÔ¤ËãºÍÖ§¸¶¡£ËäÈ»Ã¿¸ö×éÖ¯¶¼¾­ÀúÁËÒ»´Î¶ÀÌØµÄÔÆ¶ËÖ®ÂÃ£¬´øÀ´ÁËÖÚ¶àºÃ´¦£¬Áù¸öÓÅÊÆÒ»´ÎÓÖÒ»´ÎµØÏÔÏÖ³öÀ´¡£ÁË½âÕâÐ©ÓÅÊÆ¿ÉÒÔ°ïÖú¼Ü¹¹Ê¦ÐÎ³ÉÄÜ¹»Îª×éÖ¯´øÀ´³ÖÐøÀûÒæµÄ½â¾ö·½°¸¡£
 
-* AWSÌá¹©ÁËÒ»¸ö¸ß¿ÉÓÃÐÔµÄ¼¼Êõ»ù´¡ÉèÊ©Æ½Ì¨£¬ÔÚÈ«ÇòÓÐ¶à¸öÎ»ÖÃ¡£ÕâÐ©Î»ÖÃÓÉÇøÓòºÍ¿ÉÓÃÐÔÇøÓò×é³É¡£ÕâÊ¹×éÖ¯ÄÜ¹»ÔÚÈ«Çò¶à¸öÎ»ÖÃ·ÅÖÃ×ÊÔ´ºÍÊý¾Ý¡£ÓÐÖúÓÚ±£»¤»úÃÜÐÔ¡¢ÍêÕûÐÔ£¬ÏµÍ³ºÍÊý¾ÝµÄ¿ÉÓÃÐÔ¶ÔÓÚawsÀ´ËµÊÇÖÁ¹ØÖØÒªµÄ£¬Í¬Ê±Ò²Î¬»¤ÁËÊÀ½ç¸÷µØ×éÖ¯µÄÐÅÈÎºÍÐÅÐÄ¡£
+* AWSÌá¹©ÁËÒ»¸ö¸ß¿ÉÓÃÐÔµÄ¼¼Êõ»ù´¡ÉèÊ©Æ½Ì¨£¬ÔÚÈ«ÇòÓÐ¶à¸öÎ»ÖÃ¡£ÕâÐ©Î»ÖÃÓÉÇøÓòºÍ¿ÉÓÃÐÔÇøÓò×é³É¡£ÕâÊ¹×éÖ¯ÄÜ¹»ÔÚÈ«Çò¶à¸öÎ»ÖÃ·ÅÖÃ×ÊÔ´ºÍÊý¾Ý¡£ÓÐÖúÓÚ±£»¤»úÃÜÐÔ¡¢ÍêÕûÐÔ£¬ÏµÍ³ºÍÊý¾ÝµÄ¿ÉÓÃÐÔ¶ÔÓÚAWSÀ´ËµÊÇÖÁ¹ØÖØÒªµÄ£¬Í¬Ê±Ò²Î¬»¤ÁËÊÀ½ç¸÷µØ×éÖ¯µÄÐÅÈÎºÍÐÅÐÄ¡£
 
-* awsÌá¹©ÁËÒ»Ì×¹ã·ºµÄÈ«Çò¼ÆËã¡¢´æ´¢¡¢Êý¾Ý¿â¡¢·ÖÎö¡¢Ó¦ÓÃ³ÌÐòºÍ²¿Êð·þÎñ£¬°ïÖú×éÖ¯¸ü¿ìµØÒÆ¶¯¡¢½µµÍit³É±¾ºÍÀ©Õ¹Ó¦ÓÃ³ÌÐò¡£¶ÔÕâÐ©·þÎñµÄ¹ã·ºÁË½âÊ¹½â¾ö·½°¸¼Ü¹¹Ê¦ÄÜ¹»ÔÚawsÆ½Ì¨ÉÏÉè¼ÆÓÐÐ§µÄ·Ö²¼Ê½Ó¦ÓÃ³ÌÐòºÍÏµÍ³
+* AWSÌá¹©ÁËÒ»Ì×¹ã·ºµÄÈ«Çò¼ÆËã¡¢´æ´¢¡¢Êý¾Ý¿â¡¢·ÖÎö¡¢Ó¦ÓÃ³ÌÐòºÍ²¿Êð·þÎñ£¬°ïÖú×éÖ¯¸ü¿ìµØÒÆ¶¯¡¢½µµÍIT³É±¾ºÍÀ©Õ¹Ó¦ÓÃ³ÌÐò¡£¶ÔÕâÐ©·þÎñµÄ¹ã·ºÁË½âÊ¹½â¾ö·½°¸¼Ü¹¹Ê¦ÄÜ¹»ÔÚAWSÆ½Ì¨ÉÏÉè¼ÆÓÐÐ§µÄ·Ö²¼Ê½Ó¦ÓÃ³ÌÐòºÍÏµÍ³
 
 
 ## ¿¼ÊÔ»ù´¡
