@@ -1,31 +1,92 @@
 # AWS 简介
+
 ## 什么是云计算
-云计算是通过互联网按需交付IT资源和应用程序，并按需付费。无论是运行向数百万移动用户共享照片的应用程序，还是提供支持业务关键运营的服务，云提供了对灵活和低成本IT资源的快速访问。使用云计算，您不需要在硬件上进行大量的前期投资，也不需要花费大量时间管理硬件。相反，您可以提供正确类型和合适大小的计算资源，以支持您最新的聪明想法或运营您的IT部门。使用云计算，您几乎可以立即访问所需的任意数量的资源，而且只需支付您使用的资源的费用。
-云计算的优点
-Cloud	computing	introduces	a	revolutionary	shift	in	how	technology	is	obtained,	used,	and managed,	and	in	how	organizations	budget	and	pay	for	technology	services.	With	the	ability to	reconfigure	the	computing	environment	quickly	to	adapt	to	changing	business requirements,	organizations	can	optimize	spending.	Capacity	can	be	automatically	scaled	up or	down	to	meet	fluctuating	usage	patterns.	Services	can	be	temporarily	taken	offline	or	shut down	permanently	as	business	demands	dictate.	In	addition,	with	pay-per-use	billing,	AWS Cloud	services	become	an	operational	expense	instead	of	a	capital	expense. While	each	organization	experiences	a	unique	journey	to	the	cloud	with	numerous	benefits, six	advantages	become	apparent	time	and	time	again,	as	illustrated	in	Figure	1.1.
 
-云计算带来了技术获取、使用和管理方式的革命性转变，以及组织如何为技术服务进行预算和支付。云计算能够快速重新配置计算环境，以适应不断变化的业务需求，组织可以优化支出。容量可以自动增加或减少，以满足波动的使用模式。服务可以暂时脱机或根据业务需求永久关闭。此外，使用按次计费，aws云服务成为一种运营费用，而不是资本费用。虽然每个组织都经历了一次独特的云端之旅，带来了许多好处，但六个好处却一次又一次地显现出来，如图-1.1所示。
+* 云计算是通过互联网按需交付IT资源和应用程序，并按需付费。无论是运行向数百万移动用户共享照片的应用程序，还是提供支持业务关键运营的服务，云提供了对灵活和低成本IT资源的快速访问。使用云计算，您不需要在硬件上进行大量的前期投资，也不需要花费大量时间管理硬件。相反，您可以提供正确类型和合适大小的计算资源，以支持您最新的聪明想法或运营您的IT部门。使用云计算，您几乎可以立即访问所需的任意数量的资源，而且只需支付您使用的资源的费用。
 
-Global in minutes
-Variable VS.capital expense
-Economies of Scale
-Increace speed and ingility
-Focus on business differentiators
-Stop guessing capacity
+### 云计算的优点
 
+ * 云计算带来了技术获取、使用和管理方式的革命性转变，以及组织如何为技术服务进行预算和支付。
+ * 云计算能够快速重新配置计算环境，以适应不断变化的业务需求，组织可以优化支出。
+ * 容量可以自动增加或减少，以满足波动的使用模式。
+ * 服务可以暂时脱机或根据业务需求永久关闭。
+ * 此外，使用按次计费，aws云服务成为一种运营费用，而不是资本费用。
+ * 虽然每个组织都经历了一次独特的云端之旅，带来了许多好处，但六个好处却一次又一次地显现出来，如图-1.1所示。
+
+#### 可变经济支出 Variable VS.capital expense
+
+* 让我们先从资本支出换成可变运营支出的能力开始。你不必再数据中心和服务器上投入大量资金，而只需在消耗计算资源时支付，只需支付所消耗的资源。
+
+#### 规模经济 Economies of Scale
+
+* 云计算的另一个优势是，组织可以从大规模的规模经济中获益。通过使用云计算，你可以实现比你自己更低的可变成本。因为数十万客户的使用是在云中聚合的，所以像aws这样的提供商可以实现更高的规模经济，这就意味着更低的价格。
+
+#### 提升速度 Increace speed and ingility
+
+* 在云计算环境中，只需单击一下即可获得新的IT资源，这允许组织将向开发人员提供这些资源所需的时间从几周减少到几分钟，这将显著提高组织的速度和敏捷性，因为实验和开发所需的成本和时间大大降低。
+
+#### 专注于业务差异性 Focus on business differentiators
+
+* 云计算使组织能够专注于他们的业务优先事项，而不是沉重的服务器负担、堆叠和供电。通过接受这种模式转变，组织可以停止在运行和维护数据中心上花钱。这使得组织能够专注于使其业务与众不同的项目，比如分析千兆字节的数据，传送视频内容，构建伟大的移动应用，甚至探索火星。
+
+#### 停止容量评估 Stop guessing capacity
+
+* 当您在部署应用程序之前做出容量决定时，您通常要么坐在昂贵的空闲资源上，要么处理有限的容量。组织可以停止猜测满足其业务需求所必需的基础设施的容量需求。它们可以根据需要访问尽可能多的或尽可能少的内容，并根据需要进行扩展或缩小，只需提前几分钟通知。
+
+#### 全球分钟级 Global in minutes
+
+* 云计算的另一个优势是能够在几分钟内全球化。组织只需点击几下，就可以轻松地将其应用程序部署到世界各地的多个位置。这允许组织在全球范围内提供冗余，并提供更低的以最低的成本为客户提供延迟和更好的体验。过去只有最大的企业才能负担得起全球化，但云计算使这一能力民主化，使任何组织都成为可能。虽然关于云计算的这些优势的具体问题不太可能出现在考试中，但是了解这些优势有助于合理化适当的答案。
+
+### 与计算部署模型
+
+* 本次考试关注的两种主要云计算部署模型是基于云的"一体化"部署和混合部署，了解每种策略如何应用于架构选项和决策非常重要。
+
+* 一个基于云的应用程序完全部署在云中，应用程序的所有组件都在云中运行。云中的应用程序要么是在云中创建的，要么是从现有的基础设施中迁移来利用云计算的好处的。基于云的应用程序可以构建在低级基础设施上或者可以使用更高级别的服务，从核心基础设施的管理、架构和扩展需求中提供抽象。
+
+* 混合部署是许多企业采用的一种常见方法，它将基于云的资源和现有资源之间的基础设施和应用程序连接起来，通常在现有的数据中心中。最常见的混合部署方法是在云和现有的内部部署基础设施之间扩展和增长组织的基础设施，同时将云资源连接到内部系统。选择在对基础设施的现有投资和迁移到云计算之间，不需要二元决策。利用专用连接、身份联合和集成工具，组织可以跨内部部署和云服务运行混合应用程序。
 
 ## AWS 基本原理
 
-aws的核心旨在安全的云服务平台上通过互联网提供it资源的按需交付，提供计算能力、存储、数据库、内容交付和其他功能，以帮助企业扩展和增长。
-At	its	core,	AWS	provides	on-demand	delivery	of	IT	resources	via	the	Internet	on	a	secure cloud	services	platform,	offering	compute	power,	storage,	databases,	content	delivery,	and other	functionality	to	help	businesses	scale	and	grow.	Using	AWS	resources	instead	of	your own	is	like	purchasing	electricity	from	a	power	company	instead	of	running	your	own generator,	and	it	provides	the	key	advantages	of	cloud	computing:	Capacity	exactly	matches your	need,	you	pay	only	for	what	you	use,	economies	of	scale	result	in	lower	costs,	and	the service	is	provided	by	a	vendor	experienced	in	running	large-scale	networks. AWS	global	infrastructure	and	AWS	approach	to	security	and	compliance	are	key foundational	concepts	to	understand	as	you	prepare	for	the	exam. Global	Infrastructure AWS	serves	over	one	million	active	customers	in	more	than	190	countries,	and	it	continues	to expand	its	global	infrastructure	steadily	to	help	organizations	achieve	lower	latency	and higher	throughput	for	their	business	needs. AWS	provides	a	highly	available	technology	infrastructure	platform	with	multiple	locations worldwide.	These	locations	are	composed	of	regions	and	Availability	Zones.	Each	region	is	a separate	geographic	area.	Each	region	has	multiple,	isolated	locations	known	as	Availability Zones.	AWS	enables	the	placement	of	resources	and	data	in	multiple	locations.	Resources aren’t	replicated	across	regions	unless	organizations	choose	to	do	so. Each	region	is	completely	independent	and	is	designed	to	be	completely	isolated	from	the other	regions.	This	achieves	the	greatest	possible	fault	tolerance	and	stability.	Each Availability	Zone	is	also	isolated,	but	the	Availability	Zones	in	a	region	are	connected	through low-latency	links.	Availability	Zones	are	physically	separated	within	a	typical	metropolitan region	and	are	located	in	lower-risk	flood	plains	(specific	flood	zone	categorization	varies	by region).	In	addition	to	using	a	discrete	uninterruptable	power	supply	(UPS)	and	on-site backup	generators,	they	are	each	fed	via	different	grids	from	independent	utilities	(when available)	to	reduce	single	points	of	failure	further.	Availability	Zones	are	all	redundantly connected	to	multiple	tier-1	transit	providers.	By	placing	resources	in	separate	Availability Zones,	you	can	protect	your	website	or	application	from	a	service	disruption	impacting	a single	location.
-	You	can	achieve	high	availability	by	deploying	your	application	across	multiple Availability	Zones.	Redundant	instances	for	each	tier	(for	example,	web,	application,	and database)	of	an	application	should	be	placed	in	distinct	Availability	Zones,	thereby creating	a	multisite	solution.	At	a	minimum,	the	goal	is	to	have	an	independent	copy	of each	application	stack	in	two	or	more	Availability	Zones.
-Security	and	Compliance Whether	on-premises	or	on	AWS,	information	security	is	of	paramount	importance	to
-organizations	running	critical	workloads.	Security	is	a	core	functional	requirement	that protects	mission-critical	information	from	accidental	or	deliberate	theft,	leakage,	integrity compromise,	and	deletion.	Helping	to	protect	the	confidentiality,	integrity,	and	availability	of systems	and	data	is	of	the	utmost	importance	to	AWS,	as	is	maintaining	your	trust	and confidence. This	section	is	intended	to	provide	a	very	brief	introduction	to	AWS	approach	to	security	and compliance.	Chapter	12,	“Security	on	AWS,”	and	Chapter	13,	“AWS	Risk	and	Compliance,”	will address	these	topics	in	greater	detail,	including	the	importance	of	each	on	the	exam. Security Cloud	security	at	AWS	is	the	number	one	priority.	All	AWS	customers	benefit	from	data center	and	network	architectures	built	to	satisfy	the	requirements	of	the	most	securitysensitive	organizations.	AWS	and	its	partners	offer	hundreds	of	tools	and	features	to	help organizations	meet	their	security	objectives	for	visibility,	auditability,	controllability,	and agility.	This	means	that	organizations	can	have	the	security	they	need,	but	without	the	capital outlay	and	with	much	lower	operational	overhead	than	in	an	on-premises	environment. Organizations	leveraging	AWS	inherit	all	the	best	practices	of	AWS	policies,	architecture,	and operational	processes	built	to	satisfy	the	requirements	of	the	most	security-sensitive customers.	The	AWS	infrastructure	has	been	designed	to	provide	the	highest	availability while	putting	strong	safeguards	in	place	regarding	customer	privacy	and	segregation.	When deploying	systems	on	the	AWS	Cloud	computing	platform,	AWS	helps	by	sharing	the	security responsibilities	with	the	organization.	AWS	manages	the	underlying	infrastructure,	and	the organization	can	secure	anything	it	deploys	on	AWS.	This	affords	each	organization	the flexibility	and	agility	they	need	in	security	controls. This	infrastructure	is	built	and	managed	not	only	according	to	security	best	practices	and standards,	but	also	with	the	unique	needs	of	the	cloud	in	mind.	AWS	uses	redundant	and layered	controls,	continuous	validation	and	testing,	and	a	substantial	amount	of	automation to	ensure	that	the	underlying	infrastructure	is	monitored	and	protected	24/7.	AWS	ensures that	these	controls	are	consistently	applied	in	every	new	data	center	or	service. Compliance When	customers	move	their	production	workloads	to	the	AWS	Cloud,	both	parties	become responsible	for	managing	the	IT	environment.	Customers	are	responsible	for	setting	up	their environment	in	a	secure	and	controlled	manner.	Customers	also	need	to	maintain	adequate governance	over	their	entire	IT	control	environment.	By	tying	together	governance-focused, audit-friendly	service	features	with	applicable	compliance	or	audit	standards,	AWS	enables customers	to	build	on	traditional	compliance	programs.	This	helps	organizations	establish and	operate	in	an	AWS	security	control	environment.
-	Organizations	retain	complete	control	and	ownership	over	the	region	in	which their	data	is	physically	located,	allowing	them	to	meet	regional	compliance	and	data residency	requirements.
-The	IT	infrastructure	that	AWS	provides	to	organizations	is	designed	and	managed	in alignment	with	security	best	practices	and	a	variety	of	IT	security	standards.	The	following	is a	partial	list	of	the	many	certifications	and	standards	with	which	AWS	complies: Service	Organization	Controls	(SOC)	1/International	Standard	on	Assurance Engagements	(ISAE)	3402,	SOC	2,	and	SOC	3 Federal	Information	Security	Management	Act	(FISMA),	Department	of	Defense Information	Assurance	Certification	and	Accreditation	Process	(DIACAP),	and	Federal Risk	and	Authorization	Management	Program	(FedRAMP) Payment	Card	Industry	Data	Security	Standard	(PCI	DSS)	Level	1 International	Organization	for	Standardization	(ISO)	9001,	ISO	27001,	and	ISO	27018 AWS	provides	a	wide	range	of	information	regarding	its	IT	control	environment	to	help organizations	achieve	regulatory	commitments	in	the	form	of	reports,	certifications, accreditations,	and	other	third-party	attestations.
+* AWS的核心是在安全的云服务平台上通过互联网提供IT资源的按需交付，提供计算能力、存储、数据库、内容交付，以及其他帮助企业扩大规模和增长的功能。使用aws资源而不是自己的资源就像从电力公司购买电力而不是运行自己的发电机，它提供了云计算的关键优势：容量完全符合您的需求，您只需支付所用的资源，规模经济导致成本降低，服务由有经验的运营大型网络的供应商提供。**aws全球基础设施和aws安全与合规方法是准备考试时需要理解的关键基础概念**。
+
+### 全球基础设施
+
+* aws为190多个国家的100多万活跃客户提供服务，并继续稳步扩展其全球基础设施，以帮助企业实现较低的延迟和较高的吞吐量，满足其业务需求。AWS提供了一个高可用的技术基础设施平台，在全球有多个位置。这些位置由Regions和可用域组成。每个Region是一个单独的地理区域。每个Region有多个称为可用域的独立位置。AWS允许在多个位置放置资源和数据。除非组织选择跨Region复制资源。每个Region都是完全独立的，并且被设计成与其他Region完全隔离。这样可以实现最大的容错性和稳定性。每个可用域也被隔离，但是，一个地区的可用域通过低延迟链路连接。可用域在典型的大都市地区内物理上是分开的，并且位于低风险的洪泛平原（特定的洪泛区分类因地区而异）。此外，还使用离散的不间断电源（UPS）和现场备用发电机通过独立公用设施（如可用）的不同电网供电，以进一步减少单点故障。可用域均冗余连接到多个一级公交供应商。通过将资源放置在单独的可用区域，您可以保护您的网站或应用程序免受服务中断对单个位置的影响。
+
+```
+ 提示：
+    您可以通过跨多个可用性区域部署应用程序来实现高可用性。应用程序的每一层（例如，Web、应用程序和数据库）的冗余实例应放置在不同的可用性区域中，从而创建多站点解决方案。至少，目标是在两个或多个可用性区域中拥有每个应用程序堆栈的独立副本
+```
+
+### 安全和合规
+
+* 无论是在本地还是在aws上，信息安全对于运行关键工作负载的组织。安全性是一项核心功能要求，可保护关键任务信息免受意外或蓄意的盗窃、泄漏、完整性受损和删除。帮助保护系统和数据的机密性、完整性和可用性对AWS至关重要，保持你的信任和信心。本节旨在简要介绍AWS的安全和合规方法。第12章"AWS安全"和第13章"AWS风险和合规"将更详细地讨论这些主题，包括每个主题在考试中的重要性。
+
+#### 安全
+
+* AWS的云安全是首要任务。所有AWS客户都受益于为满足最安全敏感组织的要求而构建的数据中心和网络架构。AWS及其合作伙伴提供了数百种工具和功能，帮助组织实现其安全目标，实现可见性、可审计性，可控性和敏捷性。这意味着组织可以拥有所需的安全性，但不需要资金支出，而且与内部环境相比，操作开销要低得多。利用aws的组织继承了aws策略、体系结构和以及为满足最安全敏感客户的要求而构建的操作流程。AWS基础设施旨在提供最高的可用性，同时在客户隐私和隔离方面实施强有力的保护措施。在AWS云计算平台上部署系统时，aws通过与组织共享安全职责来提供帮助。aws管理底层基础设施，组织可以保护其在aws上部署的任何内容。这为每个组织提供了安全控制所需的灵活性和灵活性。该基础设施不仅按照安全最佳实践和标准进行构建和管理，而且考虑到云的独特需求。AWS使用冗余和分层控制、连续验证和测试，以及大量的自动化，以确保底层基础设施24/7受到监控和保护。AWS确保这些控制在每个新的数据中心或服务中得到一致的应用。
+
+#### 合规
+
+* 当客户将其生产工作负载转移到aws云时，双方负责管理IT环境。客户负责以安全和受控的方式建立其环境。客户还需要对其整个IT控制环境保持适当的治理。通过将治理集中在一起，有利于审计的服务功能，通过适用的合规或审计标准，AWS使客户能够建立在传统的合规计划之上。这有助于组织在AWS安全控制环境中建立和运行。
+
+```
+提示：
+    组织对其数据所在的区域保持完全的控制权和所有权，使它们能够满足区域法规遵从性和数据驻留要求。
+```
+
+aws提供给组织的it基础设施是按照安全最佳实践和各种it安全标准设计和管理的。以下是aws遵守的许多认证和标准的部分列表：
+
+```
+  * 服务组织控制（soc）1/国际保证标准参与（ISAE）3402、SOC 2和SOC 3
+  * 《联邦信息安全管理法》（FISMA），国防部信息保证认证和认可程序（DICAP），以及联邦风险和授权管理计划（FEDRAMP）   * 支付卡行业数据安全标准（PCI DSS）
+  * 一级国际标准化组织（ISO）9001、ISO 27001，而iso 27018 
+```
+
+aws提供了有关其it控制环境的广泛信息，以帮助组织以报告、认证、认证和其他第三方认证的形式实现监管承诺。 
 
 
-## AWS	云计算平台 
+## AWS 云计算平台 
 
   aws提供了许多云服务，您可以将它们结合起来以满足业务或组织需求（请参见图1.2）。了解所有的平台服务将使您成为一名全面的解决方案架构师，了解本书中概述的服务和基本概念将有助于您为《AWS认证解决方案架构师-联合考试》做好准备。
 
@@ -56,7 +117,7 @@ The	IT	infrastructure	that	AWS	provides	to	organizations	is	designed	and	managed
 
   是一个面向后端web开发人员的零管理计算平台，它在aws云上为您运行代码，并为您提供细粒度的定价结构。aws lambda在一个区域的多个可用性区域中运行自己的aws计算组amazon ec2实例，它提供了aws基础设施的高可用性、安全性、性能和可扩展性 
 
-### 自动伸缩
+### 自动伸缩（Auto Scaling）
 
 * Auto Scaling允许组织根据为特定工作负载定义的条件自动向上或向下扩展Amazon EC2容量（见图1.3）。它不仅可以帮助维护应用程序可用性并确保所需数量的Amazon EC2实例正在运行，但它也允许资源进行扩展以满足动态工作负载的需求，组织可以优化成本，而不是为峰值负载提供资源，只使用实际需要的容量。
 
@@ -78,7 +139,7 @@ The	IT	infrastructure	that	AWS	provides	to	organizations	is	designed	and	managed
 
 * aws direct connect允许组织建立从其数据中心到aws的专用网络连接。使用aws direct connect，组织可以在aws和其数据中心、办公室或托管环境之间建立专用连接，这在许多情况下可以降低网络成本，增加带宽吞吐量，提供比基于Internet的VPN连接更一致的网络体验
 
-### Amazon	Route	53 
+### Amazon Route 53 
 
 * 亚马逊Route53是一个高度可用和可扩展的域名系统（DNS）网络服务。它的目的是通过将人类可读的名称（如www.example.com）转换为计算机用来相互连接的数字IP地址（如192.0.2.1），为开发人员和企业提供一种极其可靠和经济高效的方式来将最终用户路由到Internet应用程序。允许您直接从aws购买和管理域。
 
@@ -114,15 +175,15 @@ AWS提供各种满足需要的存储服务，诸如：Amazon简单存储服务，Amzzon CloudFront，Amaz
 
 * amazon关系数据库服务（amazon rds）提供了一个完全托管的关系数据库，支持许多流行的开源和商用数据库引擎。这是一个经济高效的服务，允许组织启动安全、高可用、容错的数据库。在几分钟内就可以生产数据库了。由于amazon rds管理耗时的管理任务，包括备份、软件修补、监视、扩展和复制，因此组织资源可以集中于产生收入的应用程序和业务，而不是普通的操作任务。
 
-#### Amazon	DynamoDB
+#### Amazon DynamoDB
 
 * Amazon DYNAMODB是一种快速灵活的NoSQL数据库服务，适用于任何规模的需要一致的、毫秒级延迟的所有应用程序。它是一个完全托管的数据库，支持文档和键/值数据模型。它灵活的数据模型和可靠的性能使它非常适合移动、Web、游戏、广告技术，物联网和许多其他应用。
 
-#### Amazon	Redshift
+#### Amazon Redshift
 
 * Amazon Redshift是一个快速、完全管理、PB级的数据仓库服务，它使分析结构化数据变得简单且经济高效。Amazon Redshift提供了一个标准的SQL接口，允许组织使用现有的商业智能工具。通过利用提高I/O效率和跨多个节点并行查询的柱状存储技术，Amazon Redshift能够提供快速的查询性能。Amazon Redshift体系结构允许组织自动执行与提供、配置和监视云数据仓库相关的大多数常见管理任务。
 
-#### Amazon	ElastiCache 
+#### Amazon ElastiCache 
 
 * Amazon Elasticache是一个Web服务，它简化了云中内存缓存的部署、操作和扩展。该服务允许组织从快速、托管的内存缓存中检索信息，而不是完全依赖速度较慢的基于磁盘的数据库，从而提高了Web应用程序的性能。在撰写本文时，Amazon Elasticache支持memcached和redis缓存引擎。
 
@@ -172,4 +233,146 @@ AWS提供各种满足需要的存储服务，诸如：Amazon简单存储服务，Amzzon CloudFront，Amaz
 
 * AWS Web应用程序防火墙（WAF）有助于保护Web应用程序免受可能影响应用程序可用性、危害安全性或消耗过多资源的常见攻击和利用。AWS WAF通过定义可自定义的Web安全规则，使组织能够控制允许或阻止哪些通信流到其Web应用程序
 
+### Application Services 
 
+AWS provides a variety of managed services to use with applications. The following section explores the application services at a high level. 
+* AWS提供多种和应用一起使用的托管服务。下面章节以一个高等级概述应用服务。
+
+#### Amazon API Gateway
+
+* amazon api gateway是一个完全托管的服务，它使开发人员可以轻松地创建、发布、维护、监视和保护任何规模的api。组织可以创建一个api，作为应用程序访问数据、业务逻辑或后端服务功能的“前门”（例如：运行在amazon ec2上的工作负载，在aws lambda或任何web应用程序上运行的代码）。amazon api gateway处理接受和处理多达数十万个并发api调用所涉及的所有任务，包括流量管理、授权和访问控制、监视和api版本管理
+
+
+#### Amazon Elastic Transcoder
+
+* Amazon Elastic转码器是一种在云中进行媒体转码的技术。它被设计成一种高度可扩展且经济高效的方式，供开发者和企业将媒体文件从源格式转换（或转码）为可在智能手机、平板电脑和个人电脑等设备上播放的版本。
+
+#### Amzaon Simple Notification Service （Amazon SNS）
+
+* amazon简单通知服务（amazon sns）是一种协调和管理向接收者投递或发送消息的web服务。在amazon sns中，有两种类型的客户端-发布者和订阅者，也称为生产者和消费者。发布服务器通过生成消息并将消息发送到主题（逻辑访问点和通信通道）与订阅服务器异步通信。订阅服务器在订阅该主题时通过受支持的协议之一使用或接收消息或通知 
+
+#### Amazon Simple Email Service（Amazon SES）
+
+* Amazon简单电子邮件服务（Amazon SES）是一种经济高效的电子邮件服务，组织可以使用它向客户发送事务性电子邮件、营销消息或任何其他类型的内容。Amazon SES还可以用于接收消息并将其传递到Amazon S3存储桶，通过AWS Lambda函数调用自定义代码，或者向Amazon SNS发布通知。
+
+#### Amazon Simple Workflow Service(Amazon SWF)
+
+* Amazon Simple Workflow Service（Amazon SWF）帮助开发人员构建、运行和扩展具有并行或顺序步骤的后台作业。Amazon SWF可以看作是云上的完全受管状态跟踪器和任务协调器。在常见的体系结构模式中，如果应用程序的步骤需要500毫秒以上才能完成，跟踪处理状态并在任务失败时提供恢复或重试的能力至关重要。
+
+#### Amazon Simple Queue Service(Amazon SQS)
+
+* Amazon Simple Queue Service（Amazon SQS）是一种快速、可靠、可扩展、完全托管的消息队列服务。Amazon SQS使分离云应用程序的组件变得简单且经济高效。使用Amazon SQS，组织可以在任何吞吐量级别传输任何数量的数据，不丢失消息或要求其他服务始终可用。
+
+## 概述
+
+* "云计算"一词是指通过互联网按需交付IT资源，按需付费。组织不必购买、拥有和维护数据中心和服务器，而是可以根据需要获取计算能力、存储、数据库和其他服务等技术。使用云计算，aws在一个安全的环境中管理和维护技术基础设施，企业通过互联网访问这些资源来开发和运行他们的应用程序。容量可以立即增长或缩减，企业只支付他们使用的东西。
+
+* 云计算带来了技术获取、使用和管理方式的革命性转变，以及组织如何为技术服务进行预算和支付。虽然每个组织都经历了一次独特的云端之旅，带来了众多好处，六个优势一次又一次地显现出来。了解这些优势可以帮助架构师形成能够为组织带来持续利益的解决方案。
+
+* AWS提供了一个高可用性的技术基础设施平台，在全球有多个位置。这些位置由区域和可用性区域组成。这使组织能够在全球多个位置放置资源和数据。有助于保护机密性、完整性，系统和数据的可用性对于aws来说是至关重要的，同时也维护了世界各地组织的信任和信心。
+
+* aws提供了一套广泛的全球计算、存储、数据库、分析、应用程序和部署服务，帮助组织更快地移动、降低it成本和扩展应用程序。对这些服务的广泛了解使解决方案架构师能够在aws平台上设计有效的分布式应用程序和系统
+
+
+## 考试基础
+
+### 了解全球基础设施
+
+* AWS提供了一个高可用的技术基础设施平台，在全球有多个位置。这些位置由Regions和可用域组成。每个Region都位于一个单独的地理区域，并且有多个独立称为可用性区域的位置，
+
+### 理解Region
+
+* AWS区域是由一组数据中心组成的物理地理位置。AWS区域允许在全球多个位置放置资源和数据。每个区域完全独立，设计为与其他区域完全隔离。这将实现最大可能的容错性和稳定性。除非组织选择跨区域复制资源。
+
+### 理解可用域
+
+* 可用域是一个区域内的一个或多个数据中心，旨在与其他可用性区域中的故障隔离。可用性区域为同一Region内的其他可用域域提供廉价、低延迟的网络连接。通过将资源放在不同的可用域中，组织可以保护其网站或应用程序免受影响单个位置的服务中断的影响。
+
+### 理解混合部署模型
+
+* 混合部署模型是一种体系结构模式，为基础设施和应用程序提供基于云的资源和不在云中的现有资源之间的连接。
+
+
+## Review Questions
+1. Which of the following describes a physical location around the world where AWS clusters data centers?
+
+ A. Endpoint 
+ B. Collection 
+ C. Fleet
+ **D. Region**
+
+2. Each AWS region is composed of two or more locations that offer organizations the ability to operate production systems that are more highly available, fault tolerant, and scalable than would be possible using a single data center. What are these locations called? 
+ 
+ **A. Availability Zones**
+ B. Replication areas
+ C. Geographic districts
+ D. Compute centers
+
+3. What is the deployment term for an environment that extends an existing on-premises infrastructure into the cloud to connect cloud resources to internal systems?
+
+ A. All-in deployment
+ **B. Hybrid deployment**
+ C. On-premises deployment
+ D. Scatter deployment
+
+4. Which AWS Cloud service allows organizations to gain system-wide visibility into resource utilization, application performance, and operational health?
+
+ A. AWS Identity and Access Management (IAM)
+ B. Amazon Simple Notification Service (Amazon SNS)
+ **C. Amazon CloudWatch**
+ D. AWS CloudFormation
+
+5. Which of the following AWS Cloud services is a fully managed NoSQL database service?
+
+ A. Amazon Simple Queue Service (Amazon SQS)
+ **B. Amazon DynamoDB**
+ C. Amazon ElastiCache
+ D. Amazon Relational Database Service (Amazon RDS)
+
+ 6. Your company experiences fluctuations in traffic patterns to their e-commerce website based on flash sales. What service can help your company dynamically match the required compute capacity to the spike in traffic during flash sales?
+
+ **A. Auto Scaling**
+ B. Amazon Glacier
+ C. Amazon Simple Notification Service (Amazon SNS)
+ D. Amazon Virtual Private Cloud (Amazon VPC)
+
+7. Your company provides an online photo sharing service. The development team is looking for ways to deliver image files with the lowest latency to end users so the website content is delivered with the best possible performance. What service can help speed up distribution of these image files to end users around the world?
+
+ A. Amazon Elastic Compute Cloud (Amazon EC2)
+ B. Amazon Route 53
+ C. AWS Storage Gateway
+ **D. Amazon CloudFront**
+
+8. Your company runs an Amazon Elastic Compute Cloud (Amazon EC2) instance periodically to perform a batch processing job on a large and growing filesystem. At the end of the batch job, you shut down the Amazon EC2 instance to save money but need to persist the filesystem on the Amazon EC2 instance from the previous batch runs. What AWS Cloud service can you leverage to meet these requirements?
+
+ A. Amazon Elastic Block Store (Amazon EBS)
+ B. Amazon DynamoDB
+ **C. Amazon Glacier**
+ D. AWS CloudFormation 
+
+9. What AWS Cloud service provides a logically isolated section of the AWS Cloud where organizations can launch AWS resources in a virtual network that they define?
+
+ A. Amazon Simple Workflow Service (Amazon SWF)
+ B. Amazon Route 53
+ **C. Amazon Virtual Private Cloud (Amazon VPC)**
+ D. AWS CloudFormation 
+
+10. Your company provides a mobile voting application for a popular TV show, and 5 to 25 million viewers all vote in a 15-second timespan. What mechanism can you use to decouple the voting application from your back-end services that tally the votes?
+ A. AWS CloudTrail
+ **B. Amazon Simple Queue Service (Amazon SQS)**
+ C. Amazon Redshift
+ D. Amazon Simple Notification Service (Amazon SNS)
+
+
+## word
+
+* functional requirement 功能要求；功能条件说明书
+* protects 保护; 防护; 实行贸易保护; protect的第三人称单数
+* mission-critical关键的，至关重要的
+* accidental 意外的; 偶然的; 偶然; 次要方面
+* deliberate 故意的; 蓄意的; 存心的; 不慌不忙的; 小心翼翼的; 从容不迫的; 仔细考虑; 深思熟虑; 反复思考
+* theft 偷; 偷窃; 盗窃罪
+* leakage 泄漏量; 漏损量; 泄漏; 渗漏
+* integrity 诚实正直; 完整; 完好
+* compromise 妥协; 折中; 互让; 和解; 妥协方案; 达成妥协; 妥协，折中，让步; 违背; 达不到; 使陷入危险，使受到怀疑
+* deletion   删除
