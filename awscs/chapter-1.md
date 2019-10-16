@@ -137,7 +137,7 @@ AWSÌá¹©ÁËÓÐ¹ØÆäIT¿ØÖÆ»·¾³µÄ¹ã·ºÐÅÏ¢£¬ÒÔ°ïÖú×éÖ¯ÒÔ±¨¸æ¡¢ÈÏÖ¤¡¢ÈÏÖ¤ºÍÆäËûµÚÈý·½ÈÏÖ
 
 ### AWS Direct Connect
 
-* AWS direct connectÔÊÐí×éÖ¯½¨Á¢´ÓÆäÊý¾ÝÖÐÐÄµ½AWSµÄ×¨ÓÃÍøÂçÁ¬½Ó¡£Ê¹ÓÃAWS direct connect£¬×éÖ¯¿ÉÒÔÔÚAWSºÍÆäÊý¾ÝÖÐÐÄ¡¢°ì¹«ÊÒ»òÍÐ¹Ü»·¾³Ö®¼ä½¨Á¢×¨ÓÃÁ¬½Ó£¬ÕâÔÚÐí¶àÇé¿öÏÂ¿ÉÒÔ½µµÍÍøÂç³É±¾£¬Ôö¼Ó´ø¿íÍÌÍÂÁ¿£¬Ìá¹©±È»ùÓÚInternetµÄVPNÁ¬½Ó¸üÒ»ÖÂµÄÍøÂçÌåÑé
+* AWS direct connectÔÊÐí×éÖ¯½¨Á¢´ÓÆäÊý¾ÝÖÐÐÄµ½AWSµÄ×¨ÓÃÍøÂçÁ¬½Ó¡£Ê¹ÓÃAWS direct connect£¬×éÖ¯¿ÉÒÔÔÚAWSºÍÆäÊý¾ÝÖÐÐÄ¡¢°ì¹«ÊÒ»òÍÐ¹Ü»·¾³Ö®¼ä½¨Á¢×¨ÓÃÁ¬½Ó£¬ÕâÔÚÐí¶àÇé¿öÏÂ¿ÉÒÔ½µµÍÍøÂç³É±¾£¬Ôö¼Ó´ø¿íÍÌÍÂÁ¿£¬Ìá¹©±È»ùÓÚInternetµÄVPNÁ¬½Ó¸üÒ»ÖÂµÄÍøÂçÌåÑé¡£
 
 ### Amazon Route 53 
 
@@ -153,7 +153,7 @@ AWSÌá¹©¸÷ÖÖÂú×ãÐèÒªµÄ´æ´¢·þÎñ£¬ÖîÈç£ºAmazon¼òµ¥´æ´¢·þÎñ£¬Amzzon CloudFront£¬Amaz
 
 #### Amazon Glacier
 
-* Amazon GlacierÊÇÒ»ÖÖ°²È«¡¢ÄÍÓÃ¡¢³É±¾¼«µÍµÄ´æ´¢·þÎñ£¬ÓÃÓÚÊý¾Ý´æµµºÍ³¤ÆÚ±¸·Ý¡£×éÖ¯¿ÉÒÔÒÔ·Ç³£µÍµÄÃ¿ÔÂÃ¿GB³É±¾¿É¿¿µØ´æ´¢´óÁ¿»òÉÙÁ¿Êý¾Ý¡£ÎªÁËÊ¹¿Í»§µÄ³É±¾±£³ÖÔÚ½ÏµÍË®Æ½£¬AmazonGlacierÕë¶Ô²»³£·ÃÎÊµÄÊý¾Ý½øÐÐÁËÓÅ»¯£¬ÔÚÕâÖÖÇé¿öÏÂ£¬¼ìË÷Ê±¼äÊÊºÏ¼¸¸öÐ¡Ê±¡£AmazonS3ÓëAmazonGlacier½ôÃÜ¼¯³É£¬ÔÊÐí×éÖ¯ÎªÆä¹¤×÷¸ºÔØÑ¡ÔñÕýÈ·µÄ´æ´¢²ã 
+* Amazon GlacierÊÇÒ»ÖÖ°²È«¡¢ÄÍÓÃ¡¢³É±¾¼«µÍµÄ´æ´¢·þÎñ£¬ÓÃÓÚÊý¾Ý´æµµºÍ³¤ÆÚ±¸·Ý¡£×éÖ¯¿ÉÒÔÒÔ·Ç³£µÍµÄÃ¿ÔÂÃ¿GB³É±¾¿É¿¿µØ´æ´¢´óÁ¿»òÉÙÁ¿Êý¾Ý¡£ÎªÁËÊ¹¿Í»§µÄ³É±¾±£³ÖÔÚ½ÏµÍË®Æ½£¬Amazon GlacierÕë¶Ô²»³£·ÃÎÊµÄÊý¾Ý½øÐÐÁËÓÅ»¯£¬ÔÚÕâÖÖÇé¿öÏÂ£¬¼ìË÷Ê±¼äÊÊºÏ¼¸¸öÐ¡Ê±¡£AmazonS3ÓëAmazon Glacier½ôÃÜ¼¯³É£¬ÔÊÐí×éÖ¯ÎªÆä¹¤×÷¸ºÔØÑ¡ÔñÕýÈ·µÄ´æ´¢²ã¡£ 
 
 #### Amazon Elastic Block Storage£¨Amazon EBS£©
 
@@ -161,7 +161,7 @@ AWSÌá¹©¸÷ÖÖÂú×ãÐèÒªµÄ´æ´¢·þÎñ£¬ÖîÈç£ºAmazon¼òµ¥´æ´¢·þÎñ£¬Amzzon CloudFront£¬Amaz
 
 #### AWS Storage Gateway
 
-* AWS´æ´¢Íø¹ØÊÇÒ»Ïî½«ÄÚ²¿Èí¼þÉè±¸Óë»ùÓÚÔÆµÄ´æ´¢Á¬½ÓÆðÀ´µÄ·þÎñ£¬¿ÉÔÚ×éÖ¯µÄÄÚ²¿IT»·¾³ºÍAWS´æ´¢»ù´¡ÉèÊ©Ö®¼äÌá¹©ÎÞ·ìºÍ°²È«µÄ¼¯³É¡£¸Ã·þÎñÖ§³ÖÓëÏÖÓÐÓ¦ÓÃ³ÌÐòÒ»Æð¹¤×÷µÄÐÐÒµ±ê×¼´æ´¢Ð­Òé¡£ËüÌá¹©µÍ¹¦ºÄµÄÍ¨¹ýÔÚ±¾µØÎ¬»¤Æµ·±·ÃÎÊµÄÊý¾ÝµÄ»º´æ£¬Í¬Ê±ÔÚAmazonS3»òAmazonGlacieÖÐ°²È«µØ´æ´¢¼ÓÃÜµÄËùÓÐÊý¾Ý£¬´Ó¶ø±£³ÖÎÈ¶¨µÄÐÔÄÜ¡£
+* AWS´æ´¢Íø¹ØÊÇÒ»Ïî½«ÄÚ²¿Èí¼þÉè±¸Óë»ùÓÚÔÆµÄ´æ´¢Á¬½ÓÆðÀ´µÄ·þÎñ£¬¿ÉÔÚ×éÖ¯µÄÄÚ²¿IT»·¾³ºÍAWS´æ´¢»ù´¡ÉèÊ©Ö®¼äÌá¹©ÎÞ·ìºÍ°²È«µÄ¼¯³É¡£¸Ã·þÎñÖ§³ÖÓëÏÖÓÐÓ¦ÓÃ³ÌÐòÒ»Æð¹¤×÷µÄÐÐÒµ±ê×¼´æ´¢Ð­Òé¡£ËüÌá¹©µÍ¹¦ºÄµÄÍ¨¹ýÔÚ±¾µØÎ¬»¤Æµ·±·ÃÎÊµÄÊý¾ÝµÄ»º´æ£¬Í¬Ê±ÔÚAmazon S3»òAmazon GlacieÖÐ°²È«µØ´æ´¢¼ÓÃÜµÄËùÓÐÊý¾Ý£¬´Ó¶ø±£³ÖÎÈ¶¨µÄÐÔÄÜ¡£
 
 #### AWS CloudFront
 
