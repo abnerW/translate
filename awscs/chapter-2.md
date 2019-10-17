@@ -1,6 +1,6 @@
 # 第二章 Amazon 简单文件存储（Amazon S3) 和Amazon Glacier存储
 
-** 《AWS认证解决方案架构师-联合考试》中的本章节包括不限于如下内容：**
+**《AWS认证解决方案架构师-联合考试》中的本章节包括不限于如下内容：**
 
 ## 第一点 设计高可用，经济高效，零容错，可扩展的系统
 
@@ -171,7 +171,6 @@ Amazon S3 API故意很简单，只有几个常见的操作，包括：
 
 * 默认情况下，Amazon S3是安全的；当您在Amazon S3中创建bucket或object时，只有您拥有访问权限。为了允许您对其他对象进行受控访问，Amazon S3提供了粗粒度访问控制（Amazon S3访问控制列表[ACL]）和细粒度访问控制（Amazon S3 bucket策略，AWS身份和访问管理[IAM]策略，以及查询字符串身份验证）。
 
-
 * Amazon S3 ACL允许您授予某些粗粒度的权限：在对象或桶级上读、写或完全控制。ACL是在IAM存在之前创建的遗留访问控制机制。ACL现在被用于有限的用例集，例如，启用bucket日志记录或使承载静态网站的bucket具有world-readable。
 
 Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon S3 Bucket策略与IAM策略非常相似，后者在第6章"AWS标识和访问管理（IAM）"中进行了讨论，但在以下方面有细微的不同：
@@ -192,13 +191,13 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 
 * 为静态网站托管配置Amazon S3存储桶:
 ```
- 1.	创建一个与所需网站主机名同名的bucket。
- 2.	上传静态文件到bucket；
- 3.	所有文件授权为public（可读）；
- 4.	为Bucket启用静态网站托管。这包括指定索引文档和错误文档；
- 5.	该网站现在可以在s3网站URL:<bucket-name>.s3-website-<aws-region>.amazonaws.com上找到；
- 6.	使用DNS CNAME或解析为Amazon S3网站URL的Amazon Route 53别名在您自己的域中为网站创建友好的DNS名称；
- 7.	现在在您的网站域名上将会找到该网站。
+ 1.创建一个与所需网站主机名同名的bucket。
+ 2.上传静态文件到bucket；
+ 3.所有文件授权为public（可读）；
+ 4.为Bucket启用静态网站托管。这包括指定索引文档和错误文档；
+ 5.该网站现在可以在s3网站URL:<bucket-name>.s3-website-<aws-region>.amazonaws.com上找到；
+ 6.使用DNS CNAME或解析为Amazon S3网站URL的Amazon Route 53别名在您自己的域中为网站创建友好的DNS名称；
+ 7.现在在您的网站域名上将会找到该网站。
 
 ```
 
@@ -227,18 +226,13 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 ### 存储类
 * Amazon S3提供了一系列适合各种使用场景的存储类。
 
-
 * Amazon S3 Standard 提供了高耐久性、高可用性、低延迟和高性能的通用对象存储。因为它提供低的第一字节延迟和高吞吐量，所以标准非常适合对频繁访问的数据进行短期或长期存储。对于大多数通用用例，amazon s3标准是开始的地方。
-
 
 * Amazon S3 Standard– Infrequent  Access（Standard IA）提供了与Amazon S3标准相同的持久性、低延迟和高吞吐量，但专为寿命长、访问频率较低的数据而设计。标准IA的每GB月存储成本低于标准IA，但价格模型还包括最小对象大小（128KB）、最小持续时间（30天）和每GB检索成本，因此它最适合存储超过30天的不经常访问的数据。
 
-
 * Amazon S3 Reduced Redundancy Storage（RRS）以较低的成本提供比标准或标准IA稍低的耐久性（4个9）。它最适合于可以轻松复制的派生数据，例如图像缩略图。
 
-
 * 最后，Amazon Glacier存储类为不需要实时访问的数据（如存档和长期备份）提供安全、持久和极低成本的云存储。为了保持低成本，Amazon Glacier针对不常访问的数据进行了优化，其中检索时间为几个小时是合适的。要检索Amazon Glacier对象，可以使用Amazon S3 Api之一发出restore命令；3到5小时后，Amazon Glacier对象将复制到Amazon S3 RRS。请注意，恢复只是在Amazon S3 RRS中创建一个副本；在显式删除之前，原始数据对象将保留在amazonlacier中。还要注意，Amazon Glacier允许您每月免费检索存储在Amazon Glacier中的最多**5%**的Amazon S3数据；超出每日恢复限额的恢复将产生恢复费用。有关详细信息，请参阅AWS网站上的Amazon Glacier定价页面。
-
 
 * 除了在Amazon S3中充当存储层之外，Amazon Glacier也是一个独立的存储服务，具有单独的API和一些独特的特性。然而，当您使用Amazon Glacier作为Amazon S3的存储类时，您总是通过Amazon S3 API与数据交互。有关更多详细信息，请参阅Amazon Glacier部分。
 
@@ -278,7 +272,6 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 
 * 当您想维护自己的加密密钥，但不想管理或实现自己的客户端加密库时，可以使用此选项。使用SSE-C，AWS将对您的对象进行加密/解密，而您可以在Amazon S3中完全控制用于加密/解密对象的密钥。
 
-
 #### Client-Side Encryption
 
 * 客户端加密是指在将应用程序发送到Amazon S3之前对其客户端上的数据进行加密。使用数据加密密钥有以下两个选项：
@@ -305,7 +298,6 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 
 * 默认情况下，所有Amazon S3对象都是私有的，这意味着只有所有者有权访问。但是，对象所有者可以选择通过创建预签名的URL与其他人共享对象，使用他们自己的安全凭据授予下载对象的时间限制权限。为对象创建预签名的URL时，必须提供安全凭据并指定存储桶名称、对象密钥，http方法（get to download the object）和过期日期和时间。预签名的url仅在指定的持续时间内有效。这对于防止存储在Amazon S3中的媒体文件等web内容的"内容刮擦"特别有用。
  
-
 ### Multipart
 
 * 为了更好地支持大型对象的上传或复制，Amazon S3提供了多部分上传API，这允许您将大型对象作为一组部件进行上传，这通常会提供更好的网络利用率（通过并行传输）、暂停和恢复的能力，以及在大小最初未知的情况下上传对象的能力。多部分上载是一个三步过程：启动、上载部件和完成（或中止）。部件可以按照任意顺序独立上传，如果需要，可以重新传输。上传完所有部分后，Amazon S3将这些部分组装起来以创建一个对象。
