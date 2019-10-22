@@ -309,9 +309,187 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
   您可以在存储桶上设置对象生命周期策略，以便在指定的天数后中止不完整的多部分上载。这将最小化与未完成的多部分上载相关的存储成本。
 ```
 
-### Range	GETs 
-It	is	possible	to	download	(GET)	only	a	portion	of	an	object	in	both	Amazon	S3	and	Amazon Glacier	by	using	something	called	a	Range	GET.	Using	the	Range	HTTP	header	in	the	GET request	or	equivalent	parameters	in	one	of	the	SDK	wrapper	libraries,	you	specify	a	range	of bytes	of	the	object.	This	can	be	useful	in	dealing	with	large	objects	when	you	have	poor connectivity	or	to	download	only	a	known	portion	of	a	large	Amazon	Glacier	backup. Cross-Region	Replication Cross-region	replication	is	a	feature	of	Amazon	S3	that	allows	you	to	asynchronously replicate	all	new	objects	in	the	source	bucket	in	one	AWS	region	to	a	target	bucket	in	another region.	Any	metadata	and	ACLs	associated	with	the	object	are	also	part	of	the	replication. After	you	set	up	cross-region	replication	on	your	source	bucket,	any	changes	to	the	data, metadata,	or	ACLs	on	an	object	trigger	a	new	replication	to	the	destination	bucket.	To	enable cross-region	replication,	versioning	must	be	turned	on	for	both	source	and	destination buckets,	and	you	must	use	an	IAM	policy	to	give	Amazon	S3	permission	to	replicate	objects on	your	behalf. Cross-region	replication	is	commonly	used	to	reduce	the	latency	required	to	access	objects	in Amazon	S3	by	placing	objects	closer	to	a	set	of	users	or	to	meet	requirements	to	store	backup data	at	a	certain	distance	from	the	original	source	data.
-	If	turned	on	in	an	existing	bucket,	cross-region	replication	will	only	replicate	new objects.	Existing	objects	will	not	be	replicated	and	must	be	copied	to	the	new	bucket	via	a separate	command.
-Logging In	order	to	track	requests	to	your	Amazon	S3	bucket,	you	can	enable	Amazon	S3	server	access logs.	Logging	is	off	by	default,	but	it	can	easily	be	enabled.	When	you	enable	logging	for	a
-bucket	(the	source	bucket),	you	must	choose	where	the	logs	will	be	stored	(the	target bucket).	You	can	store	access	logs	in	the	same	bucket	or	in	a	different	bucket.	Either	way,	it	is optional	(but	a	best	practice)	to	specify	a	prefix,	such	as	logs/	or	yourbucketname/logs/,	so that	you	can	more	easily	identify	your	logs. Once	enabled,	logs	are	delivered	on	a	best-effort	basis	with	a	slight	delay.	Logs	include information	such	as: Requestor	account	and	IP	address Bucket	name Request	time Action	(GET,	PUT,	LIST,	and	so	forth) Response	status	or	error	code Event	Notifications Amazon	S3	event	notifications	can	be	sent	in	response	to	actions	taken	on	objects	uploaded or	stored	in	Amazon	S3.	Event	notifications	enable	you	to	run	workflows,	send	alerts,	or perform	other	actions	in	response	to	changes	in	your	objects	stored	in	Amazon	S3.	You	can use	Amazon	S3	event	notifications	to	set	up	triggers	to	perform	actions,	such	as	transcoding media	files	when	they	are	uploaded,	processing	data	files	when	they	become	available,	and synchronizing	Amazon	S3	objects	with	other	data	stores. Amazon	S3	event	notifications	are	set	up	at	the	bucket	level,	and	you	can	configure	them through	the	Amazon	S3	console,	through	the	REST	API,	or	by	using	an	AWS	SDK.	Amazon	S3 can	publish	notifications	when	new	objects	are	created	(by	a	PUT,	POST,	COPY,	or	multipart upload	completion),	when	objects	are	removed	(by	a	DELETE),	or	when	Amazon	S3	detects that	an	RRS	object	was	lost.	You	can	also	set	up	event	notifications	based	on	object	name prefixes	and	suffixes.	Notification	messages	can	be	sent	through	either	Amazon	Simple Notification	Service	(Amazon	SNS)	or	Amazon	Simple	Queue	Service	(Amazon	SQS)	or delivered	directly	to	AWS	Lambda	to	invoke	AWS	Lambda	functions. Best	Practices,	Patterns,	and	Performance It	is	a	common	pattern	to	use	Amazon	S3	storage	in	hybrid	IT	environments	and	applications. For	example,	data	in	on-premises	file	systems,	databases,	and	compliance	archives	can	easily be	backed	up	over	the	Internet	to	Amazon	S3	or	Amazon	Glacier,	while	the	primary application	or	database	storage	remains	on-premises. Another	common	pattern	is	to	use	Amazon	S3	as	bulk	“blob”	storage	for	data,	while	keeping an	index	to	that	data	in	another	service,	such	as	Amazon	DynamoDB	or	Amazon	RDS.	This allows	quick	searches	and	complex	queries	on	key	names	without	listing	keys	continually. Amazon	S3	will	scale	automatically	to	support	very	high	request	rates,	automatically	repartitioning	your	buckets	as	needed.	If	you	need	request	rates	higher	than	100	requests	per second,	you	may	want	to	review	the	Amazon	S3	best	practices	guidelines	in	the	Developer Guide.	To	support	higher	request	rates,	it	is	best	to	ensure	some	level	of	random	distribution of	keys,	for	example	by	including	a	hash	as	a	prefix	to	key	names.
-	If	you	are	using	Amazon	S3	in	a	GET-intensive	mode,	such	as	a	static	website hosting,	for	best	performance	you	should	consider	using	an	Amazon	CloudFront distribution	as	a	caching	layer	in	front	of	your	Amazon	S3	bucket.
+### Range GETs 
+
+* 通过使用range get，可以在Amazon S3和Amazon Glacier中只下载（get）对象的一部分。指定对象的字节范围。这对于处理连接不良的大型对象或仅下载大型Amazon Glacier备份的已知部分非常有用
+
+### Cross-Region Replication
+
+* 跨区域复制是Amazon S3的一个特性，它允许您将一个AWS区域中源bucket中的所有新对象异步复制到另一个区域中的目标bucket中。与该对象关联的任何元数据和ACL也是复制的一部分。在源存储桶上设置跨区域复制后，对对象上的数据、元数据或ACL所做的任何更改都会触发对目标存储桶的新复制。若要启用跨区域复制，必须同时启用源存储桶和目标存储桶的版本控制，而且您必须使用IAM策略来授予Amazon S3代表您复制对象的权限。
+
+* 跨区域复制通常用于减少访问Amazon S3中的对象所需的延迟，方法是将对象放置在更靠近一组用户的位置，或者满足在与原始源数据一定距离处存储备份数据的要求。
+
+* 备注
+```
+  如果在现有的桶中打开，跨区域复制将只复制新对象。现有对象将不被复制，必须通过单独的命令复制到新的桶。
+```
+
+### 日志
+
+* 为了跟踪你对Amazon S3桶的访问请求，可以启用Amazon S3 服务访问日志。默认此服务是关闭的，但可以轻松打开。当您为一个bucket（源bucket）启用日志记录时，您必须选择日志的存储位置（目标bucket）。您可以将访问日志存储在同一个bucket或不同的bucket中。无论哪种方式，都可以指定前缀，如logs/或bucketname/logs/，以便更容易识别日志。
+
+* 一旦启用，日志将在尽最大努力的基础上交付，并有轻微的延迟，日志包括如下信息：。
+```
+  * 请求者账号和IP地址
+  * Bucket名字
+  * 请求时间
+  * 动作(GET,	PUT,	LIST,	and	so	forth) 
+  * 返回状态和错误码
+```
+
+### 事件通知
+
+* Amazon S3事件通知可以响应对Amazon S3中上载或存储的对象执行的操作而发送。事件通知使您能够运行工作流、发送警报或执行其他操作以响应存储在Amazon S3中的对象中的更改。您可以使用Amazon S3事件通知设置触发器来执行操作，例如，在上传媒体文件时对其进行转码，在数据文件可用时对其进行处理，以及将amazon S3对象与其他数据存储同步。
+
+* Amazon S3事件通知是在bucket级别设置的，您可以通过Amazon S3控制台、rest api或使用aws sdk配置它们。Amazon S3可以在创建新对象（通过put、post、copy或multipart upload完成）、删除对象（通过delete）时发布通知，或者当Amazon S3检测到RRS对象丢失时。您还可以基于对象名前缀和后缀设置事件通知。通知消息可以通过Amazon简单通知服务（Amazon SNS）或Amazon简单队列服务（Amazon SQS）发送，或者直接传递到AWS lambda以调用AWS lambda函数。
+
+
+### 最佳实践、模式和性能
+
+* 在混合It环境和应用程序中使用Amazon S3存储是一种常见的模式。例如，本地文件系统、数据库和法规遵从性存档中的数据可以通过Internet轻松备份到Amazon S3或Amazon Glacier，而主应用程序或数据库存储仍在本地。
+
+* 另一个常见的模式是使用Amazon S3作为数据的大容量"blob"存储，同时在另一个服务（如amazon dynamodb或amazon rds）中保存该数据的索引，这允许快速搜索和复杂查询密钥名，而无需连续列出密钥。
+
+* Amazon S3将自动缩放以支持非常高的请求率，并根据需要自动重新分配存储桶。如果您需要的请求率高于每秒100个请求，您可能需要查看《开发人员指南》中的Amazon S3最佳实践指南。若要支持更高的请求率，最好确保密钥的某种程度的随机分布，例如，将散列作为密钥名的前缀。
+
+* 备注
+```
+  如果您正在使用GET密集模式的Amazon S3，比如静态网站托管，为了获得最佳性能，您应该考虑在Amazon S3存储桶前面使用Amazon Cloudfront发行版作为缓存层。
+``` 
+
+## Amazon Glacier
+
+* Amazon Glacier 是一种极低成本的存储服务，为数据归档和在线备份提供持久、安全和灵活的存储。为了保持低成本，mazon Glacier被设计用于不频繁访问的数据，其中三至五小时的检索时间是可接受的。
+
+* Amazon Glacier可以以任何格式存储无限量的几乎任何类型的数据。Amazon Glacier的常见用例包括替换传统的磁带解决方案，用于长期备份、存档和存储法规遵从性所需的数据。在大多数情况下，存储在Amazon Glacier中的数据由大型tar（磁带存档）或zip文件组成。
+
+* 和AmazonS3一样，Amazon Glacier非常耐用，在一个地区的多个设备上存储数据。Amazon Glacier是为99.999999999%的物体在给定年份的耐久性而设计的。
+
+#### 归档
+
+* 在Amazon Glacier中，数据存储在归档文件中。一个归档文件最多可包含40TB的数据，并且您可以拥有无限数量的归档文件。每个归档文件在创建时都被分配了一个唯一的归档ID。（与Amazon S3对象密钥不同，您不能指定一个用户友好的归档文件名。）所有归档文件都会自动加密，并且存档在创建后是不可变的，不能修改。
+
+#### Vaults
+
+* 保管库是存档的容器。每个AWS帐户最多可以有1000个保管库。您可以使用IAM策略或保管库访问策略控制对保管库的访问和允许的操作。
+
+#### Vaults Locks
+
+* 您可以使用保管库锁定策略轻松地为单个Amazon Glacier保管库部署和强制执行符合性控制。您可以在保管库锁定策略中指定诸如"一次写入多次读取"（WORM）之类的控件，并将该策略从以后的编辑中锁定。锁定后，将无法再更改该策略。
+
+#### Data Retrieval
+
+* 你可以每月从Amazon Glacier 中获取多达5%的数据，每天按比例计算。如果你检索超过5%，你将根据你的最大检索率而得到检索费。可以在保管库上设置数据检索策略，以将检索限制在可用层或指定的数据区域。
+
+#### Amazon Glacier 与 Amazon Simple Storage Service(Amazon S3)
+
+* Amazon Glacier与Amazon S3类似，但在几个关键方面有所不同。
+```
+  * Amazon Glacier支持40TB的存档，而Amazon S3支持5TB的对象
+  * 由系统生成的存档ID标识，而Amazon S3允许您使用“友好的”密钥名称
+  * Amazon Glacier存档是自动加密的，而在Amazon S3中，静态加密是可选的
+  * 但是，通过将Amazon Glacier与对象生命周期策略一起用作Amazon S3存储类，您可以使用Amazon S3接口来获得Amazon Glacier的大部分好处，而无需学习新的接口。
+```
+
+## 总结
+
+* Amazon S3是AWS的核心对象存储服务。允许您以非常高的持久性存储无限量的数据
+
+* 常见的Amazon S3使用场景包括：备份和归档、web内容、大数据分析、静态网站托管、移动和云本机应用程序托管以及灾难恢复。
+
+* Amazon S3与许多其他AWS云服务集成，包括Aws Iam、Aws KMS、Amazon Ec2、Amazon EBS、Amazon EMR、Amazon Dynamodb、Amazon Redshift、Amazon SQS、Aws Lambda和Amazon Cloudfront。
+
+* 对象存储不同于传统的块和文件存储。块存储将设备级的数据作为可寻址块管理，而文件存储将操作系统级的数据作为文件和文件夹管理。对象存储将数据作为包含数据和元数据的对象管理，由API操作。
+
+* Amazon S3 Bucket是存储在Amazon S3中的对象的容器。bucket名称必须是全局唯一的。每个bucket都是在特定的区域中创建的，除非用户显式地复制，否则数据不会离开该区域。
+
+* Amazon S3对象是存储在bucket中的文件。对象可以高达5tb，并且可以包含任何类型的数据。对象既包含数据又包含元数据，并由密钥标识。每个Amazon S3对象都可以由web服务端点、bucket名称和对象密钥形成的唯一url寻址。
+
+* Amazon S3有一个极简的API create/delete a bucket、read/write/delete objects、列出bucket中的键，并使用基于标准http动词get、put、post和delete的rest接口。
+
+* AmazonS3是一款高度耐用和高可用的产品，专为特定年份的11个9的耐久性和4个9的可用性而设计。
+
+* Amazon S3最终是一致的，但是为新的对象puts提供了读写一致性。
+
+* 默认情况下，Amazon S3对象是私有的，只能由所有者访问。对象可以标记为公共可读，以便在web上访问。可以使用acl、AWS IAM和Amazon S3 Bucket策略将受控访问提供给其他人。
+
+* 静态网站可以托管在Amazon S3存储桶中。前缀和分隔符可用于键名中，以分层方式组织和导航数据，这与传统的文件系统非常相似。
+
+* Amazon S3提供了几个适合不同用例的存储类：Standard是为需要高性能和低延迟的通用数据而设计的；Standard-IA是为访问频率较低的数据而设计的；RRS以较低的成本提供较低的冗余，以便于复制Amazon Glacier为存档和长期备份提供了低成本的持久存储，这些备份很少被访问，可以接受3到5个小时的检索时间。
+
+* 对象生命周期管理策略可用于根据时间在存储类之间自动移动数据。
+
+* Amazon S3数据可以使用服务器端或客户端加密进行加密，加密密钥可以使用Amazon KMS进行管理。
+
+* 版本控制和MFA delete可用于防止意外删除。
+
+* 跨区域复制可用于自动将新对象从一个区域的源存储桶复制到另一个区域的目标存储桶。
+
+* 预签名的url授予下载对象的时间限制权限，可用于保护媒体和其他web内容免受未经授权的“web抓取”。
+
+* 多部分上传可用于上传大型对象，Range Gets可用于下载Amazon S3对象或Amazon Glacier归档文件的一部分。
+
+* 可以在bucket上启用服务器访问日志来跟踪请求者、对象、操作和响应。
+
+* Amazon S3事件通知可用于发送Amazon SQS或Amazon SNS消息，或在创建或删除对象时触发Aws Lambda函数。
+
+* Amazon Glacier可以用作Amazon S3中的独立服务或存储类。
+
+* Amazon Glacier将数据存储在包含在保险库中的档案中。最多可以有1000个保险库，每个保险库可以存储无限数量的档案。
+
+* Amazon Glacier vaults可以锁定，以达到合规目的。
+
+## 考试要点
+
+* 知道什么是Amazon S3以及常见使用场景
+```
+ Amazon S3是一种安全、持久且高度可扩展的云存储，可以使用简单的Web服务接口以几乎任何格式存储无限量的数据。常见的用例包括备份和存档、内容存储和分发、大数据分析、静态网站托管、云本机应用程序托管，以及灾难恢复。
+```
+
+* 理解对象存储和块存储、文件存储的不同
+```
+ Amazon S3云对象存储将应用程序级的数据作为对象进行管理，使用构建在HTTP上的Rest Api。块存储使用SCSI或光纤通道等协议将操作系统级的数据作为编号的可寻址块进行管理。文件存储将数据作为共享数据进行管理使用CIFS或NFS等协议的操作系统级文件。
+```
+
+* 了解Amazon S3的基本知识。
+```
+ Amazon S3将数据存储在包含数据和元数据的对象中。对象由用户定义的密钥标识，并存储在一个称为bucket的简单平面文件夹中。接口包括本机rest接口、多种语言的sdk、AWS cli和AWS管理控制台。
+
+ 了解如何创建bucket；如何上载、下载和删除对象；如何公开对象；以及如何打开对象url
+```
+
+* 了解amazon s3的持久性、可用性和数据一致性模型。
+```
+ Amazon S3标准存储是为11个9的持久性和一年内4个9的对象可用性而设计的。其他存储类不同。Amazon S3最终是一致的，但为放入新对象提供了读写一致性。
+```
+
+* 知道如何在Amazon S3上启动静态网站托管
+```
+ 要在Amazon S3上创建静态网站，必须使用网站主机名创建一个bucket，上载静态内容并将其公开，在bucket上启用静态网站宿主，并指示索引和错误页面对象。
+```
+
+* 知道如何保护存在Amazon S3上的数据
+```
+ 使用Https加密飞行中的数据，使用SSE或客户端加密对静止数据进行加密。启用版本控制以将对象的多个版本保存在存储桶中。启用MFA delete以防止意外删除。使用Acls Amazon S3存储桶策略和AWS IAM策略进行访问控制。使用预签名的URL有时间限制的下载访问。使用跨区域复制将数据自动复制到另一个区域.
+```
+* 知道每种Amazon S3 存储类的使用场景
+```
+ Standard 是针对需要高耐久性、高性能和低延迟访问的通用数据。Standard-IA是针对访问频率较低但在访问时需要相同性能和可用性的数据。RRS以较低的成本为易于复制的数据提供较低的耐久性。Amazon Glacier用于以最低的成本存储很少访问的存档数据，而三到五小时的检索时间是可以接受的。
+```
+* 知道如何使用生命周期配置规则。
+```
+ 生命周期规则可以在AWS管理控制台或API中配置。生命周期配置规则定义了根据时间将对象从一个存储类转换到另一个存储类的操作。
+```
+
+* 知道如何使用Amazon S3事件通知
+```
+ 事件通知设置在bucket级别，可以在Amazon SNS或Amazon SQS中触发消息，或者在AWS Lambda中触发动作以响应对象的上载或删除
+```
+
+* 知道Amazon Glacier作为独立服务的基础知识。
+```
+ 数据存储在加密的存档中，其大小可达40TB。存档通常包含tar或zip文件。保险库是存档的容器，可以锁定保险库以实现法规遵从性。
+```
+
+## 练习
+

@@ -137,11 +137,11 @@ AWSÌá¹©ÁËÓÐ¹ØÆäIT¿ØÖÆ»·¾³µÄ¹ã·ºÐÅÏ¢£¬ÒÔ°ïÖú×éÖ¯ÒÔ±¨¸æ¡¢ÈÏÖ¤¡¢ÈÏÖ¤ºÍÆäËûµÚÈý·½ÈÏÖ
 
 ### AWS Direct Connect
 
-* AWS direct connectÔÊÐí×éÖ¯½¨Á¢´ÓÆäÊý¾ÝÖÐÐÄµ½AWSµÄ×¨ÓÃÍøÂçÁ¬½Ó¡£Ê¹ÓÃAWS direct connect£¬×éÖ¯¿ÉÒÔÔÚAWSºÍÆäÊý¾ÝÖÐÐÄ¡¢°ì¹«ÊÒ»òÍÐ¹Ü»·¾³Ö®¼ä½¨Á¢×¨ÓÃÁ¬½Ó£¬ÕâÔÚÐí¶àÇé¿öÏÂ¿ÉÒÔ½µµÍÍøÂç³É±¾£¬Ôö¼Ó´ø¿íÍÌÍÂÁ¿£¬Ìá¹©±È»ùÓÚInternetµÄVPNÁ¬½Ó¸üÒ»ÖÂµÄÍøÂçÌåÑé¡£
+* AWS direct connectÔÊÐí×éÖ¯½¨Á¢´ÓÆäÊý¾ÝÖÐÐÄµ½AWSµÄ×¨ÓÃÍøÂçÁ¬½Ó¡£Ê¹ÓÃAWS Direct Connect£¬×éÖ¯¿ÉÒÔÔÚAWSºÍÆäÊý¾ÝÖÐÐÄ¡¢°ì¹«ÊÒ»òÍÐ¹Ü»·¾³Ö®¼ä½¨Á¢×¨ÓÃÁ¬½Ó£¬ÕâÔÚÐí¶àÇé¿öÏÂ¿ÉÒÔ½µµÍÍøÂç³É±¾£¬Ôö¼Ó´ø¿íÍÌÍÂÁ¿£¬Ìá¹©±È»ùÓÚInternetµÄVPNÁ¬½Ó¸üÒ»ÖÂµÄÍøÂçÌåÑé¡£
 
 ### Amazon Route 53 
 
-* ÑÇÂíÑ·Route53ÊÇÒ»¸ö¸ß¶È¿ÉÓÃºÍ¿ÉÀ©Õ¹µÄÓòÃûÏµÍ³£¨DNS£©ÍøÂç·þÎñ¡£ËüµÄÄ¿µÄÊÇÍ¨¹ý½«ÈËÀà¿É¶ÁµÄÃû³Æ£¨Èçwww.example.com£©×ª»»Îª¼ÆËã»úÓÃÀ´Ïà»¥Á¬½ÓµÄÊý×ÖIPµØÖ·£¨Èç192.0.2.1£©£¬Îª¿ª·¢ÈËÔ±ºÍÆóÒµÌá¹©Ò»ÖÖ¼«Æä¿É¿¿ºÍ¾­¼Ã¸ßÐ§µÄ·½Ê½À´½«×îÖÕÓÃ»§Â·ÓÉµ½InternetÓ¦ÓÃ³ÌÐò¡£ÔÊÐíÄúÖ±½Ó´ÓAWS¹ºÂòºÍ¹ÜÀíÓò¡£
+* Amazon Route53ÊÇÒ»¸ö¸ß¶È¿ÉÓÃºÍ¿ÉÀ©Õ¹µÄÓòÃûÏµÍ³£¨DNS£©ÍøÂç·þÎñ¡£ËüµÄÄ¿µÄÊÇÍ¨¹ý½«ÈËÀà¿É¶ÁµÄÃû³Æ£¨Èçwww.example.com£©×ª»»Îª¼ÆËã»úÓÃÀ´Ïà»¥Á¬½ÓµÄÊý×ÖIPµØÖ·£¨Èç192.0.2.1£©£¬Îª¿ª·¢ÈËÔ±ºÍÆóÒµÌá¹©Ò»ÖÖ¼«Æä¿É¿¿ºÍ¾­¼Ã¸ßÐ§µÄ·½Ê½À´½«×îÖÕÓÃ»§Â·ÓÉµ½InternetÓ¦ÓÃ³ÌÐò¡£ÔÊÐíÄúÖ±½Ó´ÓAWS¹ºÂòºÍ¹ÜÀíÓò¡£
 
 ### ´æ´¢ºÍÄÚÈÝ·Ö·¢
 
@@ -149,7 +149,7 @@ AWSÌá¹©¸÷ÖÖÂú×ãÐèÒªµÄ´æ´¢·þÎñ£¬ÖîÈç£ºAmazon¼òµ¥´æ´¢·þÎñ£¬Amzzon CloudFront£¬Amaz
 
 #### Amazon S3
 
-* Amazon Simple Storage Service£¨Amazon S3£©Îª¿ª·¢ÈËÔ±ºÍITÍÅ¶ÓÌá¹©ÁË¸ß¶È³Ö¾ÃºÍ¿ÉÀ©Õ¹µÄ¶ÔÏó´æ´¢£¬¿ÉÒÔ´¦Àí¼¸ºõÎÞÏÞÁ¿µÄÊý¾ÝºÍ´óÁ¿²¢·¢ÓÃ»§¡£×éÖ¯¿ÉÒÔ´æ´¢ÈÎºÎÀàÐÍµÄ¶ÔÏó£¬ÈçHTMLÒ³Ãæ¡¢Ô´´úÂëÎÄ¼þ¡¢Í¼ÏñÎÄ¼þºÍ¼ÓÃÜÊý¾Ý£¬²¢Ê¹ÓÃ»ùÓÚhttpµÄÐ­Òé·ÃÎÊËüÃÇ¡£Amazon s3Îª¸÷ÖÖ¸÷ÑùµÄÓÃÀýÌá¹©¾­¼Ã¸ßÐ§µÄ¶ÔÏó´æ´¢£¬°üÀ¨±¸·ÝºÍ»Ö¸´¡¢½üÏß¹éµµ¡¢´óÊý¾Ý·ÖÎö¡¢ÔÖÄÑ»Ö¸´¡¢ÔÆÓ¦ÓÃ³ÌÐòºÍÄÚÈÝ·Ö·¢¡£
+* Amazon Simple Storage Service£¨Amazon S3£©Îª¿ª·¢ÈËÔ±ºÍITÍÅ¶ÓÌá¹©ÁË¸ß¶È³Ö¾ÃºÍ¿ÉÀ©Õ¹µÄ¶ÔÏó´æ´¢£¬¿ÉÒÔ´¦Àí¼¸ºõÎÞÏÞÁ¿µÄÊý¾ÝºÍ´óÁ¿²¢·¢ÓÃ»§¡£×éÖ¯¿ÉÒÔ´æ´¢ÈÎºÎÀàÐÍµÄ¶ÔÏó£¬ÈçHTMLÒ³Ãæ¡¢Ô´´úÂëÎÄ¼þ¡¢Í¼ÏñÎÄ¼þºÍ¼ÓÃÜÊý¾Ý£¬²¢Ê¹ÓÃ»ùÓÚhttpµÄÐ­Òé·ÃÎÊËüÃÇ¡£Amazon S3Îª¸÷ÖÖ¸÷ÑùµÄÓÃÀýÌá¹©¾­¼Ã¸ßÐ§µÄ¶ÔÏó´æ´¢£¬°üÀ¨±¸·ÝºÍ»Ö¸´¡¢½üÏß¹éµµ¡¢´óÊý¾Ý·ÖÎö¡¢ÔÖÄÑ»Ö¸´¡¢ÔÆÓ¦ÓÃ³ÌÐòºÍÄÚÈÝ·Ö·¢¡£
 
 #### Amazon Glacier
 
@@ -165,15 +165,15 @@ AWSÌá¹©¸÷ÖÖÂú×ãÐèÒªµÄ´æ´¢·þÎñ£¬ÖîÈç£ºAmazon¼òµ¥´æ´¢·þÎñ£¬Amzzon CloudFront£¬Amaz
 
 #### AWS CloudFront
 
-* Amazon cloudfrontÊÇÒ»¸öÄÚÈÝ½»¸¶web·þÎñ£¬ËüÓëÆäËûAWSÔÆ·þÎñ¼¯³É£¬Ê¹¿ª·¢ÈËÔ±ºÍÆóÒµÄÜ¹»ÒÔµÍÑÓ³Ù¡¢¸ßÊý¾Ý´«ÊäËÙ¶ÈºÍÎÞ×îµÍÊ¹ÓÃ³ÐÅµµÄ·½Ê½ÏòÈ«ÇòÓÃ»§·Ö·¢ÄÚÈÝ¡£Amazon CloudFront¿ÉÒÔÊ¹ÓÃ±ßÔµÎ»ÖÃµÄÈ«ÇòÍøÂçÀ´½»¸¶ÄúµÄÕû¸öÍøÕ¾£¬°üÀ¨¶¯Ì¬¡¢¾²Ì¬¡¢Á÷Ê½ºÍ½»»¥Ê½ÄÚÈÝ¡£¶ÔÄÚÈÝµÄÇëÇó»á×Ô¶¯Â·ÓÉµ½×î½üµÄ±ßÔµÎ»ÖÃ£¬Òò´ËÄÚÈÝ»áÒÔ×î¼ÑÐÔÄÜ½»¸¶¸øÈ«Çò¸÷µØµÄ×îÖÕÓÃ»§
+* Amazon cloudfrontÊÇÒ»¸öÄÚÈÝ½»¸¶Web·þÎñ£¬ËüÓëÆäËûAWSÔÆ·þÎñ¼¯³É£¬Ê¹¿ª·¢ÈËÔ±ºÍÆóÒµÄÜ¹»ÒÔµÍÑÓ³Ù¡¢¸ßÊý¾Ý´«ÊäËÙ¶ÈºÍÎÞ×îµÍÊ¹ÓÃ³ÐÅµµÄ·½Ê½ÏòÈ«ÇòÓÃ»§·Ö·¢ÄÚÈÝ¡£Amazon CloudFront¿ÉÒÔÊ¹ÓÃ±ßÔµÎ»ÖÃµÄÈ«ÇòÍøÂçÀ´½»¸¶ÄúµÄÕû¸öÍøÕ¾£¬°üÀ¨¶¯Ì¬¡¢¾²Ì¬¡¢Á÷Ê½ºÍ½»»¥Ê½ÄÚÈÝ¡£¶ÔÄÚÈÝµÄÇëÇó»á×Ô¶¯Â·ÓÉµ½×î½üµÄ±ßÔµÎ»ÖÃ£¬Òò´ËÄÚÈÝ»áÒÔ×î¼ÑÐÔÄÜ½»¸¶¸øÈ«Çò¸÷µØµÄ×îÖÕÓÃ»§
 
 ### Êý¾Ý¿â·þÎñ
 
-* AWSÌá¹©ÁËÍêÈ«ÍÐ¹ÜµÄ¹ØÏµÊý¾Ý¿â·þÎñºÍnosqlÊý¾Ý¿â·þÎñ£¬ÒÔ¼°×÷Îª·þÎñµÄÄÚ´æ»º´æºÍPB¼¶µÄÊý¾Ý²Ö¿â½â¾ö·½°¸¡£±¾Ð¡½Ú¸ÅÊöÁËÊý¾Ý¿â·þÎñ°üº¬ÄÄÐ©²úÆ·£º
+* AWSÌá¹©ÁËÍêÈ«ÍÐ¹ÜµÄ¹ØÏµÊý¾Ý¿â·þÎñºÍNo SqlÊý¾Ý¿â·þÎñ£¬ÒÔ¼°×÷Îª·þÎñµÄÄÚ´æ»º´æºÍPB¼¶µÄÊý¾Ý²Ö¿â½â¾ö·½°¸¡£±¾Ð¡½Ú¸ÅÊöÁËÊý¾Ý¿â·þÎñ°üº¬ÄÄÐ©²úÆ·£º
 
 #### Amazon RDS
 
-* Amazon¹ØÏµÊý¾Ý¿â·þÎñ£¨Amazon rds£©Ìá¹©ÁËÒ»¸öÍêÈ«ÍÐ¹ÜµÄ¹ØÏµÊý¾Ý¿â£¬Ö§³ÖÐí¶àÁ÷ÐÐµÄ¿ªÔ´ºÍÉÌÓÃÊý¾Ý¿âÒýÇæ¡£ÕâÊÇÒ»¸ö¾­¼Ã¸ßÐ§µÄ·þÎñ£¬ÔÊÐí×éÖ¯Æô¶¯°²È«¡¢¸ß¿ÉÓÃ¡¢ÈÝ´íµÄÊý¾Ý¿â¡£ÔÚ¼¸·ÖÖÓÄÚ¾Í¿ÉÒÔÉú²úÊý¾Ý¿âÁË¡£ÓÉÓÚAmazon rds¹ÜÀíºÄÊ±µÄ¹ÜÀíÈÎÎñ£¬°üÀ¨±¸·Ý¡¢Èí¼þÐÞ²¹¡¢¼àÊÓ¡¢À©Õ¹ºÍ¸´ÖÆ£¬Òò´Ë×éÖ¯×ÊÔ´¿ÉÒÔ¼¯ÖÐÓÚ²úÉúÊÕÈëµÄÓ¦ÓÃ³ÌÐòºÍÒµÎñ£¬¶ø²»ÊÇÆÕÍ¨µÄ²Ù×÷ÈÎÎñ¡£
+* Amazon¹ØÏµÊý¾Ý¿â·þÎñ£¨Amazon Rds£©Ìá¹©ÁËÒ»¸öÍêÈ«ÍÐ¹ÜµÄ¹ØÏµÊý¾Ý¿â£¬Ö§³ÖÐí¶àÁ÷ÐÐµÄ¿ªÔ´ºÍÉÌÓÃÊý¾Ý¿âÒýÇæ¡£ÕâÊÇÒ»¸ö¾­¼Ã¸ßÐ§µÄ·þÎñ£¬ÔÊÐí×éÖ¯Æô¶¯°²È«¡¢¸ß¿ÉÓÃ¡¢ÈÝ´íµÄÊý¾Ý¿â¡£ÔÚ¼¸·ÖÖÓÄÚ¾Í¿ÉÒÔÉú²úÊý¾Ý¿âÁË¡£ÓÉÓÚAmazon Rds¹ÜÀíºÄÊ±µÄ¹ÜÀíÈÎÎñ£¬°üÀ¨±¸·Ý¡¢Èí¼þÐÞ²¹¡¢¼àÊÓ¡¢À©Õ¹ºÍ¸´ÖÆ£¬Òò´Ë×éÖ¯×ÊÔ´¿ÉÒÔ¼¯ÖÐÓÚ²úÉúÊÕÈëµÄÓ¦ÓÃ³ÌÐòºÍÒµÎñ£¬¶ø²»ÊÇÆÕÍ¨µÄ²Ù×÷ÈÎÎñ¡£
 
 #### Amazon DynamoDB
 
