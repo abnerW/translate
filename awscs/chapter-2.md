@@ -638,9 +638,7 @@ http://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html
 ```
 
 ## ∏¥œ∞Ã‚
-
 1. In what ways does Amazon Simple Storage Service (Amazon S3) object storage differ from block and file storage? (Choose 2 answers)
- 
  A. Amazon S3 stores data in fixed size blocks.
  B. Objects are identified by a numbered address.
  C. Objects can be any size.
