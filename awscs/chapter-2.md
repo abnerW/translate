@@ -116,7 +116,7 @@
 ### Object URL
 
 Amazon S3是internet的存储，每个amazons3对象都可以通过使用web服务端点、bucket名称和对象密钥形成的唯一url来寻址。例如，url:http://mybucket.s3.amazonaws.com/jack.doc mybucket是S3 Bucket名称，jack.doc是密钥或文件名。如果创建了另一个对象，例如：http://mybucket.s3.amazonaws.com/fee/fi/fo/fum/jack.doc，那么bucket名称仍然是mybucket，但现在键或文件名是字符串fee/fi/fo/fum/jack.doc，键可以包含斜杠或反斜杠等分隔符，帮助您命名和逻辑组织Amazon S3对象，但对于Amazon S3来说，它只是一个扁平名称空间中的长键名，没有实际的文件和文件夹层次结构，更多信息请参见后面"Amazon S3高级特性"部分的主题"前缀和分隔符"。
-	
+ 
 * 备注
 ```
  为了方便起见，Amazon S3控制台和前缀和分隔符特性允许您在Amazon S3存储桶中导航，就像有一个文件夹层次结构一样。但是，请记住，bucket是没有结构的键的单一平面命名空间。
@@ -216,7 +216,7 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
  logs/2016/March/server42.log
 ```
 
-* REST API、包装器SDK、Aws Cli和Amazon管理控制台都支持使用分隔符和前缀。这个特性使您可以逻辑地组织新的数据，并容易地维护现有文件上传或备份的现有文件的层次结构文件夹和文件结构。与iam或amazon s3 bucket策略一起使用，前缀和分隔符还允许您在单个bucket中创建等同于部门“子目录”或用户“主目录”，根据需要限制或共享对这些“子目录”（由前缀定义）的访问。
+* REST API、包装器SDK、Aws Cli和Amazon管理控制台都支持使用分隔符和前缀。这个特性使您可以逻辑地组织新的数据，并容易地维护现有文件上传或备份的现有文件的层次结构文件夹和文件结构。与iam或amazon s3 bucket策略一起使用，前缀和分隔符还允许您在单个bucket中创建等同于部门"子目录"或用户"主目录"，根据需要限制或共享对这些"子目录"（由前缀定义）的访问。
 
 * 备注
 ```
@@ -243,7 +243,7 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 
 ### 对象生命周期管理
 
-* Amazon S3对象生命周期管理大致相当于传统IT存储基础架构中的自动化存储分层。在许多情况下，数据有一个自然的生命周期，从“热”（经常访问）数据开始，随着时间的推移移动到“热”（不常访问）数据，在最终删除之前以“冷”（长期备份或存档）数据的形式结束其生命。
+* Amazon S3对象生命周期管理大致相当于传统IT存储基础架构中的自动化存储分层。在许多情况下，数据有一个自然的生命周期，从"热"（经常访问）数据开始，随着时间的推移移动到"热"（不常访问）数据，在最终删除之前以"冷"（长期备份或存档）数据的形式结束其生命。
 
 * 例如，许多业务文档在创建时被频繁访问，然后随着时间的推移变得不那么频繁。然而，在许多情况下，法规遵从性规则要求将业务文档存档并保持多年的可访问性。类似地，研究表明，文件、操作系统，而且数据库备份最常在创建后的头几天内访问，通常是在意外错误发生后进行恢复。一两周后，这些备份仍然是一项关键资产，但访问它们进行恢复的可能性要小得多。在许多情况下，合规性规则要求为几年。
 
@@ -260,7 +260,7 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 ### Encryption（加密） 
 * 强烈建议对Amazon S3中存储的所有敏感数据进行加密，无论是在飞行中还是在静止状态。为了加密飞行中的Amazon S3数据，您可以使用Amazon S3安全套接字层（SSL）API端点，这确保所有发送到Amazon S3和从Amazon S3发送的数据在传输过程中使用https协议加密。要在静止状态下加密Amazon S3数据，您可以使用服务器端加密（SSE）的几种变体。Amazon S3在将数据写入其数据中心的磁盘时在对象级别加密数据，并在您访问时为您解密。Amazon S3和AWS密钥管理服务（Amazon KMS）执行的所有SSE都使用256位高级加密标准（aes），您也可以使用客户端加密对静止的Amazon S3数据进行加密，在将数据发送到Amazon S3之前对客户端数据进行加密。. 
 
-#### SSE-S3	(AWS-Managed Keys) 
+#### SSE-S3 (AWS-Managed Keys) 
 
 * 这是一个完全集成的"复选框式"加密解决方案，AWS 负责Amazon S3的密钥管理和密钥保护，每个对象都用一个唯一的密钥加密。然后，实际的对象密钥本身由单独的主密钥进一步加密。至少每月发布一个新的主密钥，AWS 旋转密钥。加密的数据、加密密钥和主密钥都单独存储在安全主机上，进一步加强了保护。
 
@@ -333,7 +333,7 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
   * 请求者账号和IP地址
   * Bucket名字
   * 请求时间
-  * 动作(GET,	PUT,	LIST,	and	so	forth) 
+  * 动作(GET, PUT, LIST, and so forth) 
   * 返回状态和错误码
 ```
 
@@ -386,7 +386,7 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 * Amazon Glacier与Amazon S3类似，但在几个关键方面有所不同。
 ```
   * Amazon Glacier支持40TB的存档，而Amazon S3支持5TB的对象
-  * 由系统生成的存档ID标识，而Amazon S3允许您使用“友好的”密钥名称
+  * 由系统生成的存档ID标识，而Amazon S3允许您使用"友好的"密钥名称
   * Amazon Glacier存档是自动加密的，而在Amazon S3中，静态加密是可选的
   * 但是，通过将Amazon Glacier与对象生命周期策略一起用作Amazon S3存储类，您可以使用Amazon S3接口来获得Amazon Glacier的大部分好处，而无需学习新的接口。
 ```
@@ -425,7 +425,7 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 
 * 跨区域复制可用于自动将新对象从一个区域的源存储桶复制到另一个区域的目标存储桶。
 
-* 预签名的url授予下载对象的时间限制权限，可用于保护媒体和其他web内容免受未经授权的“web抓取”。
+* 预签名的url授予下载对象的时间限制权限，可用于保护媒体和其他web内容免受未经授权的"web抓取"。
 
 * 多部分上传可用于上传大型对象，Range Gets可用于下载Amazon S3对象或Amazon Glacier归档文件的一部分。
 
@@ -492,4 +492,280 @@ Amazon S3 Bucket策略是Amazon S3推荐的访问控制机制，并提供更细粒度的控制。Amazon 
 ```
 
 ## 练习
+
+为了帮助完成以下练习，请参考以下文档
+
+* Amazon S3 入门
+```
+http://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html
+```
+
+* 建立一个静态网站
+```
+ http://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html
+```
+
+* 使用版本: 
+```
+ http://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html
+```
+
+* 对象生命周期管理
+```
+ http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html
+```
+
+### 练习 2.1
+* 在这个练习中：创建一个Amazon S3 bucket：在选定的region中创建一个Amazon S3 bucket，后面的练习会用到此bucket：
+```
+    1. 登陆AWS 管理控制台；
+    2. 选择一个合适得region，例如：US West（Oregon）；
+    3. 导航到Amazon S3控制台，注意：默认的region 指示符显示为：Global。记住Amazon S3 Bucket形成了一个全局命名空间，即使每个bucket都是在特定的区域中创建的；
+    4. 启动创建bucket的进程；
+    5. 当提示输入bucket名字时，输入：mynewbucket；
+    6. 选择一个合适得region，例如：US West（Oregon）；
+    7. 尝试创建bucket。您几乎肯定会收到一条消息，即请求的bucket名称不可用。请记住，bucket名称必须是全局唯一的；
+    8. 再次尝试使用你的姓氏，然后使用连字符，然后将今天的日期作为桶名（一个不太可能存在的桶名）以六位数格式进行。
+
+现在应该有一个新的amazon s3存储桶了
+
+```
+
+
+### 练习 2.2
+
+* 上传、公开、重命名和删除bucket中的对象：在这个练习中，你会向bucket中上传一个对象，然后公开对象，并用浏览器访问对象，然后给对象重命名，最终从bucket中删除对象。
+
+```
+ * 上传对象
+    1. 在Amazon S3 控制台加载2.1中创建得buckt；
+    2. 点击：Upload，然后新增文件；
+    3. 在本地PC上选择一个文件，此文件可以上传到Amazon S3 并且面向Internet公开（为练习得目的：建议使用非个人得镜像文件）；
+    4. 选择一个合适得文件，然后开始上传，你可以在传输段看到文件上传进度；
+    5. 文件上传结束，可以看到状态变为：Done；
+
+* 你上传得对象应该已经成为Amazon S3得对象，并在bucket中能列表展示出来；
+
+* 打开Amazon S3 URL
+    6. 打开对象属性，应该包括：bucket，名字，link；
+    7. 复制Amazon S3 中对象对应得URL；
+    8. 粘贴到浏览器得地址栏；
+* 应该看到一个xml格式包含：AccessDenied 错误的信息；对象已经有一个URL，但对象默认是private，因此不能通过web浏览器访问。
+
+* 公开对象
+    9. 回到Amazon S3 控制台，选择：Make Public（相当于，您可以更改对象的权限，并添加被授予者Everyone和打开/下载权限）
+    10. 复制URL到浏览器，并尝试打开；现在你的镜像文件会展示在浏览器里。
+
+* 对象重命名
+    11. 在Amazon S3 控制台，选择：Rename；
+    12. 给对象重命名，但不要修改文件扩展名；
+    13. 复制新得Amazon S3 URL到浏览器，你应该也可以访问到同样得镜像文件。
+
+* 删除对象
+    14. 在Amazon S3 控制台，选择：Delete，当提示你是否想要删除对象时，选择：OK；
+    15. 此时对象已经删除；
+    16. 为了验证对象已经删除，用对象的Amazon S3 URL重新加载。
+
+你应该看到一个xml格式包含：AccessDenied 错误的信息
+```
+
+### 练习 2.3
+* 启用版本控制：在这个练习中，你将会在最新创建得bucket上启用版本控制。
+```
+* 启用版本
+    1. 在Amazon S3 控制台，加载你的bucket得属性。不要打开bucket；
+    2. 启用属性中得 versioning ，并选择OK进行验证。现在你得bucket已经启用了版本控制（
+请注意，版本控制可以挂起，但不能关闭。）；创建一个对象得多个版本；
+    3. 在你得电脑上创基爱你一个文件：foo.txt，并写入：blue；
+    4. 保存文件到电脑得某个位置；
+    5. 上传文件到你得bucket，这是版本：1；
+    6. 上传文件到bucket之后，在你得电脑上打开文件副本，blue 为 red，保存文件，文件名仍然为：foo.txt；
+    7. 上传修改后得文件到你得bucket；
+    8. 在上传得对象上选择：Show Versions；现在你看到对喜爱那个得两个不通版本，并且有不通得IDs，可能大小也不一样；
+
+* 注意，当您选择Show Version时，Amazon S3 URL现在在查询字符串中的对象名后面包含版本ID;
+
+```
+
+### 练习 2.4 
+* 删除对象并恢复：在这个练习中，你将在你得Amazon S3 bucket中删除一个对象并恢复它。
+
+```
+* 删除一个对象
+    1. 打开在2.3中上传得包含两个版本得文本文件得bucket；
+    2. 选择：Hide Versions；
+    3. 选择：Delete，然后选择：OK进行验证；
+    4. 你得对象将会被删除，你也不能再看见这个对象；
+    5. 选择：Show Versions；
+对象的两个版本现在都显示其版本ID
+
+* 恢复一个对象
+    6. 打开你得bucket；
+    7. 选择：Show Versions；
+    8. 选择最旧得版本下载对象，注意：文件名只是foo.txt，没有版本指示器；
+    9. 上传foo.txt到统一个bucket；
+    10. 选择：Hide Versions，文件foo.txt应该重新出现了；
+
+* 备注：
+    若要还原版本，请将所需版本复制到同一个bucket中。在Amazon S3控制台中，这需要下载然后重新上载对象。使用API、SDK或AWS CLI，可以直接复制版本，而无需下载和重新加载。
+```
+
+### 练习 2.5
+* 生命周期管理：在这个练习中，你将会探索生命周期管理得各种选项。
+```
+    1. 通过Amazon S3 控制台选择你的bucket；
+    2. 在属性下，增加一个生命周期规则；
+    3. 探索各种选项以将生命周期规则添加到此bucket中的对象。建议不要实现这些选项中的任何一个，因为可能会产生额外的成本。完成后，单击"取消"按钮。
+
+备注：
+    大多数生命周期规则在转换生效之前都需要一定的过期天数。例如，从Amazon S3 Standard 转换到Amazon S3 Standard-IA至少需要30天。这使得创建生命周期规则并在练习中查看实际结果变得不实际
+```
+
+
+### 练习 2.6
+* 在你的bucket上启用静态托管：在这个练习中，你将会在你创建得bucket上启用静态托管。
+
+```
+    1. 在Amazon S3 控制台上选择你的bucket；
+    2. 在属性段，选择：Enable Website Hosting；
+    3. 输入index.txt作为索引文档名，输入error.txt作为错误文档名；
+    4. 使用文本编辑器创建两个文本文件，并将它们保存为index.txt和error.txt。在index.txt文件中，写下短语"hello world"，在error.txt文件中，写下短语"error page"。上传两个文件到你的bucket；
+    5. 公开这两个文件；
+    6. 复制"静态网站宿主"下的"端点：链接"，并将其粘贴到浏览器窗口或选项卡中。现在应该可以看到显示的短语"hello world"；
+    7. 在你浏览器得地址栏，尝试添加一个正斜杠，后跟一个虚构的文件名（例如，/test.html），现在应该可以看到显示的短语"error page"。
+    8. 为了清理：删除bucket中的对象，同时删除你的bucket。
+
+```
+
+## 复习题
+
+1. In what ways does Amazon Simple Storage Service (Amazon S3) object storage differ from block and file storage? (Choose 2 answers)
+ 
+ A. Amazon S3 stores data in fixed size blocks.
+ B. Objects are identified by a numbered address.
+ C. Objects can be any size.
+ D. Objects contain both data and metadata.
+ E. Objects are stored in buckets. 
+
+2. Which of the following are not appropriates use cases for Amazon Simple Storage Service (Amazon S3)? (Choose 2 answers)
+ A. Storing web content
+ B. Storing a file system mounted to an Amazon Elastic Compute Cloud (Amazon EC2) instance
+ C. Storing backups for a relational database
+ D. Primary storage for a database E. Storing logs for analytics 
+
+3. What are some of the key characteristics of Amazon Simple Storage Service (Amazon S3)? (Choose 3 answers)
+ A. All objects have a URL.
+ B. Amazon S3 can store unlimited amounts of data.
+ C. Objects are world-readable by default.
+ D. Amazon S3 uses a REST (Representational State Transfer) Application Program Interface (API).
+ E. You must pre-allocate the storage in a bucket. 
+
+4. Which features can be used to restrict access to Amazon Simple Storage Service (Amazon S3) data? (Choose 3 answers)
+ A. Enable static website hosting on the bucket.
+ B. Create a pre-signed URL for an object.
+ C. Use an Amazon S3 Access Control List (ACL) on a bucket or object.
+ D. Use a lifecycle policy.
+ E. Use an Amazon S3 bucket policy. 
+
+5. Your application stores critical data in Amazon Simple Storage Service (Amazon S3), which must be protected against inadvertent or intentional deletion. How can this data be protected? (Choose 2 answers)
+ A. Use cross-region replication to copy data to another bucket automatically.
+ B. Set a vault lock.
+ C. Enable versioning on the bucket.
+ D. Use a lifecycle policy to migrate data to Amazon Glacier.
+ E. Enable MFA Delete on the bucket. 
+
+6. Your company stores documents in Amazon Simple Storage Service (Amazon S3), but it wants to minimize cost. Most documents are used actively for only about a month, then much less frequently. However, all data needs to be available within minutes when requested. How can you meet these requirements?
+ A. Migrate the data to Amazon S3 Reduced Redundancy Storage (RRS) after 30 days.
+ B. Migrate the data to Amazon Glacier after 30 days.
+ C. Migrate the data to Amazon S3 Standard – Infrequent Access (IA) after 30 days.
+ D. Turn on versioning, then migrate the older version to Amazon Glacier. 
+
+7. How is data stored in Amazon Simple Storage Service (Amazon S3) for high durability? 
+ A. Data is automatically replicated to other regions. 
+ B. Data is automatically replicated within a region. 
+ C. Data is replicated only if versioning is enabled on the bucket. 
+ D. Data is automatically backed up on tape and restored if needed. 
+
+8. Based on the following Amazon Simple Storage Service (Amazon S3) URL, which one of the following statements is correct? https://bucket1.abc.com.s3.amazonaws.com/folderx/myfile.doc
+ A. The object “myfile.doc” is stored in the folder “folderx” in the bucket “bucket1.abc.com.”
+ B. The object “myfile.doc” is stored in the bucket “bucket1.abc.com.”
+ C. The object “folderx/myfile.doc” is stored in the bucket “bucket1.abc.com.”
+ D. The object “myfile.doc” is stored in the bucket “bucket1.”
+
+9. To have a record of who accessed your Amazon Simple Storage Service (Amazon S3) data and from where, you should do what?
+ A. Enable versioning on the bucket.
+ B. Enable website hosting on the bucket.
+ C. Enable server access logs on the bucket.
+ D. Create an AWS Identity and Access Management (IAM) bucket policy.
+ E. Enable Amazon CloudWatch logs. 
+
+10. What are some reasons to enable cross-region replication on an Amazon Simple Storage Service (Amazon S3) bucket? (Choose 2 answers)
+ A. You want a backup of your data in case of accidental deletion.
+ B. You have a set of users or customers who can access the second bucket with lower latency.
+ C. For compliance reasons, you need to store data in a location at least 300 miles away from the first region.
+ D. Your data needs at least five nines of durability. 
+
+11. Your company requires that all data sent to external storage be encrypted before being sent. Which Amazon Simple Storage Service (Amazon S3) encryption solution will meet this requirement?
+ A. Server-Side Encryption (SSE) with AWS-managed keys (SSE-S3)
+ B. SSE with customer-provided keys (SSE-C)
+ C. Client-side encryption with customer-managed keys
+ D. Server-side encryption with AWS Key Management Service (AWS KMS) keys (SSEKMS) 
+
+12. You have a popular web application that accesses data stored in an Amazon Simple Storage Service (Amazon S3) bucket. You expect the access to be very read-intensive, with expected request rates of up to 500 GETs per second from many clients. How can you increase the performance and scalability of Amazon S3 in this case? 
+ A. Turn on cross-region replication to ensure that data is served from multiple locations.
+ B. Ensure randomness in the namespace by including a hash prefix to key names.
+ C. Turn on server access logging.
+ D. Ensure that key names are sequential to enable pre-fetch.
+
+13. What is needed before you can enable cross-region replication on an Amazon Simple Storage Service (Amazon S3) bucket? (Choose 2 answers) 
+ A. Enable versioning on the bucket.
+ B. Enable a lifecycle rule to migrate data to the second region.
+ C. Enable static website hosting.
+ D. Create an AWS Identity and Access Management (IAM) policy to allow Amazon S3 to replicate objects on your behalf. 
+
+14. Your company has 100TB of financial records that need to be stored for seven years by law. Experience has shown that any record more than one-year old is unlikely to be accessed. Which of the following storage plans meets these needs in the most cost efficient manner?
+ A. Store the data on Amazon Elastic Block Store (Amazon EBS) volumes attached to t2.micro instances.
+ B. Store the data on Amazon Simple Storage Service (Amazon S3) with lifecycle policies that change the storage class to Amazon Glacier after one year and delete the object
+after seven years.
+ C. Store the data in Amazon DynamoDB and run daily script to delete data older than seven years.
+ D. Store the data in Amazon Elastic MapReduce (Amazon EMR). 
+
+15. Amazon Simple Storage Service (S3) bucket policies can restrict access to an Amazon S3 bucket and objects by which of the following? (Choose 3 answers)
+ A. Company name
+ B. IP address range
+ C. AWS account
+ D. Country of origin
+ E. Objects with a specific prefix 
+
+16. Amazon Simple Storage Service (Amazon S3) is an eventually consistent storage system. For what kinds of operations is it possible to get stale data as a result of eventual consistency? (Choose 2 answers)
+ A. GET after PUT of a new object
+ B. GET or LIST after a DELETE
+ C. GET after overwrite PUT (PUT to an existing key)
+ D. DELETE after PUT of new object 
+
+17. What must be done to host a static website in an Amazon Simple Storage Service (Amazon S3) bucket? (Choose 3 answers)
+ A. Configure the bucket for static hosting and specify an index and error document.
+ B. Create a bucket with the same name as the website.
+ C. Enable File Transfer Protocol (FTP) on the bucket.
+ D. Make the objects in the bucket world-readable.
+ E. Enable HTTP on the bucket. 
+
+18. You have valuable media files hosted on AWS and want them to be served only to authenticated users of your web application. You are concerned that your content could be stolen and distributed for free. How can you protect your content?
+ A. Use static web hosting.
+ B. Generate pre-signed URLs for content in the web application.
+ C. Use AWS Identity and Access Management (IAM) policies to restrict access.
+ D. Use logging to track your content. 
+
+19. Amazon Glacier is well-suited to data that is which of the following? (Choose 2 answers)
+ A. Is infrequently or rarely accessed
+ B. Must be immediately available when needed
+ C. Is available after a three- to five-hour restore period
+ D. Is frequently erased within 30 days 
+
+20. Which statements about Amazon Glacier are true? (Choose 3 answers)
+ A. Amazon Glacier stores data in objects that live in archives.
+ B. Amazon Glacier archives are identified by user-specified key names.
+ C. Amazon Glacier archives take three to five hours to restore.
+ D. Amazon Glacier vaults can be locked.
+ E. Amazon Glacier can be used as a standalone service and as an Amazon S3 storage class.
 
