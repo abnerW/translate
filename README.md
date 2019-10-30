@@ -3,7 +3,7 @@
 本项目是对一些英文文档的翻译，旨在与大家共享，和英文不是特别好的人共同学习共同提高。《AWS Certified Solutions architect OFFICE STUDY GUIDE-ASSOCIATE EXAM》的
 LCTT已经拥有十余名活跃成员，并欢迎更多的Linux志愿者加入我们的团队。
 
-#项目的组成
+# 项目的组成
 * 选题，针对部分经典的英文技术文档，白皮书。
 
 * 译者，负责从选题中选择内容进行翻译。
