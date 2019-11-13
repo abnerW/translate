@@ -14,7 +14,7 @@
 
 ## 第二点 实现/部署
 
-### 使用Amazon Ec2、amazon Simple Storage Service（amazon S3）、aws Elastic Beanstalk、aws Cloudformation、aws Opsworks、amazon Virtual Private Cloud（amazon Vpc）和aws Identity And Access Management（iam）确定适当的技术和方法来编码和实现云解决方案。
+### 使用Amazon Ec2、amazon Simple Storage Service（amazon S3）、AWS Elastic Beanstalk、AWS Cloudformation、AWS Opsworks、amazon Virtual Private Cloud（amazon Vpc）和AWS Identity And Access Management（iam）确定适当的技术和方法来编码和实现云解决方案。
 
 **包含如下内容**
 ```
@@ -32,7 +32,6 @@
   * 灾难恢复
   * Amazon EB
 ```
-
 
 ## 简介
 在本章中，你将会学习Amazon Elastic Compute Cloud（Amazon EC2）和Amazon Elastic Block Store（Amazon EBS）如何提供基本的计算元素和块等级的存储，用以运行你在AWS上的workloads。对于考试来说，主要聚焦你需要理解的关键话题，包括如下内容：
@@ -59,7 +58,7 @@ Amazon EC2是AWS一个主要的web服务，在云上提供弹性调整计算的能力。
 * 在AWS上启动实例有两个关键概念：（1）专用于实例的虚拟硬件数量和（2）加载在实例上的软件，这两个维度的新实例分别由实例类型和AMI控制。
 
 #### 实例类型
-* 实例类型定义了支持amazon ec2实例的虚拟硬件。有几十种可用的实例类型，在以下维度中有所不同：
+* 实例类型定义了支持Amazon EC2实例的虚拟硬件。有几十种可用的实例类型，在以下维度中有所不同：
 ```
  * 虚拟CPUs（vCPUs）
  * 内存
@@ -92,9 +91,9 @@ m4.4xlarge|16|64|
 |i2|存储型-需要大量快速SSD存储的工作负载|
 |g2|基于GPU实例-用于图形和通用GPU计算工作负载|
 
-* 为了响应客户需求并利用新的处理器技术，aws偶尔会引入新的实例系列。请查看aws网站上的当前列表。选择实例类型时要考虑的另一个变量是网络性能。对于大多数实例类型，aws发布了网络性能的相对度量：低、中或高。某些实例类型指定10 gbps的网络性能。随着实例类型的增长，族内的网络性能将提高。
+* 为了响应客户需求并利用新的处理器技术，AWS偶尔会引入新的实例系列。请查看AWS网站上的当前列表。选择实例类型时要考虑的另一个变量是网络性能。对于大多数实例类型，AWS发布了网络性能的相对度量：低、中或高。某些实例类型指定10 gbps的网络性能。随着实例类型的增长，族内的网络性能将提高。
 
-* 对于需要更高网络性能的工作负载，许多实例类型支持增强的网络。增强的网络通过启用称为单根I/O虚拟化（SR-IOV）的功能减少了虚拟化对网络性能的影响。这会导致每秒包数（PPS）更多，延迟更低，在编写本文时，有一些实例类型支持C3、C4、D2、I2、M4中的增强型网络，和r3系列（请参阅aws文档以获取当前列表）。在实例上启用增强的网络包括确保安装了正确的驱动程序并修改实例属性。增强的网络仅适用于在amazon虚拟私有云（amazon vpc）中启动的实例，这在第4章中讨论过，“亚马逊虚拟私有云（Amazon VPC）。”
+* 对于需要更高网络性能的工作负载，许多实例类型支持增强的网络。增强的网络通过启用称为单根I/O虚拟化（SR-IOV）的功能减少了虚拟化对网络性能的影响。这会导致每秒包数（PPS）更多，延迟更低，在编写本文时，有一些实例类型支持C3、C4、D2、I2、M4中的增强型网络，和r3系列（请参阅AWS文档以获取当前列表）。在实例上启用增强的网络包括确保安装了正确的驱动程序并修改实例属性。增强的网络仅适用于在amazon虚拟私有云（amazon vpc）中启动的实例，这在第4章中讨论过，“亚马逊虚拟私有云（Amazon VPC）。”
 
 #### Amazon Machine Images（AMIs）
 Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义了实例启动时软件状态的各个方面，包括：
@@ -112,14 +111,14 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
     其中包括linux的多个发行版（包括ubuntu、red hat和Amazon自己的发行版）以及windows 2008和windows 2012。
     基于其中一个AMIs启动实例将导致默认的os设置，类似于从标准OS ISO映像安装OS。
   * AWS集市
-    AWS marketplace是一个在线商店，它帮助客户查找、购买并立即开始使用运行在amazon ec2上的软件和服务。许多aws合作伙伴已经在aws marketplace上提供了他们的软件。这提供了两个好处：客户不需要安装软件，许可协议也适用于云计算，从aws marketplace ami启动的实例会产生实例类型的标准小时成本加上额外软件的每小时额外费用（一些开源aws marketplace包没有额外的软件费用）。
+    AWS marketplace是一个在线商店，它帮助客户查找、购买并立即开始使用运行在Amazon EC2上的软件和服务。许多AWS合作伙伴已经在AWS marketplace上提供了他们的软件。这提供了两个好处：客户不需要安装软件，许可协议也适用于云计算，从AWS marketplace ami启动的实例会产生实例类型的标准小时成本加上额外软件的每小时额外费用（一些开源AWS marketplace包没有额外的软件费用）。
   * 由现有实例生成
     AMI可以从现有的Amazon EC2实例创建。
     这是AMIs的一个非常常见的来源。
     客户从发布的AMI启动一个实例，然后该实例被配置为满足所有客户的更新、管理、安全的企业标准，等等。
     然后从配置的实例生成一个AMI，并用于生成该OS的所有实例，这样，所有新实例都遵循公司标准，单个项目更难启动不一致的实例
   * 上传虚拟服务器
-    使用aws vm导入/导出服务，客户可以从各种虚拟化格式创建映像，
+    使用AWS vm导入/导出服务，客户可以从各种虚拟化格式创建映像，
     包括raw、vhd、vmdk和ova。
     支持的操作系统（Linux和Windows）的当前列表可以在AWS文档中找到。
     客户有责任遵守其操作系统供应商的许可条款。
@@ -131,7 +130,7 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
 #### 寻址实例
 有几种方法可以在创建实例时通过Web寻址 
 * 公共域名系统（DNS）名称
- 当你启动一个实例时，aws创建可用于访问实例的dns名称。此dns名称是自动生成的，客户无法指定。可以在aws管理控制台的"描述"选项卡中或通过命令行界面（cli）或应用程序编程界面（api）找到此名称。此dns名称仅在实例正在运行，无法转移到其他实例
+ 当你启动一个实例时，AWS创建可用于访问实例的dns名称。此dns名称是自动生成的，客户无法指定。可以在AWS管理控制台的"描述"选项卡中或通过命令行界面（cli）或应用程序编程界面（api）找到此名称。此dns名称仅在实例正在运行，无法转移到其他实例
 
 * 公共IP
  已启动的实例也可能分配了公用IP地址。此IP地址是从AWS保留的地址分配的，无法指定。此IP地址在Internet上是唯一的，仅在实例运行时持续存在，并且无法传输到其他实例。
@@ -146,7 +145,7 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
 
 #### 初始化访问
 
-* Amazon EC2使用公钥密码加密和解密登录信息。公钥密码使用公钥加密一段数据，并使用关联的私钥解密数据。这两个密钥一起称为密钥对。可以通过AWS管理控制台、CLI或API创建密钥对，或者客户可以上传自己的密钥对。aws存储公钥，而私钥由客户保存。私钥对于第一次获得对实例的安全访问至关重要。
+* Amazon EC2使用公钥密码加密和解密登录信息。公钥密码使用公钥加密一段数据，并使用关联的私钥解密数据。这两个密钥一起称为密钥对。可以通过AWS管理控制台、CLI或API创建密钥对，或者客户可以上传自己的密钥对。AWS存储公钥，而私钥由客户保存。私钥对于第一次获得对实例的安全访问至关重要。
 
 * 备注
 ```
@@ -182,7 +181,7 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
 * 安全组是在实例级别应用的，而不是传统的在外围保护的内部部署防火墙。这样做的效果是，攻击者不必为了访问安全组中的所有实例而破坏单个外围，而是必须为每个实例重复地破坏安全组。
 
 ### 实例的生命周期
-* amazon ec2有几个特性和服务，可以在其整个生命周期中方便地管理Amazon EC2实例。
+* Amazon ec2有几个特性和服务，可以在其整个生命周期中方便地管理Amazon EC2实例。
 
 #### 启动
 当启动一个新的Amazon EC2实例的时候，还有一些附加服务非常有用。
@@ -206,7 +205,7 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
 ```
 ##### VM导入/导出
 
-* 除了将虚拟实例导入为AMIs之外，VM导入/导出使您可以轻松地将虚拟机（VM）从亚马逊的EC2实例从现有的环境导入，并将它们导出回您的Office环境。您只能导出以前导入的amazon ec2实例。无法导出从AMIS在AWS中启动的实例。    
+* 除了将虚拟实例导入为AMIs之外，VM导入/导出使您可以轻松地将虚拟机（VM）从亚马逊的EC2实例从现有的环境导入，并将它们导出回您的Office环境。您只能导出以前导入的Amazon EC2实例。无法导出从AMIS在AWS中启动的实例。    
 
 ##### 实例元数据
 
@@ -220,7 +219,7 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
 * 这只是开始触及元数据中可用信息的表面有关完整列表，请参阅AWS文档
 
 #### 管理实例
-* 当帐户中的实例数开始攀升时，很难跟踪它们。标签不仅可以帮助您管理Amazon EC2实例，还可以帮助您管理许多aws云服务。标记是可以与实例或其他服务关联的键/值对。标记可用于标识实例的属性，如项目、环境（开发、测试等）、可计费部门等。每个实例最多可以应用10个标记。表3.4显示了一些标签建议。
+* 当帐户中的实例数开始攀升时，很难跟踪它们。标签不仅可以帮助您管理Amazon EC2实例，还可以帮助您管理许多AWS云服务。标记是可以与实例或其他服务关联的键/值对。标记可用于标识实例的属性，如项目、环境（开发、测试等）、可计费部门等。每个实例最多可以应用10个标记。表3.4显示了一些标签建议。
 
 |---|---|
 |键|值|
@@ -231,35 +230,35 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
 表 3.4 样例标记
 
 #### 监控实例
-* aws提供了一个名为amazon cloudwatch的服务，它为amazon ec2实例以及其他aws基础设施提供监控和警报。Amazon CloudWatch在第5章"Elastic Load Balancing, Amazon CloudWatch, 和 Auto Scaling"中进行了详细讨论。 
+* AWS提供了一个名为amazon cloudwatch的服务，它为Amazon EC2实例以及其他AWS基础设施提供监控和警报。Amazon CloudWatch在第5章"Elastic Load Balancing, Amazon CloudWatch, 和 Auto Scaling"中进行了详细讨论。 
 
 #### 修改实例
 实例有几个方面可以在启动后修改:
 
 * 实例类型
 
-更改实例的实例类型的能力大大提高了在云中运行工作负载的灵活性。不必在工作负载启动前几个月提交特定的硬件配置，可以使用实例类型的最佳估计值来启动工作负载。如果需要证明计算高于或低于预期，则可以将实例更改为更适合工作负载的不同大小可以使用aws管理控制台、cli或api调整实例的大小。若要调整实例的大小，请将状态设置为“已停止”。在您选择的工具中选择“更改实例类型”功能（实例类型在控制台中作为实例设置列出，在cli中作为实例属性列出），然后选择所需的实例类型。重新启动实例，进程就完成了。
+更改实例的实例类型的能力大大提高了在云中运行工作负载的灵活性。不必在工作负载启动前几个月提交特定的硬件配置，可以使用实例类型的最佳估计值来启动工作负载。如果需要证明计算高于或低于预期，则可以将实例更改为更适合工作负载的不同大小可以使用AWS管理控制台、cli或api调整实例的大小。若要调整实例的大小，请将状态设置为“已停止”。在您选择的工具中选择“更改实例类型”功能（实例类型在控制台中作为实例设置列出，在cli中作为实例属性列出），然后选择所需的实例类型。重新启动实例，进程就完成了。
 
 * 安全组
 
 如果实例在amazon vpc中运行（在第4章中讨论），则可以在实例运行时更改与实例关联的安全组。对于amazon vpc以外的实例（称为ec2 classic），启动后不能更改安全组的关联。
 #### 终端保护
 
-* 当不再需要amazon ec2实例时，可以将状态设置为terminated，实例将被关闭并从aws基础设施中移除。为了防止通过AWS管理控制台、CLI或API终止，可以为实例启用终止保护启用后，终止实例的调用将失败，直到禁用终止保护。这有助于防止由于人为错误而意外终止。
+* 当不再需要Amazon EC2实例时，可以将状态设置为terminated，实例将被关闭并从AWS基础设施中移除。为了防止通过AWS管理控制台、CLI或API终止，可以为实例启用终止保护启用后，终止实例的调用将失败，直到禁用终止保护。这有助于防止由于人为错误而意外终止。
 
-* 请注意，这只是防止来自aws管理控制台、cli或api的终止调用。它不阻止操作系统关闭命令触发的终止、自动缩放组的终止（在第5章中讨论）或现货价格变化导致的现货实例的终止（在下一节中讨论）。
+* 请注意，这只是防止来自AWS管理控制台、cli或api的终止调用。它不阻止操作系统关闭命令触发的终止、自动缩放组的终止（在第5章中讨论）或现货价格变化导致的现货实例的终止（在下一节中讨论）。
 
 ### 选项
-在amazon ec2中有几个额外的选项可用于改进成本优化、安全性和性能，这对于考试来说非常重要。
+在Amazon EC2中有几个额外的选项可用于改进成本优化、安全性和性能，这对于考试来说非常重要。
 
 #### 价格选项
 * Amazon EC2实例处于运行状态时，每小时向您收费，但每小时收费的金额可能会根据三种定价选项而有所不同：按需实例、保留实例和现货实例。
 
 * 按需实例
-在aws网站上发布的每种实例类型的每小时价格表示按需实例的价格。这是最灵活的定价选项，因为它不需要预先承诺，并且客户可以控制何时启动该实例以及何时终止该实例。这是三种定价方案中每计算小时成本效益最低的，但是它的灵活性允许客户通过为不可预测的工作负载提供可变的计算级别来节省。
+在AWS网站上发布的每种实例类型的每小时价格表示按需实例的价格。这是最灵活的定价选项，因为它不需要预先承诺，并且客户可以控制何时启动该实例以及何时终止该实例。这是三种定价方案中每计算小时成本效益最低的，但是它的灵活性允许客户通过为不可预测的工作负载提供可变的计算级别来节省。
 
 * 保留实例
-保留实例定价选项允许客户为可预测的工作负载进行容量保留。通过对这些工作负载使用保留实例，客户可以比按需时薪节省高达75%。当购买预订时，客户为该预订实例指定实例类型和可用性区域，并在预订期间为该实例获得较低的有效小时价格。另一个好处是，aws数据中心的容量是为该客户保留的。决定预订成本的因素有两个：定期承诺和付款选择
+保留实例定价选项允许客户为可预测的工作负载进行容量保留。通过对这些工作负载使用保留实例，客户可以比按需时薪节省高达75%。当购买预订时，客户为该预订实例指定实例类型和可用性区域，并在预订期间为该实例获得较低的有效小时价格。另一个好处是，AWS数据中心的容量是为该客户保留的。决定预订成本的因素有两个：定期承诺和付款选择
 
 承诺期限是保留的期限，可以是一年或三年。承诺时间越长，折扣就越大。
 保留实例有三种不同的付款方式：
@@ -281,7 +280,7 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
 表 3.5 保留实例价格样例
 * 备注
 ```
- 本例使用撰写本文时发布的价格。aws迄今已多次降价，因此请查看aws网站上的当前定价信息。
+ 本例使用撰写本文时发布的价格。AWS迄今已多次降价，因此请查看AWS网站上的当前定价信息。
 ```
 
 当您的计算需求发生变化时，您可以修改保留的实例，并继续从容量保留中受益。修改不会更改保留实例的剩余期限；它们的结束日期保持不变。不收费，您也不会收到任何新的账单或发票。修改与购买是分开的，不会影响您使用、购买或出售保留实例的方式您可以通过以下一种或多种方式修改整个预订或仅修改一个子集。
@@ -294,15 +293,14 @@ Amazon Machine Image（AMI）定义了实例启动是要在实例上运行的的初始化软件。AMI定义
 
 * 现货实例
 
-对于不具有时间关键性并且能够容忍中断的工作负载，spot实例提供了最大的折扣。对于spot实例，客户指定他们愿意为某个实例类型支付的价格。当客户的出价高于当前现货价格时，客户将收到请求的实例。这些实例将像所有其他amazon ec2实例一样运行，客户将只支付实例运行小时的现货价格。实例将运行到：
+对于不具有时间关键性并且能够容忍中断的工作负载，spot实例提供了最大的折扣。对于spot实例，客户指定他们愿意为某个实例类型支付的价格。当客户的出价高于当前现货价格时，客户将收到请求的实例。这些实例将像所有其他Amazon EC2实例一样运行，客户将只支付实例运行小时的现货价格。实例将运行到：
 ```
 客户终止它们。
 现货价格高于客户的出价。
 没有足够的未使用容量来满足现场实例的需求。
 ```
 
-如果amazon ec2需要终止spot实例，实例将收到一个终止通知，在amazonec2终止实例之前提供两分钟的警告。由于存在中断的可能性，spot实例只能用于能够容忍中断的工作负载。这可能包括分析、财务建模、大数据、媒体编码、科学计算和测试
-
+如果Amazon ec2需要终止spot实例，实例将收到一个终止通知，在amazonec2终止实例之前提供两分钟的警告。由于存在中断的可能性，spot实例只能用于能够容忍中断的工作负载。这可能包括分析、财务建模、大数据、媒体编码、科学计算和测试
 
 **不同定价模式的架构**对于考试来说，重要的是要知道如何利用不同的定价模式来创建一个具有成本效益的架构。这样的架构可能在相同的工作负载中包含不同的定价模式。例如，一个平均每天访问5000次的网站，但在周期性高峰期间，每天访问量会增加到20000次，可能会购买两个保留实例来处理平均流量，但在高峰期间，需要依赖OnDemand实例来满足计算需求。图3.2显示了这样一种架构。
 
@@ -326,9 +324,9 @@ Amazon EC2专用主机是一个物理服务器，具有完全专用于单个客户使用的Amazon EC2实例容
 
 ### 实例存储
 
-* 实例存储（有时称为临时存储）为实例提供临时块级存储。此存储位于物理连接到主机的磁盘上。实例存储非常适合于经常更改的信息（如缓冲区、缓存、临时数据和其他临时内容）的临时存储，或用于跨实例组（如Web服务器的负载平衡池）复制的数据。amazon ec2实例可用的实例存储的大小和类型取决于实例类型。在编写本文时，各种实例类型可用的存储空间从无实例存储到242tb实例存储不等实例类型还确定实例存储卷的硬件类型虽然有些提供硬盘驱动器（hdd）实例存储，但其他实例类型使用固态驱动器（ssd）来提供非常高的随机i/o性能。              
+* 实例存储（有时称为临时存储）为实例提供临时块级存储。此存储位于物理连接到主机的磁盘上。实例存储非常适合于经常更改的信息（如缓冲区、缓存、临时数据和其他临时内容）的临时存储，或用于跨实例组（如Web服务器的负载平衡池）复制的数据。Amazon ec2实例可用的实例存储的大小和类型取决于实例类型。在编写本文时，各种实例类型可用的存储空间从无实例存储到242tb实例存储不等实例类型还确定实例存储卷的硬件类型虽然有些提供硬盘驱动器（hdd）实例存储，但其他实例类型使用固态驱动器（ssd）来提供非常高的随机i/o性能。              
 
-* 实例存储包含在amazon ec2实例的成本中，因此对于适当的工作负载来说，它们是非常经济有效的解决方案。实例存储的关键方面是它们是临时的，当发生如下情况时，实例存储中的数据会丢失：
+* 实例存储包含在Amazon ec2实例的成本中，因此对于适当的工作负载来说，它们是非常经济有效的解决方案。实例存储的关键方面是它们是临时的，当发生如下情况时，实例存储中的数据会丢失：
 ```
  * 底层的磁盘驱动失效
  * 实例停止（如果实例重启，数据会持久化）
@@ -342,7 +340,7 @@ Amazon EC2专用主机是一个物理服务器，具有完全专用于单个客户使用的Amazon EC2实例容
 
 
 ### Elastic Block Store Basic
-* Amazon EBS提供持久块级存储卷，用于Amazon EC2实例。每个Amazon EBS卷在其可用性区域内自动复制，以保护您免受组件故障的影响，提供高可用性和耐用性。Amazon EBS卷有多种类型，性能特点和价格不同。可以将多个amazon ebs卷附加到单个amazon ec2实例，但一次只能将一个卷附加到单个实例。
+* Amazon EBS提供持久块级存储卷，用于Amazon EC2实例。每个Amazon EBS卷在其可用性区域内自动复制，以保护您免受组件故障的影响，提供高可用性和耐用性。Amazon EBS卷有多种类型，性能特点和价格不同。可以将多个amazon ebs卷附加到单个Amazon ec2实例，但一次只能将一个卷附加到单个实例。
 
 ###Amazon EBS 卷类型
 * Amazon EBS卷有几种不同的类型。类型在基础硬件、性能和成本等方面有所不同。了解不同类型的属性很重要，这样您就可以指定满足工作负载在考试中的性能要求的最经济高效的类型。
@@ -446,10 +444,10 @@ Amazon EC2专用主机是一个物理服务器，具有完全专用于单个客户使用的Amazon EC2实例容
 * Amazon EBS提供多种类型的持久块存储。磁力每千兆字节的成本最低，性能适中。通用SSD是一种经济高效的存储，可提供高达10000 IOPS的速度。配置的IOPS SSD具有最高的每千兆字节成本，非常适合于对存储性能敏感的I/O密集型工作负载。快照是存储在Amazon S3中的Amazon EBS卷的增量备份。Amazon EBS卷可以加密。
 
 ## 考试基础
-### 了解启动Amazon ec2实例的基础知识
+### 了解启动Amazon EC2实例的基础知识
 * 要启动实例，必须指定AMI（在启动时定义实例上的软件）和实例类型（定义支持实例的虚拟硬件（内存、vCPUs等）
 
-### 了解哪些架构适合Amazon ec2的定价选项
+### 了解哪些架构适合Amazon EC2的定价选项
 * Spot实例最适合于能够容纳中断的工作负载。保留实例最适合于一致的、长期的计算需求。按需实例提供灵活的计算以响应缩放需求。
 
 ### 了解如何组合多种定价选项
@@ -462,7 +460,7 @@ Amazon EC2专用主机是一个物理服务器，具有完全专用于单个客户使用的Amazon EC2实例容
 * VM导入/导出允许您将现有的VM导入AWS作为Amazon EC2实例或AMIS。通过VM导入/导出导入的Amazon EC2实例也可以导出回虚拟环境。
 
 ### 了解通过internet访问实例的方法
-* 您可以通过公共IP地址、弹性IP地址或公共DNS名称通过web访问AmazonEC2实例。访问Amazon VPC内的实例还有其他方法，包括私有IP地址和ENIs。
+* 您可以通过公共IP地址、弹性IP地址或公共DNS名称通过web访问Amazon EC2实例。访问Amazon VPC内的实例还有其他方法，包括私有IP地址和ENIs。
 
 ### 了解实例存储的生存期
 * 实例存储区中的数据在实例停止或终止时丢失。实例存储数据在操作系统重新启动后仍然有效。
@@ -481,17 +479,17 @@ Amazon EC2专用主机是一个物理服务器，具有完全专用于单个客户使用的Amazon EC2实例容
 
 ### 知道如何解释安全组的影响
 * 当一个实例是多个安全组的成员时，其效果是所有组中所有规则的联合。
-### 了解不同的Amazon ebs卷类型、它们的特性和它们相应的工作负载
+### 了解不同的Amazon EBS卷类型、它们的特性和它们相应的工作负载
 * 磁卷提供100 IOPS的平均性能，最多可配置1 TB。它们适合冷的和不常访问的数据。通用SSD卷提供3个IOPS/GB，最高可达10000 IOPS，较小的卷能够突发3000 IOPS。它们最多可配置16 TB，适用于开发/测试环境、小型数据库等。配置的IOPS固态硬盘最多可为16 TB的卷提供20000个一致的IOPS。对于执行许多事务的大型数据库等工作负载，它们是最佳选择。
 
-### 知道如何加密Amazon ebs卷
+### 知道如何加密Amazon EBS卷
 * 任何卷类型都可以在启动时加密。加密基于AWS KMS，对附加实例上的应用程序透明。
 
 ### 了解快照的概念和过程。
 * 快照提供Amazon EBS卷的时间点备份，并存储在Amazon S3中。后续快照是增量快照，它们只存储增量。当您请求快照时，将立即创建时间点快照，并且可以继续使用卷，但快照可能会保持挂起状态，直到所有修改的块都传输到Amazon S3。快照可以在区域之间复制。
 
 
-### 了解Amazon ebs优化实例如何影响Amazon ebs性能
+### 了解Amazon EBS优化实例如何影响Amazon EBS性能
 * 除了控制Amazon EBS卷内外性能的IOPS之外，还可以使用Amazon EBS优化实例来确保Amazon EBS I/O的额外专用容量。
 
 ## 练习
@@ -560,4 +558,243 @@ Amazon EC2专用主机是一个物理服务器，具有完全专用于单个客户使用的Amazon EC2实例容
 * 18. 结束RDP会话并终止实例。
 
 ### 练习 3.4
-#### 
+#### 启动一个Spot实例
+在这个练习中，你将会创建一个Spot实例
+* 1. 在Amazon EC2 控制台，进入Spot 请求页；
+* 2. 查看m3.medium价格历史，特别时最近的价格；
+* 3. 记下最近的价格和可用区域；
+* 4. 在Amazon EC2 控制台启动一个实例；
+* 5. 选择Amazon Linux AMI;
+* 6. xuanze t2.medium 实例类型；
+* 7. 在配置实例页面，请求一个Spot实例；
+* 8. 在默认VPC或EC2 Classic中启动实例（注意，默认VPC将定义实例的可用区域）；
+* 9. 给实例分配一个public IP地址；
+* 10. 请求一个Spot实例，并输入一个出价高于记录的现货价格几美分（的价格）；
+* 11. 结束启动实例；
+* 12. 回到Spot请求页，查看你的请求，如果你的出价足够高，你应该看到实例状态改变为：Active，并出现一个实例ID；
+* 13. 在Amazon EC2 控制台的实例页面找到实例，注意：Spot生命周期在描述中的生命周期字段表示。
+* 14. 一旦实例处于running，结束它。
+
+### 练习 3.5 
+#### 存取Metadata
+在这个练习中，你将会从OS存取实例的Metadata。
+* 1. 在Amazon EC2控制台里启动一个实例；
+* 2. 选贼Amazon Linux AMI；
+* 3. 选择t2.medium 实例类型；
+* 4. 在默认VPC或EC2 Classic中启动实例;
+* 5. 为实例分配一个public IP地址；
+* 6. 给实例增加一个tag，Key：Name，Value：Exercise 3.5
+* 7. 使用Cert Book 安全组
+* 8. 启动实例；
+* 9. 使用练习-3.1中（10）的key对；
+* 10. 通过Public IP地址，以用户名：ec2-user，和keyname.ppk文件，使用SSH连接实例；
+* 11. 在Linux 提示命令行，输入如下信息获取可用的metadata列表：curl	http://169.254.169.254/latest/meta-data/ 
+* 12. 看一个值，将名字增加到上URL的尾部，例如找到安全组类型增加到尾部：curl	http://169.254.169.254/latest/meta-data/security-groups；
+* 13. 尝试其他的值，以/结尾的名字包含更长的子值列表；
+* 14. 关闭SSH窗口并结束实例；
+
+### 练习 3.6
+#### 创建一个Amazon EBS卷，展示实例结束后仍然存在
+在这个练习中，您将看到Amazon EBS卷如何在实例生命周期之外持续存在。
+* 1. 在Amazon EC2 控制台启动一个实例；
+* 2. 选择Amazon Linux AMI；
+* 3. 选择t2.medium实例类型；
+* 4. 通过默认VPC或者EC2-Classic启动实例；
+* 5. 为实例分配一个public IP地址；
+* 6. 增加第二个50G的卷，注意：在结束实例后删除Root卷；
+* 7. 给实例增加一个tag，Key：Name，Value：Exercise 3.6；
+* 8. 使用Cert Book安全组（前面练习中创建的）；
+* 9. 启动实例；
+* 10. 在EBS控制台上找到两个两个卷，将他们都命名为：Exercise 3.6；
+* 11. 结束实例；
+注意：启动驱动已经删除，但是第二个Amazon EBS卷仍然存在，现在可以说可用，不要删除这个可用的卷。
+
+### 练习 3.7
+#### 拍摄快照和恢复
+这个练习指导你拍摄快照，并通过三种方法恢复。
+* 1. 在Amazon EBS控制台找到你在练习3.6中创建的卷；
+* 2. 拍摄快照，并命名卷的名字为：Exercise 3.7；
+* 3. 在快照控制台，等待快照完成（当卷是空的时候，拍摄快照应该是非常快）；
+* 4. 在AWS 快照管理控制台的快照页面，选择最新的快照，选择创建卷；
+* 5. 使用默认配置创建卷；
+* 6. 在找到快照，并再创建一个卷；设置这个新卷的大小为：100G（使用快照并将快照还原为新的、更大的卷，是用以说明如何解决增大现有卷的大小的问题的），重新找到快照的位置并选择复制，复制快照到另外一个Region，并将描述写为：Exercise 3.7；
+* 7. 进入6中快照要复制到的那个Region，等待快照变成可用；
+* 8. 在新的Region中使用快照创建卷，这就是如何在Regions之间共享Amazon EBS卷的方法，那就是：拍摄快照，并复制快照；
+* 9. 删除上面的4个卷；
+
+### 练习 3.8
+#### 启动一个加密卷
+在这个实例中，你将启动一个带有加密的Amazon EBS卷的Amazon EC2实例，并存一些数据在这个卷上，用以确认加密对实例时透明的。
+* 1. 在Amazon EC2控制台启动一个实例；
+* 2. 选择Microsoft Window Server 2012 AMI；
+* 3. 选择m3.medium实例类型；
+* 4. 通过默认VPC或者EC2-Classic启动实例；
+* 5. 给实例分配一个Public IP地址；
+* 6. 在存储页面上，为实例增加一个大小为50GB的加密Amazon EBS卷；
+* 7. 为实例增加一个标记，键：Name，值：Exercise 3.8；
+* 8. 使用练习3.2中更新的Cert BOOK安全组；
+* 9. 启动实例；
+* 10. 选择练习3.1中的Key对；
+* 11. 解密administrator密码并使用RDP登陆到实例；
+* 12. 一旦RDP会话连接，打开Notepad；
+* 13. 向Notdpad中输入一些随机信息，保存为：d:\testfile.txt，然后关闭Notepad；
+* 14. 在Windows Explorer中找到：d:\testfile.txt，用Notepad打开，确认Notepad中的数据不是加密的；
+* 15. 注销；
+* 16. 结束实例；
+
+### 练习 3.9
+#### 分离引导驱动器并重新连接到另一个实例
+在这个练习中，你将练习从一个停止的驱动上移除Amazon EBS卷并连接到两外一个实例，恢复数据。
+* 1. 在Amazon EC2控制台启动一个实例；
+* 2. 选择Microsoft Windows Server 2012 Base AMI；
+* 3. 选择t2.medium 实例类型；
+* 4. 通过默认的VPC或者EC2-Classic启动实例；
+* 5. 给实例分配一个Public IP地址；
+* 6. 为实例增加一个标记，键：Name，值：Exercise 3.9 Source；
+* 7. 使用前面练习中的Cert BOOK安全组；
+* 8. 使用练习3.1中的key对启动实例；
+* 9. 在Amazon EC2控制台启动第二个实例；
+* 10. 选择Microsof Windows Server 2012 Base AMI；
+* 11. 选择t2.medium 实例类型；
+* 12. 通过默认的VPC或者EC2-Classic启动实例；
+* 13. 给实例分配一个public IP地址；
+* 14. 为实例增加一个标记，键：Name，值：Exercise 3.9 Destination；
+* 15. 使用前面练习中的Cert BOOK安全组；
+* 16. 使用练习3.1中的key对启动实例；
+* 17. 一旦两个实例都处于running状态，停止第一个实例，记住实例的实例ID；
+* 18. 在Amazon EC2控制台进入Amazon EBS页面并通过实例ID找到附加的原始实例的卷，将卷和实例分开；
+* 19. 当卷变成可用状态时，将卷与第二个实例（Destination）相连接；
+* 20. 使用administrator账户通过RDP登录到Destination实例；
+* 21. 打开命令行窗口（cmd.exe）
+* 22. 在命令行提示窗口，输入如下命令：
+```
+  C:\Users\Administrator >diskpart 
+  DISKPART>select disk 1 
+  DISKPART>online disk 
+  DISKPART>exit C:\Users\Administrator>dir e:
+```
+从停止的原始驱动移除的卷现在作为目标实例的E:驱动是可读了，因此卷的数据也能获取到；
+* 23. 结束所有的实例，并在这个过程中，确认删除所有的卷。
+
+## 复习题
+### 1. Your web application needs four instances to support steady traffic nearly all of the time. On the last day of each month, the traffic triples. What is a cost-effective way to handle this traffic pattern?
+* A. Run 12 Reserved Instances all of the time.
+* B. Run four On-Demand Instances constantly, then add eight more On-Demand Instances on the last day of each month.
+* C. Run four Reserved Instances constantly, then add eight On-Demand Instances on the last day of each month. 
+* D. Run four On-Demand Instances constantly, then add eight Reserved Instances on the last day of each month.
+
+### 2. Your order-processing application processes orders extracted from a queue with two Reserved Instances processing 10 orders/minute. If an order fails during processing, then it is returned to the queue without penalty. Due to a weekend sale, the queues have several hundred orders backed up. While the backup is not catastrophic, you would like to drain it so that customers get their confirmation emails faster. What is a cost-effective way to drain the queue for orders? 
+* A. Create more queues. 
+* B. Deploy additional Spot Instances to assist in processing the orders. 
+* C. Deploy additional Reserved Instances to assist in processing the orders. 
+* D. Deploy additional On-Demand Instances to assist in processing the orders. 
+
+### 3. Which of the following must be specified when launching a new Amazon Elastic Compute Cloud (Amazon EC2) Windows instance? (Choose 2 answers) 
+* A. The Amazon EC2 instance ID 
+* B. Password for the administrator account 
+* C. Amazon EC2 instance type 
+* D. Amazon Machine Image (AMI) 
+
+### 4. You have purchased an m3.xlarge Linux Reserved instance in us-east-1a. In which ways can you modify this reservation? (Choose 2 answers) 
+* A. Change it into two m3.large instances. 
+* B. Change it to a Windows instance. 
+* C. Move it to us-east-1b. 
+* D. Change it to an m4.xlarge. 
+
+### 5. Your instance is associated with two security groups. The first allows Remote Desktop Protocol (RDP) access over port 3389 from Classless Inter-Domain Routing (CIDR) block 72.14.0.0/16. The second allows HTTP access over port 80 from CIDR block 0.0.0.0/0. What traffic can reach your instance?
+* A. RDP and HTTP access from CIDR block 0.0.0.0/0 
+* B. No traffic is allowed. 
+* C. RDP and HTTP traffic from 72.14.0.0/16 
+* D. RDP traffic over port 3389 from 72.14.0.0/16 and HTTP traffic over port 80 from 0.0.00/0 
+
+### 6. Which of the following are features of enhanced networking? (Choose 3 answers) 
+* A. More Packets Per Second (PPS) 
+* B. Lower latency 
+* C. Multiple network interfaces 
+* D. Border Gateway Protocol (BGP) routing 
+* E. Less jitter 
+
+### 7. You are creating a High-Performance Computing (HPC) cluster and need very low latency and high bandwidth between instances. What combination of the following will allow this? (Choose 3 answers) 
+* A. Use an instance type with 10 Gbps network performance. 
+* B. Put the instances in a placement group. 
+* C. Use Dedicated Instances. 
+* D. Enable enhanced networking on the instances. 
+* E. Use Reserved Instances. 
+
+### 8. Which Amazon Elastic Compute Cloud (Amazon EC2) feature ensures that your instances will not share a physical host with instances from any other AWS customer? 
+* A. Amazon Virtual Private Cloud (VPC) 
+* B. Placement groups 
+* C. Dedicated Instances 
+* D. Reserved Instances 
+
+### 9. Which of the following are true of instance stores? (Choose 2 answers) 
+* A. Automatic backups 
+* B. Data is lost when the instance stops. 
+* C. Very high IOPS 
+* D. Charge is based on the total amount of storage provisioned. 
+
+### 10. Which of the following are features of Amazon Elastic Block Store (Amazon EBS)? (Choose 2 answers) 
+* A. Data stored on Amazon EBS is automatically replicated within an Availability Zone.
+* B. Amazon EBS data is automatically backed up to tape. 
+* C. Amazon EBS volumes can be encrypted transparently to workloads on the attached instance. 
+* D. Data on an Amazon EBS volume is lost when the attached instance is stopped. 
+
+### 11. You need to take a snapshot of an Amazon Elastic Block Store (Amazon EBS) volume. How long will the volume be unavailable? 
+* A. It depends on the provisioned size of the volume. 
+* B. The volume will be available immediately. 
+* C. It depends on the amount of data stored on the volume. 
+* D. It depends on whether the attached instance is an Amazon EBS-optimized instance. 
+
+### 12. You are restoring an Amazon Elastic Block Store (Amazon EBS) volume from a snapshot. How long will it be before the data is available? 
+* A. It depends on the provisioned size of the volume. 
+* B. The data will be available immediately. 
+* C. It depends on the amount of data stored on the volume. 
+* D. It depends on whether the attached instance is an Amazon EBS-optimized instance. 
+
+### 13. You have a workload that requires 15,000 consistent IOPS for data that must be durable. What combination of the following steps do you need? (Choose 2 answers) 
+* A. Use an Amazon Elastic Block Store (Amazon EBS)-optimized instance. 
+* B. Use an instance store. 
+* C. Use a Provisioned IOPS SSD volume. 
+* D. Use a magnetic volume. 
+
+### 14. Which of the following can be accomplished through bootstrapping? 
+* A. Install the most current security updates. 
+* B. Install the current version of the application. 
+* C. Configure Operating System (OS) services. 
+* D. All of the above. 
+
+### 15. How can you connect to a new Linux instance using SSH? 
+* A. Decrypt the root password. 
+* B. Using a certificate 
+* C. Using the private half of the instance’s key pair 
+* D. Using Multi-Factor Authentication (MFA) 
+
+### 16. VM Import/Export can import existing virtual machines as: (Choose 2 answers) 
+* A. Amazon Elastic Block Store (Amazon EBS) volumes
+* B. Amazon Elastic Compute Cloud (Amazon EC2) instances 
+* C. Amazon Machine Images (AMIs) 
+* D. Security groups 
+
+### 17. Which of the following can be used to address an Amazon Elastic Compute Cloud (Amazon EC2) instance over the web? (Choose 2 answers) 
+* A. Windows machine name 
+* B. Public DNS name 
+* C. Amazon EC2 instance ID 
+* D. Elastic IP address 
+
+### 18. Using the correctly decrypted Administrator password and RDP, you cannot log in to a Windows instance you just launched. Which of the following is a possible reason? 
+* A. There is no security group rule that allows RDP access over port 3389 from your IP address. 
+* B. The instance is a Reserved Instance. 
+* C. The instance is not using enhanced networking. 
+* D. The instance is not an Amazon EBS-optimized instance. 
+
+### 19. You have a workload that requires 1 TB of durable block storage at 1,500 IOPS during normal use. Every night there is an Extract, Transform, Load (ETL) task that requires 3,000 IOPS for 15 minutes. What is the most appropriate volume type for this workload? 
+* A. Use a Provisioned IOPS SSD volume at 3,000 IOPS. 
+* B. Use an instance store. 
+* C. Use a general-purpose SSD volume. 
+* D. Use a magnetic volume. 
+
+### 20. How are you billed for elastic IP addresses? 
+* A. Hourly when they are associated with an instance 
+* B. Hourly when they are not associated with an instance 
+* C. Based on the data that flows through them 
+* D. Based on the instance type to which they are attached
