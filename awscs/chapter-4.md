@@ -33,6 +33,7 @@
  * "ºËÐÄ"Amazon EC2ºÍS3°²È«ÌØÐÔ¼¯
  * ÕûºÏÍ¨ÓÃ³£¹æ°²È«²úÆ·£¨·À»ðÇ½ºÍVPN£©
  * ¸´ÔÓµÄ·ÃÎÊ¿ØÖÆ£¨¹¹½¨¸´ÔÓµÄ°²È«×é¡¢ACLµÈ£© 
+```
 
 ## ¼ò½é
 * AmazonÐéÄâË½ÓÐÔÆ£¨Amazon VPC£©ÊÇAWSÔÆÖÐ×Ô¶¨ÒåµÄÐéÄâÍøÂç¡£Äú¿ÉÒÔÌá¹©×Ô¼ºµÄAWSÂß¼­¸ôÀë²¿·Ö£¬ÀàËÆÓÚÉè¼ÆºÍÊµÏÖ½«ÔÚ±¾µØÊý¾ÝÖÐÐÄÖÐÔËÐÐµÄ¶ÀÁ¢ÍøÂç¡£±¾ÕÂÌ½ÌÖAmazon VPCµÄºËÐÄ×é¼þ£¬ÔÚÁ·Ï°ÖÐ£¬Äú½«Ñ§Ï°ÈçºÎÔÚÔÆÖÐ¹¹½¨×Ô¼ºµÄAmazon VPC¡£Í¨¹ý¿¼ÊÔÐèÒª¶ÔAmazon VPCµÄÍØÆË½á¹¹ºÍ¹ÊÕÏÅÅ³ýÓÐºÜÇ¿µÄÁË½â£¬ÎÒÃÇÇ¿ÁÒ½¨ÒéÄúÍê³É±¾ÕÂÖÐµÄÁ·Ï°
@@ -248,6 +249,7 @@ AWS ÔÚÃ¿¸öRegionÎ¬³ÖÒ»¸ö¹«¹²IPµØÖ·³Ø£¬²¢Ê¹ËüÃÇ¿É¹©ÄúÓëAmazon VPCsÖÐµÄ×ÊÔ´¹ØÁª¡£µ
 ```
 
 * ÓëNATÊµÀýÒ»Ñù£¬´ËÍÐ¹Ü·þÎñÔÊÐí³öÕ¾InternetÍ¨ÐÅ£¬²¢×èÖ¹ÊµÀý½ÓÊÕÓÉInternetÉÏµÄÄ³ÈË·¢ÆðµÄÈëÕ¾Í¨ÐÅ
+
 * ±¸×¢
 ``` 
  Òª´´½¨¶ÀÁ¢ÓÚ¿ÉÓÃÇøµÄÌåÏµ½á¹¹£¬ÇëÔÚÃ¿¸ö¿ÉÓÃÇøÖÐ´´½¨Ò»¸öNATÍø¹Ø£¬²¢ÅäÖÃÂ·ÓÉÒÔÈ·±£×ÊÔ´ÔÚÍ¬Ò»¿ÉÓÃÇøÖÐÊ¹ÓÃNATÍø¹Ø
