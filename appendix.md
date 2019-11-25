@@ -38,6 +38,9 @@
 ### NATs
 * Network Address Translation
 
+### NTP
+* Network Time Protocol
+
 ### S3
 * Simple Storage Service
 
