@@ -143,7 +143,6 @@ AWS ÔÚÃ¿¸öRegionÎ¬³ÖÒ»¸ö¹«¹²IPµØÖ·³Ø£¬²¢Ê¹ËüÃÇ¿É¹©ÄúÓëAmazon VPCsÖÐµÄ×ÊÔ´¹ØÁª¡£µ
 
 * ENIsÔÊÐíÄú´´½¨Ò»¸ö¹ÜÀíÍøÂç£¬ÔÚAmazon VPCÖÐÊ¹ÓÃÍøÂçºÍ°²È«Éè±¸£¬ÔÚ²»Í¬µÄ×ÓÍøÉÏ´´½¨¾ßÓÐ¹¤×÷¸ºÔØ/½ÇÉ«µÄË«Ö÷ÊµÀý£¬»òÕß´´½¨Ò»¸öµÍ³É±¾¡¢¸ß¿ÉÓÃÐÔµÄ½â¾ö·½°¸
 
-
 ## ¶Ëµã£¨Endpoints£©
 * Amazon VPC¶ËµãÔÊÐíÄúÔÚAmazon VPCºÍÁíÒ»¸öAWS·þÎñÖ®¼ä´´½¨Ë½ÓÐÁ¬½Ó£¬¶øÎÞÐèÍ¨¹ýInternet»òNATÊµÀý¡¢VPNÁ¬½Ó»òAWSÖ±½ÓÁ¬½Ó½øÐÐ·ÃÎÊ¡£¿ÉÒÔÎªµ¥¸ö·þÎñ´´½¨¶à¸öÖÕ½áµã£¬»¹¿ÉÒÔÊ¹ÓÃ²»Í¬µÄÂ·ÓÉ±í´Ó²»Í¬µÄ×ÓÍø¶ÔÍ¬Ò»·þÎñÇ¿ÖÆÊµÊ©²»Í¬µÄ·ÃÎÊ²ßÂÔ¡£
 
@@ -157,7 +156,7 @@ AWS ÔÚÃ¿¸öRegionÎ¬³ÖÒ»¸ö¹«¹²IPµØÖ·³Ø£¬²¢Ê¹ËüÃÇ¿É¹©ÄúÓëAmazon VPCsÖÐµÄ×ÊÔ´¹ØÁª¡£µ
 
 * ±í-4.1 ÊÇÒ»¸öÂ·ÓÉ±íµÄÊ¾Àý¡£¸ÃÂ·ÓÉ±í¾ßÓÐ½«ËùÓÐInternetÒµÎñ£¨0.0.0.0/0£©Òýµ¼µ½IGWµÄÏÖÓÐÂ·ÓÉ¡£´ÓÁíÒ»¸öAWS·þÎñ£¨ÀýÈç£¬Amazon S3»òAmazon DynamoDB£©µÄ×ÓÍøÖÐµÄÈÎºÎÒµÎñ½«±»·¢ËÍµ½IGW£¬ÒÔ±ã´ïµ½¸Ã·þÎñ¡£ 
 
-±í-4.1 ´øÓÐIGWÂ·ÓÉ¹æÔòµÄÂ·ÓÉ±í
+* ±í-4.1 ´øÓÐIGWÂ·ÓÉ¹æÔòµÄÂ·ÓÉ±í
 |---|---|
 |Destination|Target|
 |10.0.0.0/16|Local|
@@ -165,7 +164,7 @@ AWS ÔÚÃ¿¸öRegionÎ¬³ÖÒ»¸ö¹«¹²IPµØÖ·³Ø£¬²¢Ê¹ËüÃÇ¿É¹©ÄúÓëAmazon VPCsÖÐµÄ×ÊÔ´¹ØÁª¡£µ
 
 * ±í4.2ÊÇÒ»¸öÊ¾ÀýÂ·ÓÉ±í£¬Ëü¾ßÓÐ½«ËùÓÐInternetÁ÷Á¿Òýµ¼µ½IGWºÍËùÓÐAmazon S3Á÷Á¿µ½Amazon VPC¶ËµãµÄÏÖÓÐÂ·ÓÉ¡£ 
 
-±í-4.2 ´øÓÐIGWÂ·ÓÉ¹æÔòºÍVPC¶Ëµã¹æÔòµÄÂ·ÓÉ±í
+* ±í-4.2 ´øÓÐIGWÂ·ÓÉ¹æÔòºÍVPC¶Ëµã¹æÔòµÄÂ·ÓÉ±í
 |---|---|
 |Destination|Target|
 |10.0.0.0/16|Local|
@@ -274,19 +273,132 @@ AWS ÔÚÃ¿¸öRegionÎ¬³ÖÒ»¸ö¹«¹²IPµØÖ·³Ø£¬²¢Ê¹ËüÃÇ¿É¹©ÄúÓëAmazon VPCsÖÐµÄ×ÊÔ´¹ØÁª¡£µ
 ```
 
 ## ×Ü½á
+* ÔÚ±¾ÕÂÖÐ£¬ÄúÁË½âµ½Amazon VPCÊÇAmazon EC2µÄÍøÂç²ã£¬ËüÔÊÐíÄúÔÚÔÆÖÐ´´½¨×Ô¼ºµÄË½ÓÐÐéÄâÍøÂç¡£Äú¿ÉÒÔÌá¹©×Ô¼ºµÄAWSÂß¼­¸ôÀë²¿·Ö£¬ÀàËÆÓÚÉè¼ÆºÍÊµÏÖÔÚÎïÀíÊý¾ÝÖÐÐÄÖÐ²Ù×÷µÄ¶ÀÁ¢ÍøÂç¡£
 
+* Ò»¸öVPC°üº¬ÈçÏÂµÄ×é¼þ£º
+```
+ * ×ÓÍø
+ * Â·ÓÉ±í
+ * DHCP Ñ¡Ïî¼¯
+ * °²È«×é
+ * ÍøÂçACLs
+```
 
+* Ò»¸öVPC°üº¬ÈçÏÂµÄ¿ÉÑ¡×é¼þ£º
+```
+ * IGWs
+ * EIPµØÖ·
+ * ¶Ëµã
+ * Peering
+ * NAT ÊµÀýºÍNATÍø¹Ø
+ * VPG£¬CGWÒÔ¼°VPN
+```
 
+* ×ÓÍøÖ»ÄÜÊÇ¹«ÓÃ¡¢×¨ÓÃ»òVPN¡£¹«¹²×ÓÍøÊÇ¹ØÁªµÄÂ·ÓÉ±í½«×ÓÍøµÄÁ÷Á¿¶¨Ïòµ½Amazon VPCµÄIGWµÄ×ÓÍø¡£Ë½ÓÐ×ÓÍøÊÇ¹ØÁªµÄÂ·ÓÉ±í²»½«×ÓÍøµÄÁ÷Á¿¶¨Ïòµ½Amazon VPCµÄIGWµÄ×ÓÍø¡£Ö»ÓÐVPNµÄ×ÓÍøÊÇÕâÑùÒ»¸ö×ÓÍø£¬ÆäÖÐ¹ØÁªµÄÂ·ÓÉ±í½«×ÓÍøµÄÁ÷Á¿¶¨Ïòµ½Amazon VPCµÄVPG£¬²¢ÇÒÃ»ÓÐµ½IGWµÄÂ·ÓÉ¡£ÎÞÂÛ×ÓÍøµÄÀàÐÍÈçºÎ£¬×ÓÍøµÄÄÚ²¿IPµØÖ··¶Î§Ê¼ÖÕÊÇË½ÓÐµÄ£¨ÔÚInternetÉÏÊÇ²»¿ÉÂ·ÓÉµÄ£©¡£
+
+* Â·ÓÉ±íÊÇAmazon VPCÖÐµÄÒ»¸öÂß¼­½á¹¹£¬Ëü°üº¬Ò»×éÓ¦ÓÃÓÚ×ÓÍø²¢ÓÃÓÚÈ·¶¨ÍøÂçÁ÷Á¿Ö¸ÏòºÎ´¦µÄ¹æÔò£¨³ÆÎªÂ·ÓÉ£©¡£Â·ÓÉ±íµÄÂ·ÓÉÔÊÐíAmazon VPCÄÚ²»Í¬×ÓÍøÖÐµÄAmazon EC2ÊµÀýÏà»¥Í¨ÐÅ¡£Äú¿ÉÒÔÐÞ¸ÄÂ·ÓÉ±í²¢Ìí¼Ó×Ô¼ºµÄ×Ô¶¨ÒåÂ·ÓÉ¡£Äú»¹¿ÉÒÔÊ¹ÓÃÂ·ÓÉ±íÖ¸¶¨ÄÄÐ©×ÓÍøÊÇ¹«¹²µÄ£¨Í¨¹ý½«InternetÁ÷Á¿¶¨Ïòµ½IGW£©ÄÄÐ©×ÓÍøÊÇË½ÓÐµÄ£¨Í¨¹ýÃ»ÓÐ½«Á÷Á¿¶¨Ïòµ½IGWµÄÂ·ÓÉ£©¡£IGWÊÇÒ»¸öË®Æ½À©Õ¹µÄ¡¢ÈßÓàµÄ¡¢¸ß¿ÉÓÃµÄAmazon VPC×é¼þ£¬ËüÔÊÐíAmazon VPCÖÐµÄÊµÀýÓëInternetÖ®¼ä½øÐÐÍ¨ÐÅ¡£IGWsÊÇÍêÈ«ÈßÓàµÄ£¬Ã»ÓÐ´ø¿íÏÞÖÆ¡£IGWÔÚAmazon VPCÂ·ÓÉ±íÖÐÎªInternet¿ÉÂ·ÓÉÁ÷Á¿Ìá¹©Ò»¸öÄ¿±ê£¬²¢ÎªÒÑ·ÖÅä¹«¹²IPµØÖ·µÄÊµÀýÖ´ÐÐÍøÂçµØÖ·×ª»»¡£
+
+* Amazon VPCµÄDHCP option setsÔªËØÔÊÐíÄú½«Amazon EC2Ö÷»úÃû·ÖÅä¶¨Ïòµ½×Ô¼ºµÄ×ÊÔ´¡£ÎªÁË½«×Ô¼ºµÄÓòÃû·ÖÅä¸øÊµÀý£¬ÐèÒª´´½¨Ò»¸ö×Ô¶¨ÒåµÄDHCPÑ¡Ïî¼¯²¢½«Æä·ÖÅä¸øAmazon VPC¡£
+
+* EIPµØÖ·ÊÇ³ØÖÐµÄ¾²Ì¬¹«ÓÃIPµØÖ·£¬ÓÃÓÚ¿ÉÒÔ·ÖÅä¸øÕÊ»§£¨´Ó³ØÖÐÌáÈ¡£©ºÍÊÍ·Å£¨·µ»Ø³Ø£©µÄÇøÓò¡£EIPÔÊÐíÄúÎ¬»¤Ò»×é±£³Ö¹Ì¶¨µÄIPµØÖ·£¬¶øµ×²ã»ù´¡ÉèÊ©¿ÉÄÜ»áËæ×ÅÊ±¼ä¶ø¸Ä±ä¡£
+
+* Amazon VPC¶ËµãÔÊÐíÄúÔÚAmazon VPCºÍÁíÒ»¸öAWS·þÎñÖ®¼ä´´½¨Ë½ÓÐÁ¬½Ó£¬¶øÎÞÐèÍ¨¹ýInternet»òNATÊµÀý¡¢VPNÁ¬½Ó»òAWSÖ±½ÓÁ¬½Ó½øÐÐ·ÃÎÊ¡£¿ÉÒÔÎªµ¥¸ö·þÎñ´´½¨¶à¸öÖÕ½áµã£¬»¹¿ÉÒÔÊ¹ÓÃ²»Í¬µÄÂ·ÓÉ±í´Ó²»Í¬µÄ×ÓÍø¶ÔÍ¬Ò»·þÎñÇ¿ÖÆÊµÊ©²»Í¬µÄ·ÃÎÊ²ßÂÔ¡£
+
+* Amazon VPC¶ÔµÈÁ¬½ÓÊÇÁ½¸öAmazon VPCÖ®¼äµÄÒ»ÖÖÍøÂçÁ¬½Ó£¬ËüÊ¹ÈÎÒ»Amazon VPCÖÐµÄÊµÀýÄÜ¹»±Ë´ËÍ¨ÐÅ£¬¾ÍºÃÏñËüÃÇÔÚÍ¬Ò»¸öÍøÂçÖÐÒ»Ñù¡£Äú¿ÉÒÔÔÚ×Ô¼ºµÄAmazon VPCÖ®¼ä´´½¨Ò»¸öAmazon VPC¶ÔµÈÁ¬½Ó£¬Ò²¿ÉÒÔÔÚµ¥¸öÇøÓòÄÚµÄÁíÒ»¸öAWSÕÊ»§ÖÐ´´½¨Ò»¸öAmazon VPC¶ÔµÈÁ¬½Ó¡£¶ÔµÈÁ¬½Ó¼È²»ÊÇÍø¹ØÒ²²»ÊÇVPNÁ¬½Ó£¬²¢ÇÒ²»»áÒýÈëÍ¨ÐÅµÄµ¥µã¹ÊÕÏ¡£
+
+* °²È«×éÊÇÒ»¸öÐéÄâÓÐ×´Ì¬·À»ðÇ½£¬Ëü¿ØÖÆµ½Amazon EC2ÊµÀýµÄÈëÕ¾ºÍ³öÕ¾Á÷Á¿¡£µ±ÄúµÚÒ»´ÎÔÚAmazon VPCÖÐÆô¶¯Amazon EC2ÊµÀýÊ±£¬±ØÐëÖ¸¶¨ÓëÖ®¹ØÁªµÄ°²È«×é¡£AWSÌá¹©ÁËÒ»¸ö¹©ÄúÊ¹ÓÃµÄÄ¬ÈÏ°²È«×é£¬ÆäÖÐ°üº¬ÔÊÐíÓë¸Ã°²È«×é¹ØÁªµÄËùÓÐÊµÀýÏà»¥Í¨ÐÅ²¢ÔÊÐíËùÓÐ³öÕ¾Á÷Á¿µÄ¹æÔò¡£Äú¿ÉÒÔ¸ü¸ÄÄ¬ÈÏ°²È«×éµÄ¹æÔò£¬µ«²»ÄÜÉ¾³ýÄ¬ÈÏ°²È«×é¡£
+
+* ÍøÂçACLÊÇÁíÒ»¸ö°²È«²ã£¬ÔÚ×ÓÍø¼¶±ð³äµ±ÎÞ×´Ì¬·À»ðÇ½¡£Amazon vpcÊÇÓÃÒ»¸ö¿ÉÐÞ¸ÄµÄÄ¬ÈÏÍøÂçACL´´½¨µÄ£¬¸ÃACLÓëÔÊÐíËùÓÐÈëÕ¾ºÍ³öÕ¾Á÷Á¿µÄÃ¿¸ö×ÓÍøÏà¹ØÁª¡£Èç¹ûÒª´´½¨×Ô¶¨ÒåÍøÂçACL£¬Æä³õÊ¼ÅäÖÃ½«¾Ü¾øËùÓÐÈëÕ¾ºÍ³öÕ¾Á÷Á¿£¬Ö±µ½Äú´´½¨Ò»¸öÉùÃ÷ÎªÆäËûµÄ¹æÔò¡£
+
+* NATÊµÀýÊÇÒ»¸ö¿Í»§¹ÜÀíµÄÊµÀý£¬Ëü±»Éè¼ÆÎª½ÓÊÜÀ´×ÔË½ÓÐ×ÓÍøÄÚÊµÀýµÄÁ÷Á¿£¬½«Ô´IPµØÖ·×ª»»ÎªNATÊµÀýµÄ¹«¹²IPµØÖ·£¬²¢½«Á÷Á¿×ª·¢µ½IGW¡£´ËÍâ£¬NATÊµÀýÎ¬»¤×ª·¢Á÷Á¿µÄ×´Ì¬£¬ÒÔ±ã½«ÏìÓ¦Á÷Á¿´ÓInternet·µ»Øµ½Ë½ÓÐ×ÓÍøÖÐµÄÊÊµ±ÊµÀý¡£
+
+* NATÍø¹ØÊÇAWS¹ÜÀíµÄ·þÎñ£¬Éè¼ÆÓÃÓÚ½ÓÊÜÀ´×ÔË½ÓÐ×ÓÍøÄÚÊµÀýµÄÁ÷Á¿£¬½«Ô´IPµØÖ·×ª»»ÎªNATÍø¹ØµÄ¹«¹²IPµØÖ·£¬²¢½«Á÷Á¿×ª·¢µ½IGW¡£´ËÍâ£¬NATÍø¹ØÎ¬»¤×ª·¢Á÷Á¿µÄ×´Ì¬£¬ÒÔ±ã½«ÏìÓ¦Á÷Á¿´ÓInternet·µ»Øµ½Ë½ÓÐ×ÓÍøÖÐµÄÊÊµ±ÊµÀý¡£
+
+* VPGÊÇÁ½¸öÍøÂçÖ®¼äVPNÁ¬½ÓµÄAWS¶ËµÄVPN¼¯ÖÐÆ÷¡£CGWÊÇVPNÁ¬½ÓµÄ¿Í»§¶ËµÄÎïÀíÉè±¸»òÈí¼þÓ¦ÓÃ³ÌÐò¡£ÔÚ´´½¨ÁËAmazon VPCµÄÕâÁ½¸öÔªËØÖ®ºó£¬×îºóÒ»²½ÊÇ´´½¨VPNËíµÀ¡£VPNËíµÀÊÇÔÚ´ÓVPNÁ¬½ÓµÄ¿Í»§¶Ë¡£
 
 ## ¿¼ÊÔ»ù´¡
+### Àí½âÊ²Ã´ÊÇVPC£¬ËûµÄºËÐÄ×é¼þºÈ¿ÉÑ¡×é¼þ
+* Amazon VPCÊÇAWSÔÆÖÐÂß¼­¸ôÀëµÄÍøÂç¡£Amazon VPCÓÉÒÔÏÂºËÐÄÔªËØ×é³É£º×ÓÍø£¨½öÏÞ¹«¹²¡¢Ë½ÓÐºÍVPN£©¡¢Â·ÓÉ±í¡¢DHCPÑ¡Ïî¼¯¡¢°²È«×éºÍÍøÂçacl¡£¿ÉÑ¡ÔªËØ°üÀ¨IGW¡¢EIPµØÖ·¡¢¶Ëµã¡¢¶ÔµÈÁ¬½Ó¡¢NATÊµÀý¡¢VPG¡¢CGWs£¬ºÍVPNÁ¬½Ó¡£
+
+### Àí½â×ÓÍøµÄÓÃÍ¾
+* ×ÓÍøÊÇAmazon VPC IPµØÖ··¶Î§µÄÒ»²¿·Ö£¬Äú¿ÉÒÔÔÚÆäÖÐ·ÅÖÃ¶ÀÁ¢×ÊÔ´×é¡£×ÓÍøÓÉCIDR¿é¶¨Òå£¬ÀýÈç10.0.1.0/24ºÍ10.0.2.0/24£¬²¢°üº¬ÔÚ¿ÉÓÃÐÔÇøÓòÖÐ¡£
+
+### Ê¶±ðpublic×ÓÍø£¬private×ÓÍø£¬VPN-only×ÓÍøÖ®¼äµÄ²»Í¬
+* Èç¹û×ÓÍøµÄÁ÷Á¿Â·ÓÉµ½IGW£¬Ôò¸Ã×ÓÍø³ÆÎª¹«ÓÃ×ÓÍø¡£Èç¹û×ÓÍøÃ»ÓÐµ½IGWµÄÂ·ÓÉ£¬Ôò¸Ã×ÓÍø³ÆÎªË½ÓÐ×ÓÍø¡£Èç¹û×ÓÍøÃ»ÓÐµ½IGWµÄÂ·ÓÉ£¬µ«ÆäÁ÷Á¿Â·ÓÉµ½VPG£¬Ôò¸Ã×ÓÍø³ÆÎªVPN-onlyµÄ×ÓÍø 
+
+### Àí½âÂ·ÓÉ±íµÄÓÃÍ¾
+* Â·ÓÉ±íÊÇÒ»×é¹æÔò£¨³ÆÎªÂ·ÓÉ£©£¬ÓÃÓÚÈ·¶¨ÍøÂçÁ÷Á¿µÄÁ÷Ïò¡£Â·ÓÉ±íÔÊÐí²»Í¬×ÓÍøÖÐµÄAmazon EC2ÊµÀýÏà»¥Í¨ÐÅ£¨ÔÚÍ¬Ò»Amazon VPCÄÚ£©¡£Amazon VPCÂ·ÓÉÆ÷»¹ÔÊÐí×ÓÍø¡¢igwºÍvpgÏà»¥Í¨ÐÅ¡£
+
+### Àí½âIGWµÄÓÃÍ¾
+* IGWÊÇÒ»¸öË®Æ½À©Õ¹µÄ¡¢ÈßÓàµÄ¡¢¸ß¿ÉÓÃµÄAmazon VPC×é¼þ£¬ËüÔÊÐíAmazon VPCÖÐµÄÊµÀýÓëInternetÖ®¼ä½øÐÐÍ¨ÐÅ¡£IGWsÊÇÍêÈ«ÈßÓàµÄ£¬Ã»ÓÐ´ø¿íÏÞÖÆ¡£IGWÔÚAmazon VPCÂ·ÓÉ±íÖÐÎªInternet¿ÉÂ·ÓÉÁ÷Á¿Ìá¹©Ä¿±ê£¬²¢ÎªÒÑ·ÖÅä¹«¹²IPµØÖ·µÄÊµÀýÖ´ÐÐÍøÂçµØÖ·×ª»»¡£
 
 
+### Àí½âDHCPÑ¡Ïî¼¯ÎªAmazon VPCÌá¹©ÁËÊ²Ã´
+* Amazon VPCµÄDHCP option setsÔªËØÔÊÐíÄú½«Amazon EC2Ö÷»úÃû·ÖÅä¶¨Ïòµ½×Ô¼ºµÄ×ÊÔ´¡£Äú¿ÉÒÔÎªAmazon VPCÖÐµÄÊµÀýÖ¸¶¨ÓòÃû£¬²¢±êÊ¶×Ô¶¨ÒåDNS·þÎñÆ÷¡¢NTP·þÎñÆ÷ºÍNetBIOS·þÎñÆ÷µÄIPµØÖ·¡£
 
+### ÖªµÀVPCµÄpublic IPµØÖ·ÓëEIPµØÖ·Ö®¼äµÄ²»Í¬
+* ¹«ÓÃIPµØÖ·ÊÇAWSÓµÓÐµÄIP£¬¿ÉÒÔ×Ô¶¯·ÖÅä¸ø×ÓÍøÖÐÆô¶¯µÄÊµÀý¡£EIPµØÖ·ÊÇAWSÓµÓÐµÄ¹«ÓÃIPµØÖ·£¬Äú¿ÉÒÔ·ÖÅä¸øÄúµÄÕÊ»§£¬²¢¸ù¾ÝÐèÒª·ÖÅä¸øÊµÀý»òÍøÂç½Ó¿Ú¡£
+
+
+### Àí½âEndpointÎªAmazon VPCÌá¹©ÁËÊ²Ã´
+* Amazon VPC¶ËµãÔÊÐíÄúÔÚAmazon VPCºÍÁíÒ»¸öAWS·þÎñÖ®¼ä´´½¨Ë½ÓÐÁ¬½Ó£¬¶øÎÞÐèÍ¨¹ýInternet»òNATÊµÀý¡¢VPNÁ¬½Ó»òAWSÖ±½ÓÁ¬½Ó½øÐÐ·ÃÎÊ¡£ÖÕ½áµã½öÖ§³ÖRegionÄÚµÄ·þÎñ¡£
+
+
+### Àí½âAmazon VPC peering
+* Ò»¸öAmazon VPC¶ÔµÈÁ¬½ÓÊÇÁ½¸öAmazon VPCÖ®¼äµÄÍøÂçÁ¬½Ó£¬ËüÊ¹ÈÎºÎÒ»¸öAmazon VPCÖÐµÄÊµÀýÄÜ¹»±Ë´ËÍ¨ÐÅ£¬¾ÍºÃÏñËüÃÇÔÚÍ¬Ò»¸öÍøÂçÖÐÒ»Ñù¡£¶ÔµÈÁ¬½ÓÊÇÍ¨¹ýÇëÇó/½ÓÊÜÐ­Òé´´½¨µÄ¡£²»Ö§³Ö´«µÝ¶ÔµÈ£¬¶ÔµÈ½öÔÚÍ¬Ò»ÇøÓòÄÚµÄAmazon VPCÖ®¼ä¿ÉÓÃ
+
+### ÖªµÀ°²È«×éºÍÍøÂçACLµÄ²»Í¬
+* °²È«×éÔÚÊµÀý¼¶±ðÓ¦ÓÃ¡£Äú¿ÉÒÔÔÚ¶à¸ö×ÓÍøÖÐÓÐ¶à¸öÊµÀý£¬ÕâÐ©×ÓÍøÊÇÍ¬Ò»°²È«×éµÄ³ÉÔ±¡£°²È«×éÊÇÓÐ×´Ì¬µÄ£¬ÕâÒâÎ¶×Å²»¹Ü³öÕ¾¹æÔòÈçºÎ£¬¶¼×Ô¶¯ÔÊÐí·µ»ØÍ¨ÐÅÁ¿¡£ÍøÂçACLÓ¦ÓÃÓÚ×ÓÍø¼¶±ð£¬²¢ÇÒÍ¨ÐÅÁ¿ÊÇÎÞ×´Ì¬µÄ¡£ÄúÐèÒªÔÊÐíÍøÂçACLÉÏµÄÈëÕ¾ºÍ³öÕ¾Á÷Á¿£¬ÒÔ±ã×ÓÍøÖÐµÄAmazon EC2ÊµÀýÄÜ¹»Í¨¹ýÌØ¶¨Ð­Òé½øÐÐÍ¨ÐÅ¡£
+
+### Àí½âNATÎªAmazon VPCÌá¹©ÁËÊ²Ã´
+* NATÊµÀý»òNATÍø¹ØÔÊÐíË½ÓÐ×ÓÍøÖÐµÄÊµÀýÆô¶¯µ½InternetµÄ³öÕ¾Í¨ÐÅ¡£ÀýÈç£¬ÕâÔÊÐí³öÕ¾InternetÍ¨ÐÅÏÂÔØÐÞ²¹³ÌÐòºÍ¸üÐÂ£¬µ«×èÖ¹ÊµÀý½ÓÊÕInternetÉÏÄ³ÈË·¢ÆðµÄÈëÕ¾Í¨ÐÅ¡£
+
+### Àí½â½¨Á¢´ÓÍøÂçµ½Amazon VPCµÄVPNÁ¬½ÓËùÐèµÄ×é¼þ
+* VPGÊÇÁ½¸öÍøÂçÖ®¼äVPNÁ¬½ÓµÄAWS¶ËµÄVPN¼¯ÖÐÆ÷¡£CGW±íÊ¾VPNÁ¬½ÓµÄ¿Í»§¶ËµÄÎïÀíÉè±¸»òÈí¼þÓ¦ÓÃ³ÌÐò¡£VPNÁ¬½Ó±ØÐë´ÓCGW¶ËÆô¶¯£¬²¢ÇÒÁ¬½ÓÓÉÁ½¸öIPSecËíµÀ×é³É¡£
 
 ## Á·Ï°
+* ÊìÏ¤Amazon VPCµÄ×îºÃ·½·¨ÊÇ¹¹½¨×Ô¼ºµÄ×Ô¶¨ÒåAmazon VPC£¬È»ºó½«Amazon EC2ÊµÀý²¿Êðµ½ÆäÖÐ£¬Õâ¾ÍÊÇ±¾½Ú½«Òª×öµÄ¡£ÄúÓ¦¸ÃÖØ¸´ÕâÐ©Á·Ï°£¬Ö±µ½Äú¿ÉÒÔ×ÔÐÅµØ´´½¨ºÍÍ£ÓÃAmazon VPCs¡£ÓÐ¹ØÍê³ÉÕâÐ©Á·Ï°µÄ°ïÖú£¬Çë²ÎÔÄÎ»ÓÚhttp://aws.Amazon.com/documentation/VPC/µÄAmazon VPCÓÃ»§Ö¸ÄÏ¡£
+
+### Á·Ï° 4.1 
+#### ´´½¨Ò»¸ö¿Í»§Amazon VPC
+
+* 1. ×÷Îª¹ÜÀíÔ±»òÕßÓÐÈ¨ÏÞµÄÓÃ»§µÇÂ¼AWS¹ÜÀí¿ØÖÆÌ¨£»
+* 2. Ñ¡ÔÚAmazon VPC ICONÆô¶¯Amazon VPC Dashboard£»
+* 3. ´´½¨Ò»¸öAmazon VPC£¬CIDR¿éµÈÓÚ192.168.0.0/16£¬Ãû³Æ±êÇ©Îª£ºMy First VPC£¬Ä¬ÈÏ×âÁÞ¡£
+
+ÄãÒÑ¾­´´½¨ÁËÄãµÄµÚÒ»¸ö¿Í»§VPC
+
+### Á·Ï° 4.2
+#### ÎªÄãµÄ¿Í»§Amazon VPC´´½¨Á½¸ö×ÓÍø
+* 1. ´´½¨Ò»¸ö×ÓÍø£¬CIDR¿éµÈÓÚ192.168.1.0/24£¬²¢ÇÒÃû³Æ±êÇ©Îª£ºMy First Public Subnet¡£¸ù¾ÝÁ·Ï°4.1ÔÚAmazon VPCÖÐ´´½¨×ÓÍø£¬²¢Ö¸¶¨×ÓÍøµÄ¿ÉÓÃÇøÓò£¨ÀýÈç£¬US-East-1a£©¡£
+* 2¡£´´½¨Ò»¸ö×ÓÍø£¬CIDR¿éµÈÓÚ192.168.2.0/24£¬²¢ÇÒÃû³Æ±êÇ©Îª£ºMy First Private Subnet¡£¸ù¾ÝÁ·Ï°4.1ÔÚAmazon VPCÖÐ´´½¨×ÓÍø£¬²¢Îª×ÓÍøÖ¸¶¨Ò»¸ö²»Í¬ÓÚÏÈÇ°Ö¸¶¨µÄ¿ÉÓÃÇøÓò£¨ÀýÈç£¬US-East-1b£©¡£
+
+* ÏÖÔÚÄúÒÑ¾­´´½¨ÁËÁ½¸öÐÂµÄ×ÓÍø£¬Ã¿¸ö×ÓÍø¶¼Î»ÓÚÆä×Ô¼ºµÄ¿ÉÓÃÐÔÇøÓòÖÐ¡£¼Ç×¡Ò»¸ö×ÓÍøµÈÓÚÒ»¸ö¿ÉÓÃÇøÓòÊÇºÜÖØÒªµÄ¡£²»ÄÜ¿ç¶à¸ö¿ÉÓÃÐÔÇøÓòÀ­Éì×ÓÍø¡£
+
+### Á·Ï° 4.3
+#### ½«ÄúµÄ×Ô¶¨ÒåAmazon VPCÁ¬½Óµ½Internet²¢½¨Á¢Â·ÓÉ
+ÒÔ»ñµÃ´ËÁ·Ï°µÄ°ïÖú£¬Çë²ÎÔÄAmazon EC2ÃÜÔ¿¶ÔÎÄµµ£ºhttp://docs.aws.Amazon.com/aws EC2/latest/UserGuide/EC2-key-pairs.htmlÒÔ»ñÈ¡´ËÁ·Ï°µÄÆäËû°ïÖú£¬Çë²ÎÔÄNATÊµÀýÎÄµµ£ºhttp://docs.aws.amazon.com/amazonpvc/latest/UserGuide/VPC_NAT_Instance.html#NATInstance 
+
+* 1¡£ÔÚÓë×Ô¶¨ÒåAmazon VPCÏàÍ¬µÄÇøÓòÖÐ´´½¨Amazon EC2ÃÜÔ¿¶Ô¡£
+* 2¡£´´½¨Ò»¸ö´øÓÐÎÒµÄµÚÒ»¸öIGWÃû³Æ±êÇ©µÄIGW£¬²¢½«Æä¸½¼Óµ½ÄúµÄ×Ô¶¨ÒåAmazon VPC¡£
+* 3. ½«Â·ÓÉÌí¼Óµ½×Ô¶¨ÒåAmazon VPCµÄÖ÷Â·ÓÉ±íÖÐ£¬¸Ã±í½«»¥ÁªÍøÁ÷Á¿£¨0.0.0.0/0£©¶¨Ïòµ½IGW¡£
+* 4. ´´½¨Ò»¸öNATÍø¹Ø£¬½«Æä·ÅÖÃÔÚ×Ô¶¨ÒåAmazon VPCµÄ¹«¹²×ÓÍøÖÐ£¬²¢ÎªÆä·ÖÅäÒ»¸öEIP¡£
+* 5. Ê¹ÓÃÎÒµÄµÚÒ»¸öË½ÓÐÂ·ÓÉ±íµÄÃû³Æ±êÇ©´´½¨Ò»¸öÐÂµÄÂ·ÓÉ±í£¬²¢½«Æä·ÅÖÃÔÚÄúµÄ×Ô¶¨ÒåAmazon VPCÖÐ¡£ÏòÆäÌí¼ÓÒ»¸ö½«InternetÁ÷Á¿£¨0.0.0.0/0£©¶¨Ïòµ½NATÍø¹ØµÄÂ·ÓÉ£¬²¢½«ÆäÓë×¨ÓÃ×ÓÍø¹ØÁª¡£
+
+* ÏÖÔÚ£¬ÄúÒÑ¾­ÎªAmazon VPCÄÚµÄ×ÊÔ´´´½¨ÁËµ½InternetµÄÁ¬½Ó¡£Äú½¨Á¢ÁË½«InternetÁ÷Á¿¶¨Ïòµ½IGWµÄÂ·ÓÉ¹æÔò£¬¶ø²»¿¼ÂÇÔ­Ê¼×ÓÍø¡£  
 
 
+### Á·Ï° 4.4
+#### Æô¶¯Ò»¸öAmazon EC2ÊµÀý²¢²âÊÔÓëInternetµÄÁ¬½Ó
+* 1. ½«t2.micro Amazon Linux AMI×÷ÎªAmazon EC2ÊµÀýÆô¶¯µ½×Ô¶¨ÒåAmazon VPCµÄ¹«¹²×ÓÍøÖÐ£¬¸øËüÒ»¸öMy First Public Instance µÄÃû³Æ±êÇ©£¬²¢Ñ¡ÔñÐÂ´´½¨µÄÃÜÔ¿¶ÔÒÔ°²È«·ÃÎÊ¸ÃÊµÀý¡£
+* 2. Ê¹ÓÃÐÂ´´½¨µÄÃÜÔ¿¶ÔÍ¨¹ýSSH°²È«µØ·ÃÎÊ¹«¹²×ÓÍøÖÐµÄAmazon EC2ÊµÀý¡£
+* 3. Í¨¹ýÖ´ÐÐÒÔÏÂÃüÁî¶Ô²Ù×÷ÏµÍ³ÊµÀý¿âÖ´ÐÐ¸üÐÂ£º
+```
+  sudo yum update-y  
+```
+* 4. ÄúÓ¦¸Ã¿´µ½ÏÔÊ¾ÊµÀý´ÓInternetÏÂÔØ²¢°²×°Èí¼þµÄÊä³ö¡£
 
+* ÄúÏÖÔÚÒÑ¾­ÔÚ¹«¹²×ÓÍøÖÐÉèÖÃÁËAmazon EC2ÊµÀý¡£Äú¿ÉÒÔ½«²¹¶¡Ó¦ÓÃµ½¹«¹²×ÓÍøÖÐµÄAmazon EC2ÊµÀý£¬²¢ÑÝÊ¾ÁËÓëInternetµÄÁ¬½Ó¡£
 
 ## ¸´Ï°Ìâ
 
