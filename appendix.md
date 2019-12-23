@@ -14,8 +14,14 @@
 ### AMI
 * Amazon Machine Image
 
+### ARN
+* Amazon Resource Name
+
 ### CGWs
 * Customer Gateways(CGWs)
+
+### CNAME
+* Canonical Name Record
 
 ### EBS
 * Elastic Block Storage
@@ -44,8 +50,14 @@
 ### S3
 * Simple Storage Service
 
+### SAN
+* Subject Alternative Name
+
 ### SNS
 * Simple Notification Service
+
+### SNI
+* Server Name Indication
 
 ### VPGs
 * Virtual Private Gateways(VPGs)

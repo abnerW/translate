@@ -332,17 +332,14 @@ AWS ÔÚÃ¿¸öRegionÎ¬³ÖÒ»¸ö¹«¹²IPµØÖ·³Ø£¬²¢Ê¹ËüÃÇ¿É¹©ÄúÓëAmazon VPCsÖÐµÄ×ÊÔ´¹ØÁª¡£µ
 ### Àí½âIGWµÄÓÃÍ¾
 * IGWÊÇÒ»¸öË®Æ½À©Õ¹µÄ¡¢ÈßÓàµÄ¡¢¸ß¿ÉÓÃµÄAmazon VPC×é¼þ£¬ËüÔÊÐíAmazon VPCÖÐµÄÊµÀýÓëInternetÖ®¼ä½øÐÐÍ¨ÐÅ¡£IGWsÊÇÍêÈ«ÈßÓàµÄ£¬Ã»ÓÐ´ø¿íÏÞÖÆ¡£IGWÔÚAmazon VPCÂ·ÓÉ±íÖÐÎªInternet¿ÉÂ·ÓÉÁ÷Á¿Ìá¹©Ä¿±ê£¬²¢ÎªÒÑ·ÖÅä¹«¹²IPµØÖ·µÄÊµÀýÖ´ÐÐÍøÂçµØÖ·×ª»»¡£
 
-
 ### Àí½âDHCPÑ¡Ïî¼¯ÎªAmazon VPCÌá¹©ÁËÊ²Ã´
 * Amazon VPCµÄDHCP option setsÔªËØÔÊÐíÄú½«Amazon EC2Ö÷»úÃû·ÖÅä¶¨Ïòµ½×Ô¼ºµÄ×ÊÔ´¡£Äú¿ÉÒÔÎªAmazon VPCÖÐµÄÊµÀýÖ¸¶¨ÓòÃû£¬²¢±êÊ¶×Ô¶¨ÒåDNS·þÎñÆ÷¡¢NTP·þÎñÆ÷ºÍNetBIOS·þÎñÆ÷µÄIPµØÖ·¡£
 
 ### ÖªµÀVPCµÄpublic IPµØÖ·ÓëEIPµØÖ·Ö®¼äµÄ²»Í¬
 * ¹«ÓÃIPµØÖ·ÊÇAWSÓµÓÐµÄIP£¬¿ÉÒÔ×Ô¶¯·ÖÅä¸ø×ÓÍøÖÐÆô¶¯µÄÊµÀý¡£EIPµØÖ·ÊÇAWSÓµÓÐµÄ¹«ÓÃIPµØÖ·£¬Äú¿ÉÒÔ·ÖÅä¸øÄúµÄÕÊ»§£¬²¢¸ù¾ÝÐèÒª·ÖÅä¸øÊµÀý»òÍøÂç½Ó¿Ú¡£
 
-
 ### Àí½âEndpointÎªAmazon VPCÌá¹©ÁËÊ²Ã´
 * Amazon VPC¶ËµãÔÊÐíÄúÔÚAmazon VPCºÍÁíÒ»¸öAWS·þÎñÖ®¼ä´´½¨Ë½ÓÐÁ¬½Ó£¬¶øÎÞÐèÍ¨¹ýInternet»òNATÊµÀý¡¢VPNÁ¬½Ó»òAWSÖ±½ÓÁ¬½Ó½øÐÐ·ÃÎÊ¡£ÖÕ½áµã½öÖ§³ÖRegionÄÚµÄ·þÎñ¡£
-
 
 ### Àí½âAmazon VPC peering
 * Ò»¸öAmazon VPC¶ÔµÈÁ¬½ÓÊÇÁ½¸öAmazon VPCÖ®¼äµÄÍøÂçÁ¬½Ó£¬ËüÊ¹ÈÎºÎÒ»¸öAmazon VPCÖÐµÄÊµÀýÄÜ¹»±Ë´ËÍ¨ÐÅ£¬¾ÍºÃÏñËüÃÇÔÚÍ¬Ò»¸öÍøÂçÖÐÒ»Ñù¡£¶ÔµÈÁ¬½ÓÊÇÍ¨¹ýÇëÇó/½ÓÊÜÐ­Òé´´½¨µÄ¡£²»Ö§³Ö´«µÝ¶ÔµÈ£¬¶ÔµÈ½öÔÚÍ¬Ò»ÇøÓòÄÚµÄAmazon VPCÖ®¼ä¿ÉÓÃ
@@ -386,7 +383,6 @@ AWS ÔÚÃ¿¸öRegionÎ¬³ÖÒ»¸ö¹«¹²IPµØÖ·³Ø£¬²¢Ê¹ËüÃÇ¿É¹©ÄúÓëAmazon VPCsÖÐµÄ×ÊÔ´¹ØÁª¡£µ
 * 5. Ê¹ÓÃÎÒµÄµÚÒ»¸öË½ÓÐÂ·ÓÉ±íµÄÃû³Æ±êÇ©´´½¨Ò»¸öÐÂµÄÂ·ÓÉ±í£¬²¢½«Æä·ÅÖÃÔÚÄúµÄ×Ô¶¨ÒåAmazon VPCÖÐ¡£ÏòÆäÌí¼ÓÒ»¸ö½«InternetÁ÷Á¿£¨0.0.0.0/0£©¶¨Ïòµ½NATÍø¹ØµÄÂ·ÓÉ£¬²¢½«ÆäÓë×¨ÓÃ×ÓÍø¹ØÁª¡£
 
 * ÏÖÔÚ£¬ÄúÒÑ¾­ÎªAmazon VPCÄÚµÄ×ÊÔ´´´½¨ÁËµ½InternetµÄÁ¬½Ó¡£Äú½¨Á¢ÁË½«InternetÁ÷Á¿¶¨Ïòµ½IGWµÄÂ·ÓÉ¹æÔò£¬¶ø²»¿¼ÂÇÔ­Ê¼×ÓÍø¡£  
-
 
 ### Á·Ï° 4.4
 #### Æô¶¯Ò»¸öAmazon EC2ÊµÀý²¢²âÊÔÓëInternetµÄÁ¬½Ó
