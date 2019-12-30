@@ -2,26 +2,38 @@
 
 ## 术语
 
-### Amazon VPC
-* Amazon Virtual Private Cloud
-
-### Amazon RDS
-* Amazon Relation Database Service
 
 ### ACLs
 * Access Control Lists
 
+### Amazon Cognito
+
+### ADFS
+* Active Directory Federation Services
+
 ### AMI
 * Amazon Machine Image
 
+### Amazon RDS
+* Amazon Relation Database Service
+
+### APN
+* AWS Partner Network
+
 ### ARN
 * Amazon Resource Name
+
+### Amazon VPC
+* Amazon Virtual Private Cloud
 
 ### CGWs
 * Customer Gateways(CGWs)
 
 ### CNAME
 * Canonical Name Record
+
+### DHCP
+* Dynamic Host Configuration Protocol
 
 ### EBS
 * Elastic Block Storage
@@ -35,17 +47,29 @@
 ### ENIs
 * Elastic Network Interfaces
 
-### DHCP
-* Dynamic Host Configuration Protocol
+### IAM
+* AWS Identity and Access Management
+
+### IdP
+* Identity Providers
 
 ### IGWs
 * Internet Gateways(IGWs)
+
+### LDAP
+* Lightweight Directory Access Protocol 
 
 ### NATs
 * Network Address Translation
 
 ### NTP
 * Network Time Protocol
+
+### OTP
+* One-time Password
+
+### SAML
+* Security Assertion Markup Language 2.0
 
 ### S3
 * Simple Storage Service
