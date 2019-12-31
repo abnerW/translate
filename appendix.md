@@ -68,6 +68,12 @@
 ### OTP
 * One-time Password
 
+### RPO
+* Recovery Point Objective 
+
+### RTO
+* Recovery Time Objective
+
 ### SAML
 * Security Assertion Markup Language 2.0
 
