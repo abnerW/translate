@@ -95,11 +95,14 @@
 ### VPNs
 * Virtual Private Networks(VPNs)
 
+### WLM
+* Workload Manager
 
+### HIPAA
+* Health Insurance Portability and Accountability Act
 
-
-
-
+### PCI DSS
+* Payment Card Industry Data Security Standard 
 
 
 
