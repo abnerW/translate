@@ -2,7 +2,6 @@
 
 ## 术语
 
-
 ### ACLs
 * Access Control Lists
 
@@ -47,6 +46,9 @@
 ### ENIs
 * Elastic Network Interfaces
 
+### HIPAA
+* Health Insurance Portability and Accountability Act
+
 ### IAM
 * AWS Identity and Access Management
 
@@ -67,6 +69,9 @@
 
 ### OTP
 * One-time Password
+
+### PCI DSS
+* Payment Card Industry Data Security Standard 
 
 ### RPO
 * Recovery Point Objective 
@@ -89,6 +94,9 @@
 ### SNI
 * Server Name Indication
 
+### TDE
+* Transparent Data Encryption
+
 ### VPGs
 * Virtual Private Gateways(VPGs)
 
@@ -97,13 +105,6 @@
 
 ### WLM
 * Workload Manager
-
-### HIPAA
-* Health Insurance Portability and Accountability Act
-
-### PCI DSS
-* Payment Card Industry Data Security Standard 
-
 
 
 
